@@ -1,0 +1,92 @@
+[
+  {
+    "segment_id": "para_26",
+    "location": "Body Paragraph 26",
+    "entity_type": "PERSON",
+    "text": "Cyber Crest Park",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "Registered Office: Building 7, Cyber Crest Park, Phase 2, Pune - 403599, Maharashtra, I"
+  },
+  {
+    "segment_id": "para_153",
+    "location": "Body Paragraph 153",
+    "entity_type": "PERSON",
+    "text": "Casey Montgom",
+    "confidence": 0.94,
+    "source": "role_context",
+    "context_snippet": "tatements and undertakings made by such Casey Montgomery."
+  },
+  {
+    "segment_id": "para_173",
+    "location": "Body Paragraph 173",
+    "entity_type": "PERSON",
+    "text": "Each Cas",
+    "confidence": 0.94,
+    "source": "role_context",
+    "context_snippet": "ulation 8 of the SEBI ICDR Regulations. Each Casey Montgomery has, severally and not joi"
+  },
+  {
+    "segment_id": "para_679",
+    "location": "Body Paragraph 679",
+    "entity_type": "PERSON",
+    "text": "Jamie Haye",
+    "confidence": 0.94,
+    "source": "role_context",
+    "context_snippet": "tion of the proposed utilization of the Jamie Hayes, even if such variation is in the inte"
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "location": "Table 5 Row 10 Cell 1 Para 0",
+    "entity_type": "PERSON",
+    "text": "Hayes I",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "restview Capital Private Limited, Rowan Hayes I Beacon Financial Private Limited, Vangu"
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "location": "Table 5 Row 10 Cell 1 Para 0",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial Park IX",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "Limited, Zenith Energy Private Limited, Waterloo Industrial Park IX B Beacon Financial Private Limited, Ale"
+  },
+  {
+    "segment_id": "table_5_r_29_c_1_p_0",
+    "location": "Table 5 Row 29 Cell 1 Para 0",
+    "entity_type": "PERSON",
+    "text": "Cyber Crest Park",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "The registered office Building 7, Cyber Crest Park, Phase 2, Pune - 408531, Maharashtra, I"
+  },
+  {
+    "segment_id": "table_6_r_12_c_1_p_0",
+    "location": "Table 6 Row 12 Cell 1 Para 0",
+    "entity_type": "PERSON",
+    "text": "Cyber Crest Park",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "cturing facility located at Building 7, Cyber Crest Park, Phase 2, Pune - 403599, Maharashtra, I"
+  },
+  {
+    "segment_id": "table_9_r_5_c_1_p_0",
+    "location": "Table 9 Row 5 Cell 1 Para 0",
+    "entity_type": "PERSON",
+    "text": "Schedule XIII",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "Book building process, as provided in Schedule XIII of the SEBI ICDR Regulations, in terms"
+  },
+  {
+    "segment_id": "table_53_r_7_c_3_p_0",
+    "location": "Table 53 Row 7 Cell 3 Para 0",
+    "entity_type": "PERSON",
+    "text": "Narayana B. Shetty",
+    "confidence": 0.88,
+    "source": "ner",
+    "context_snippet": "ransfer of shares to Skyler Carter from Narayana B. Shetty"
+  }
+]

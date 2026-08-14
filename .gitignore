@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+.pytest_cache
+*.pyc
+output/redacted_output_redacted.docx
+output/~$dacted_output.docx
+output/~$*.docx
+scratch_profile.py
+scratch/
