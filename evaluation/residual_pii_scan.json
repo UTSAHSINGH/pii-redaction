@@ -1,1 +1,119 @@
-[]
+[
+  {
+    "segment_id": "para_26",
+    "entity_type": "ADDRESS",
+    "text": "11/4 and Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001",
+    "start": 25,
+    "end": 94,
+    "confidence": 0.91,
+    "source": "structural_address"
+  },
+  {
+    "segment_id": "para_48",
+    "entity_type": "ADDRESS",
+    "text": "11/4 and Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001",
+    "start": 257,
+    "end": 326,
+    "confidence": 0.91,
+    "source": "structural_address"
+  },
+  {
+    "segment_id": "para_617",
+    "entity_type": "PERSON",
+    "text": "Our Managemen",
+    "start": 144,
+    "end": 157,
+    "confidence": 0.96,
+    "source": "role_context"
+  },
+  {
+    "segment_id": "table_0_r_1_c_0_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/4 and Plot 858, James Avenue Industrial Area, Sector 19, Pune 411001",
+    "start": 6,
+    "end": 77,
+    "confidence": 0.91,
+    "source": "structural_address"
+  },
+  {
+    "segment_id": "table_2_r_1_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "RAJESH KUSHAL HEGDE",
+    "start": 842,
+    "end": 861,
+    "confidence": 0.75,
+    "source": "ner_candidate"
+  },
+  {
+    "segment_id": "table_2_r_1_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "KUSHAL HEGDE",
+    "start": 958,
+    "end": 970,
+    "confidence": 0.75,
+    "source": "ner_candidate"
+  },
+  {
+    "segment_id": "table_3_r_1_c_1_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/4 and Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001",
+    "start": 123,
+    "end": 192,
+    "confidence": 0.91,
+    "source": "structural_address"
+  },
+  {
+    "segment_id": "table_5_r_29_c_1_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/4 and Plot 727, Sharp Loop Industrial Area, Sector 8, Pune 411001",
+    "start": 54,
+    "end": 122,
+    "confidence": 0.91,
+    "source": "structural_address"
+  },
+  {
+    "segment_id": "table_6_r_12_c_1_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/4 and Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001",
+    "start": 44,
+    "end": 113,
+    "confidence": 0.91,
+    "source": "structural_address"
+  },
+  {
+    "segment_id": "table_53_r_7_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Narayana B. Shetty",
+    "start": 53,
+    "end": 71,
+    "confidence": 0.75,
+    "source": "ner_candidate"
+  },
+  {
+    "segment_id": "table_53_r_8_c_3_p_0",
+    "entity_type": "COMPANY",
+    "text": "Robertson from Shubhkamal Leasing and Investment Private Limited",
+    "start": 42,
+    "end": 106,
+    "confidence": 0.9,
+    "source": "regex_suffix"
+  },
+  {
+    "segment_id": "table_53_r_10_c_3_p_0",
+    "entity_type": "COMPANY",
+    "text": "Smith from Shubhkamal Leasing and Investment Private Limited",
+    "start": 42,
+    "end": 102,
+    "confidence": 0.9,
+    "source": "regex_suffix"
+  },
+  {
+    "segment_id": "table_70_r_1_c_3_p_0",
+    "entity_type": "ADDRESS",
+    "text": "245/ 104, Pushpakamal, Deccan Gymkhana Society, lane no. Plot 172, Neil Greens Industrial Area, Sector 13, Pune 411001",
+    "start": 7,
+    "end": 125,
+    "confidence": 0.91,
+    "source": "structural_address"
+  }
+]

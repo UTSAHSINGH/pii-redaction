@@ -60,7 +60,7 @@ class DocxAdapter(DocumentAdapter):
                         if elem_id in seen_element_ids:
                             continue
                         seen_element_ids.add(elem_id)
-                        seg_id = f"table_{t_idx}_r{r_idx}_c{c_idx}_p{p_idx}"
+                        seg_id = f"table_{t_idx}_r_{r_idx}_c_{c_idx}_p_{p_idx}"
                         segments.append(DocumentSegment(
                             segment_id=seg_id,
                             text=p.text,
@@ -91,7 +91,7 @@ class DocxAdapter(DocumentAdapter):
                     if elem_id in seen_element_ids:
                         continue
                     seen_element_ids.add(elem_id)
-                    seg_id = f"section_{s_idx}_{hf_type}_p{p_idx}"
+                    seg_id = f"sec_{s_idx}_{hf_type}_p_{p_idx}"
                     segments.append(DocumentSegment(
                         segment_id=seg_id,
                         text=p.text,

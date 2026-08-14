@@ -1,12 +1,12 @@
 {
-  "segments_checked": 4639,
-  "segments_with_expected_redactions": 184,
+  "status": "PASS",
+  "segments_checked": 4635,
+  "segments_with_expected_redactions": 345,
   "segments_with_unexpected_changes": 0,
   "unauthorized_changed_characters": 0,
   "total_original_characters": 324718,
   "unauthorized_change_rate": 0.0,
   "non_pii_preservation_rate": 1.0,
-  "total_approved_spans": 304,
-  "status": "PASS",
+  "total_approved_spans": 562,
   "failed_segments_sample": []
 }

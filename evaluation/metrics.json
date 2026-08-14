@@ -2,14 +2,14 @@
   "per_type": {
     "PERSON": {
       "gold": 29,
-      "predicted": 40,
+      "predicted": 138,
       "TP": 23,
-      "FP": 17,
+      "FP": 115,
       "FN": 6,
-      "precision": 0.575,
+      "precision": 0.1667,
       "recall": 0.7931,
-      "f1": 0.6667,
-      "accuracy": 0.5
+      "f1": 0.2754,
+      "accuracy": 0.1597
     },
     "EMAIL": {
       "gold": 24,
@@ -35,20 +35,20 @@
     },
     "COMPANY": {
       "gold": 7,
-      "predicted": 51,
+      "predicted": 59,
       "TP": 7,
-      "FP": 44,
+      "FP": 52,
       "FN": 0,
-      "precision": 0.1373,
+      "precision": 0.1186,
       "recall": 1.0,
-      "f1": 0.2414,
-      "accuracy": 0.1373
+      "f1": 0.2121,
+      "accuracy": 0.1186
     },
     "ADDRESS": {
       "gold": 3,
-      "predicted": 0,
+      "predicted": 6,
       "TP": 0,
-      "FP": 0,
+      "FP": 6,
       "FN": 3,
       "precision": 0.0,
       "recall": 0.0,
@@ -106,18 +106,18 @@
   },
   "overall": {
     "micro": {
-      "precision": 0.4676,
+      "precision": 0.259,
       "recall": 0.8784,
-      "f1": 0.6103,
-      "accuracy": 0.4392
+      "f1": 0.4,
+      "accuracy": 0.25
     },
     "macro": {
-      "precision": 0.4271,
+      "precision": 0.3417,
       "recall": 0.7586,
-      "f1": 0.507
+      "f1": 0.4228
     },
     "total_TP": 65,
-    "total_FP": 74,
+    "total_FP": 186,
     "total_FN": 9
   },
   "negative_preservation": {
@@ -128,15 +128,15 @@
     "failed_details": []
   },
   "integrity_report": {
-    "segments_checked": 4639,
-    "segments_with_expected_redactions": 184,
+    "status": "PASS",
+    "segments_checked": 4635,
+    "segments_with_expected_redactions": 345,
     "segments_with_unexpected_changes": 0,
     "unauthorized_changed_characters": 0,
     "total_original_characters": 324718,
     "unauthorized_change_rate": 0.0,
     "non_pii_preservation_rate": 1.0,
-    "total_approved_spans": 304,
-    "status": "PASS",
+    "total_approved_spans": 562,
     "failed_segments_sample": []
   }
 }

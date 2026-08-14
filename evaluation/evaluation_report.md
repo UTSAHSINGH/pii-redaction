@@ -19,8 +19,8 @@ non-PII preservation rates, and residual PII scan findings.
 ### Document Integrity Invariant
 
 - **Integrity Verification Status**: ✅ **PASS**
-- **Segments Checked**: 4639
-- **Segments with Expected Redactions**: 184
+- **Segments Checked**: 4635
+- **Segments with Expected Redactions**: 345
 - **Segments with Unexpected Changes**: **0**
 - **Unauthorized Changed Characters**: **0**
 - **Unauthorized Change Rate (UNAUTHORIZED_CHANGE_RATE)**: **0.000000**
@@ -30,11 +30,11 @@ non-PII preservation rates, and residual PII scan findings.
 
 | Entity Type | Gold Count | Predicted | TP | FP | FN | Precision | Recall | F1 Score | Accuracy |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **PERSON** | 29 | 40 | 23 | 17 | 6 | 0.5750 | 0.7931 | 0.6667 | 0.5000 |
+| **PERSON** | 29 | 138 | 23 | 115 | 6 | 0.1667 | 0.7931 | 0.2754 | 0.1597 |
 | **EMAIL** | 24 | 26 | 24 | 2 | 0 | 0.9231 | 1.0000 | 0.9600 | 0.9231 |
 | **PHONE** | 11 | 22 | 11 | 11 | 0 | 0.5000 | 1.0000 | 0.6667 | 0.5000 |
-| **COMPANY** | 7 | 51 | 7 | 44 | 0 | 0.1373 | 1.0000 | 0.2414 | 0.1373 |
-| **ADDRESS** | 3 | 0 | 0 | 0 | 3 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| **COMPANY** | 7 | 59 | 7 | 52 | 0 | 0.1186 | 1.0000 | 0.2121 | 0.1186 |
+| **ADDRESS** | 3 | 6 | 0 | 6 | 3 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
 | **SSN** | 0 | 0 | 0 | 0 | 0 | *N/A* | *N/A* | *N/A* | *N/A* |
 | **CREDIT_CARD** | 0 | 0 | 0 | 0 | 0 | *N/A* | *N/A* | *N/A* | *N/A* |
 | **DOB** | 0 | 0 | 0 | 0 | 0 | *N/A* | *N/A* | *N/A* | *N/A* |
@@ -44,13 +44,13 @@ non-PII preservation rates, and residual PII scan findings.
 
 | Metric | Micro Aggregate | Macro Aggregate |
 |:---|:---:|:---:|
-| **Precision** | **0.4676** | **0.4271** |
+| **Precision** | **0.2590** | **0.3417** |
 | **Recall** | **0.8784** | **0.7586** |
-| **F1 Score** | **0.6103** | **0.5070** |
-| **Accuracy** | **0.4392** | — |
+| **F1 Score** | **0.4000** | **0.4228** |
+| **Accuracy** | **0.2500** | — |
 
 - **Total True Positives (TP)**: 65
-- **Total False Positives (FP)**: 74
+- **Total False Positives (FP)**: 186
 - **Total False Negatives (FN)**: 9
 
 ## 5. Non-PII Protected Phrase Preservation Test
@@ -62,7 +62,7 @@ non-PII preservation rates, and residual PII scan findings.
 
 ## 6. Residual PII Scan Results
 
-- **Residual Original PII Remaining**: **0**
+- **Residual Original PII Remaining**: **13**
 - **Synthetic Replacement Exclusion**: Applied
 
 ## 7. Verification Invariants

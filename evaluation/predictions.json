@@ -5,9 +5,19 @@
     "text": "KSH INTERNATIONAL LIMITED",
     "start": 0,
     "end": 25,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "APEX DYNAMICS LIMITED"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Knight Limited"
+  },
+  {
+    "segment_id": "para_16",
+    "entity_type": "PERSON",
+    "text": "Anchor Investors",
+    "start": 100,
+    "end": 116,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Derek Carroll"
   },
   {
     "segment_id": "para_23",
@@ -15,9 +25,9 @@
     "text": "KSH INTERNATIONAL LIMITED",
     "start": 0,
     "end": 25,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "APEX DYNAMICS LIMITED"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Knight Limited"
   },
   {
     "segment_id": "para_24",
@@ -25,9 +35,9 @@
     "text": "Bhandary Metal Extrusion Private Limited",
     "start": 44,
     "end": 84,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Lopez, Perez and Griffith Private Limited"
   },
   {
     "segment_id": "para_24",
@@ -35,9 +45,9 @@
     "text": "Bhandary Metal Extrusion Private Limited",
     "start": 316,
     "end": 356,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Lopez, Perez and Griffith Private Limited"
   },
   {
     "segment_id": "para_24",
@@ -45,9 +55,9 @@
     "text": "KSH International Private Limited",
     "start": 362,
     "end": 395,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Omni Core Private Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ferguson Private Limited"
   },
   {
     "segment_id": "para_24",
@@ -55,9 +65,19 @@
     "text": "KSH International Limited",
     "start": 1529,
     "end": 1554,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Horizon Holdings Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Knight Limited"
+  },
+  {
+    "segment_id": "para_26",
+    "entity_type": "ADDRESS",
+    "text": "11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501",
+    "start": 34,
+    "end": 95,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001, Maharashtra, India"
   },
   {
     "segment_id": "para_28",
@@ -67,7 +87,7 @@
     "end": 33,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Logan Sullivan"
+    "replacement": "Matthew Griffin"
   },
   {
     "segment_id": "para_28",
@@ -77,7 +97,7 @@
     "end": 105,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 32754"
+    "replacement": "+1-555-625-1338"
   },
   {
     "segment_id": "para_29",
@@ -86,8 +106,18 @@
     "start": 8,
     "end": 39,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "rowan.reynolds98@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "nicholasmercado@example.com"
+  },
+  {
+    "segment_id": "para_31",
+    "entity_type": "PERSON",
+    "text": "Anchor Investors",
+    "start": 100,
+    "end": 116,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Derek Carroll"
   },
   {
     "segment_id": "para_48",
@@ -95,9 +125,79 @@
     "text": "KSH International Limited",
     "start": 129,
     "end": 154,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Horizon Holdings Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Knight Limited"
+  },
+  {
+    "segment_id": "para_48",
+    "entity_type": "ADDRESS",
+    "text": "11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501",
+    "start": 277,
+    "end": 338,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001, Maharashtra, India"
+  },
+  {
+    "segment_id": "para_106",
+    "entity_type": "COMPANY",
+    "text": "Red Herring Prospectus should accordingly be limited",
+    "start": 1306,
+    "end": 1358,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ortega-Davis Limited"
+  },
+  {
+    "segment_id": "para_114",
+    "entity_type": "PERSON",
+    "text": "Key Managerial Personnel",
+    "start": 1174,
+    "end": 1198,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "David Rowe"
+  },
+  {
+    "segment_id": "para_114",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 1204,
+    "end": 1221,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
+  },
+  {
+    "segment_id": "para_114",
+    "entity_type": "PERSON",
+    "text": "Book Running Lead Managers",
+    "start": 1250,
+    "end": 1276,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Teresa Perry"
+  },
+  {
+    "segment_id": "para_133",
+    "entity_type": "PERSON",
+    "text": "Reference Rate",
+    "start": 13,
+    "end": 27,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Steven Banks"
+  },
+  {
+    "segment_id": "para_151",
+    "entity_type": "PERSON",
+    "text": "Syndicate Members",
+    "start": 1142,
+    "end": 1159,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christina Thomas"
   },
   {
     "segment_id": "para_166",
@@ -105,9 +205,39 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "para_166",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 23,
+    "end": 42,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "para_166",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 44,
+    "end": 63,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "para_166",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 65,
+    "end": 83,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
   },
   {
     "segment_id": "para_166",
@@ -115,19 +245,39 @@
     "text": "Trust and Waterloo Industrial Park VI Private Limited",
     "start": 238,
     "end": 291,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Ellis Private Limited"
+  },
+  {
+    "segment_id": "para_173",
+    "entity_type": "PERSON",
+    "text": "Other Regulatory",
+    "start": 479,
+    "end": 495,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brittany Scott"
+  },
+  {
+    "segment_id": "para_173",
+    "entity_type": "PERSON",
+    "text": "Statutory Disclosures",
+    "start": 500,
+    "end": 521,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christina Greene"
   },
   {
     "segment_id": "para_220",
     "entity_type": "PERSON",
-    "text": "Materiality Policy",
-    "start": 185,
-    "end": 203,
+    "text": "Senior Management",
+    "start": 114,
+    "end": 131,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Logan Whitman"
+    "replacement": "Kyle Sandoval"
   },
   {
     "segment_id": "para_225",
@@ -135,9 +285,49 @@
     "text": "Kushal Subbayya Hegde",
     "start": 31,
     "end": 52,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "para_225",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 54,
+    "end": 73,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "para_225",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 75,
+    "end": 93,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "para_225",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 182,
+    "end": 201,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
+  },
+  {
+    "segment_id": "para_226",
+    "entity_type": "PERSON",
+    "text": "Sandesh Bhagwat",
+    "start": 30,
+    "end": 45,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Cory Tran"
   },
   {
     "segment_id": "para_226",
@@ -147,7 +337,7 @@
     "end": 62,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Foster"
+    "replacement": "Darius Decker"
   },
   {
     "segment_id": "para_226",
@@ -157,7 +347,7 @@
     "end": 86,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Logan Sullivan"
+    "replacement": "Matthew Griffin"
   },
   {
     "segment_id": "para_226",
@@ -167,7 +357,17 @@
     "end": 132,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Mitchell"
+    "replacement": "Dennis Hart"
+  },
+  {
+    "segment_id": "para_248",
+    "entity_type": "PERSON",
+    "text": "Key Managerial Personnel",
+    "start": 185,
+    "end": 209,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "David Rowe"
   },
   {
     "segment_id": "para_262",
@@ -175,9 +375,9 @@
     "text": "Pandit LLP",
     "start": 30,
     "end": 40,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Vanguard Industries LLP"
+    "replacement": "Hill-Salazar LLP"
   },
   {
     "segment_id": "para_267",
@@ -185,9 +385,9 @@
     "text": "Pandit LLP",
     "start": 28,
     "end": 38,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Vanguard Industries LLP"
+    "replacement": "Hill-Salazar LLP"
   },
   {
     "segment_id": "para_276",
@@ -195,9 +395,19 @@
     "text": "Pandit LLP",
     "start": 30,
     "end": 40,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Vanguard Industries LLP"
+    "replacement": "Hill-Salazar LLP"
+  },
+  {
+    "segment_id": "para_279",
+    "entity_type": "PERSON",
+    "text": "Red Herring",
+    "start": 268,
+    "end": 279,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Casey Martin"
   },
   {
     "segment_id": "para_282",
@@ -205,9 +415,29 @@
     "text": "Pandit LLP",
     "start": 28,
     "end": 38,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Vanguard Industries LLP"
+    "replacement": "Hill-Salazar LLP"
+  },
+  {
+    "segment_id": "para_287",
+    "entity_type": "PERSON",
+    "text": "Secondary Transfer of",
+    "start": 0,
+    "end": 21,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Amanda Fernandez"
+  },
+  {
+    "segment_id": "para_319",
+    "entity_type": "PERSON",
+    "text": "Ahleia Switchgear Co",
+    "start": 38,
+    "end": 58,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Robert Walker"
   },
   {
     "segment_id": "para_319",
@@ -215,9 +445,9 @@
     "text": "Bharat Bijlee Limited",
     "start": 61,
     "end": 82,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Solstice Systems Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Page Limited"
   },
   {
     "segment_id": "para_319",
@@ -225,9 +455,19 @@
     "text": "CG Power and Industrial Solutions Limited",
     "start": 84,
     "end": 125,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Omni Core Limited"
+    "replacement": "Hayes Limited"
+  },
+  {
+    "segment_id": "para_319",
+    "entity_type": "PERSON",
+    "text": "Emirates Transform",
+    "start": 127,
+    "end": 145,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Diane Jacobs"
   },
   {
     "segment_id": "para_319",
@@ -235,9 +475,9 @@
     "text": "Switchgear Limited",
     "start": 150,
     "end": 168,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Prism Ventures Limited"
+    "replacement": "Johnson, Christensen and Sherman Limited"
   },
   {
     "segment_id": "para_319",
@@ -245,9 +485,9 @@
     "text": "Georgia Transformer Corporation",
     "start": 170,
     "end": 201,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Crestview Capital Limited"
+    "replacement": "Warner, Thomas and Norris Limited"
   },
   {
     "segment_id": "para_319",
@@ -255,9 +495,19 @@
     "text": "Nidec Industrial Automation India Private Limited",
     "start": 203,
     "end": 252,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Summit Technologies Private Limited"
+    "replacement": "Rice, Buck and Bradford Private Limited"
+  },
+  {
+    "segment_id": "para_319",
+    "entity_type": "COMPANY",
+    "text": "Virginia Transformer Corporation",
+    "start": 301,
+    "end": 333,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Williams-Thomas Limited"
   },
   {
     "segment_id": "para_347",
@@ -265,9 +515,9 @@
     "text": "Cindus Corporation",
     "start": 55,
     "end": 73,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Pinnacle Advisory Limited"
+    "replacement": "Watkins Limited"
   },
   {
     "segment_id": "para_347",
@@ -275,9 +525,9 @@
     "text": "Elantas Beck India Limited",
     "start": 75,
     "end": 101,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Limited"
+    "replacement": "Lucas, Lynch and Williams Limited"
   },
   {
     "segment_id": "para_347",
@@ -285,9 +535,9 @@
     "text": "Hindalco Industries Limited",
     "start": 103,
     "end": 130,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Summit Technologies Limited"
+    "replacement": "Hughes, Gonzalez and Clark Limited"
   },
   {
     "segment_id": "para_347",
@@ -295,9 +545,89 @@
     "text": "Savli Copper Products Private Limited",
     "start": 152,
     "end": 189,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Paramount Infra Private Limited"
+    "replacement": "Franklin-Colon Private Limited"
+  },
+  {
+    "segment_id": "para_347",
+    "entity_type": "COMPANY",
+    "text": "Union Copper Rod LLC",
+    "start": 191,
+    "end": 211,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
+  },
+  {
+    "segment_id": "para_347",
+    "entity_type": "COMPANY",
+    "text": "Vedanta Limited",
+    "start": 217,
+    "end": 232,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Beck-Lane Limited"
+  },
+  {
+    "segment_id": "para_375",
+    "entity_type": "PERSON",
+    "text": "Power Sector",
+    "start": 43,
+    "end": 55,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Heather Clark"
+  },
+  {
+    "segment_id": "para_383",
+    "entity_type": "PERSON",
+    "text": "Power Sector",
+    "start": 498,
+    "end": 510,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Heather Clark"
+  },
+  {
+    "segment_id": "para_391",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 235,
+    "end": 248,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "para_391",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 408,
+    "end": 421,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "para_401",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 131,
+    "end": 144,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "para_416",
+    "entity_type": "PERSON",
+    "text": "Foreign Trade",
+    "start": 728,
+    "end": 741,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Nancy Armstrong"
   },
   {
     "segment_id": "para_428",
@@ -305,9 +635,19 @@
     "text": "KSH International Private Limited",
     "start": 280,
     "end": 313,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Omni Core Private Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ferguson Private Limited"
+  },
+  {
+    "segment_id": "para_428",
+    "entity_type": "PERSON",
+    "text": "Other Approvals",
+    "start": 531,
+    "end": 546,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Samantha Mckinney"
   },
   {
     "segment_id": "para_440",
@@ -315,9 +655,9 @@
     "text": "Bhandary Metal Extrusion Private Limited",
     "start": 103,
     "end": 143,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Lopez, Perez and Griffith Private Limited"
   },
   {
     "segment_id": "para_440",
@@ -325,19 +665,59 @@
     "text": "KSH International Private Limited",
     "start": 149,
     "end": 182,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Omni Core Private Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ferguson Private Limited"
+  },
+  {
+    "segment_id": "para_441",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 87,
+    "end": 106,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "para_442",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 99,
+    "end": 117,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "para_443",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 95,
+    "end": 113,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Jonathan Jackson"
   },
   {
     "segment_id": "para_455",
     "entity_type": "COMPANY",
-    "text": "Kanj and Co LLP",
-    "start": 169,
+    "text": "Co LLP",
+    "start": 178,
     "end": 184,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Omni Core LLP"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "White, Hanna and Hernandez LLP"
+  },
+  {
+    "segment_id": "para_456",
+    "entity_type": "PERSON",
+    "text": "Karunakar N. Bhandary",
+    "start": 73,
+    "end": 94,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Kevin Hopkins"
   },
   {
     "segment_id": "para_456",
@@ -345,9 +725,29 @@
     "text": "Kushal Subbayya Hegde",
     "start": 153,
     "end": 174,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "para_456",
+    "entity_type": "PERSON",
+    "text": "Narayna B. Shetty",
+    "start": 176,
+    "end": 193,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jason Obrien"
+  },
+  {
+    "segment_id": "para_456",
+    "entity_type": "PERSON",
+    "text": "Jayaram N. Shetty",
+    "start": 198,
+    "end": 215,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Vanessa Hendrix"
   },
   {
     "segment_id": "para_487",
@@ -355,9 +755,49 @@
     "text": "Kushal Subbayya Hegde",
     "start": 31,
     "end": 52,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "para_487",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 54,
+    "end": 73,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "para_487",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 75,
+    "end": 93,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "para_487",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 182,
+    "end": 201,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
+  },
+  {
+    "segment_id": "para_488",
+    "entity_type": "PERSON",
+    "text": "Sandesh Bhagwat",
+    "start": 30,
+    "end": 45,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Cory Tran"
   },
   {
     "segment_id": "para_488",
@@ -367,7 +807,7 @@
     "end": 62,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Foster"
+    "replacement": "Darius Decker"
   },
   {
     "segment_id": "para_488",
@@ -377,7 +817,7 @@
     "end": 86,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Logan Sullivan"
+    "replacement": "Matthew Griffin"
   },
   {
     "segment_id": "para_488",
@@ -387,7 +827,37 @@
     "end": 132,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Mitchell"
+    "replacement": "Dennis Hart"
+  },
+  {
+    "segment_id": "para_534",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 595,
+    "end": 608,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "para_546",
+    "entity_type": "PERSON",
+    "text": "Provident Funds",
+    "start": 106,
+    "end": 121,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Mary Alvarado"
+  },
+  {
+    "segment_id": "para_616",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 39,
+    "end": 56,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
   },
   {
     "segment_id": "para_616",
@@ -397,7 +867,7 @@
     "end": 82,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Riley Blackwood"
+    "replacement": "Max Burton"
   },
   {
     "segment_id": "para_617",
@@ -407,7 +877,7 @@
     "end": 60,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Blackwood"
+    "replacement": "Karen Mcgrath"
   },
   {
     "segment_id": "para_617",
@@ -417,7 +887,7 @@
     "end": 81,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Hayden Morgan"
+    "replacement": "Richard Mata"
   },
   {
     "segment_id": "para_617",
@@ -427,7 +897,7 @@
     "end": 102,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Skyler Carter"
+    "replacement": "Brandon Smith"
   },
   {
     "segment_id": "para_617",
@@ -437,7 +907,7 @@
     "end": 122,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Quinn Mercer"
+    "replacement": "Jonathan Jackson"
   },
   {
     "segment_id": "para_617",
@@ -447,7 +917,87 @@
     "end": 146,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Harrison"
+    "replacement": "Derek Finley"
+  },
+  {
+    "segment_id": "para_618",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 90,
+    "end": 107,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
+  },
+  {
+    "segment_id": "para_618",
+    "entity_type": "PERSON",
+    "text": "Key Managerial Personnel",
+    "start": 109,
+    "end": 133,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "David Rowe"
+  },
+  {
+    "segment_id": "para_627",
+    "entity_type": "PERSON",
+    "text": "Our Business",
+    "start": 50,
+    "end": 62,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Paul Stevenson"
+  },
+  {
+    "segment_id": "para_627",
+    "entity_type": "PERSON",
+    "text": "Human Resources",
+    "start": 65,
+    "end": 80,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Valerie Richard"
+  },
+  {
+    "segment_id": "para_632",
+    "entity_type": "PERSON",
+    "text": "Stock Exchanges",
+    "start": 160,
+    "end": 175,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Taylor Johnson"
+  },
+  {
+    "segment_id": "para_633",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 105,
+    "end": 124,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
+  },
+  {
+    "segment_id": "para_633",
+    "entity_type": "PERSON",
+    "text": "Independent Directors",
+    "start": 139,
+    "end": 160,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Alyssa Wood"
+  },
+  {
+    "segment_id": "para_633",
+    "entity_type": "PERSON",
+    "text": "Independent Directors",
+    "start": 329,
+    "end": 350,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Alyssa Wood"
   },
   {
     "segment_id": "para_633",
@@ -457,7 +1007,7 @@
     "end": 381,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Robin Mercer"
+    "replacement": "Carlos Daniels"
   },
   {
     "segment_id": "para_633",
@@ -467,7 +1017,27 @@
     "end": 404,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Casey Hayes"
+    "replacement": "Amy Pugh"
+  },
+  {
+    "segment_id": "para_641",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 82,
+    "end": 95,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "para_642",
+    "entity_type": "PERSON",
+    "text": "Foreign Trade",
+    "start": 613,
+    "end": 626,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Nancy Armstrong"
   },
   {
     "segment_id": "para_647",
@@ -475,9 +1045,9 @@
     "text": "Waterloo Motors Private Limited",
     "start": 70,
     "end": 101,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Horizon Holdings Private Limited"
+    "replacement": "Beck-Walker Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -485,9 +1055,9 @@
     "text": "KSH Project Management Services Private Limited",
     "start": 108,
     "end": 155,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Prism Ventures Private Limited"
+    "replacement": "Johnson, Wallace and Rogers Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -495,9 +1065,9 @@
     "text": "Private Limited",
     "start": 180,
     "end": 195,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -505,9 +1075,9 @@
     "text": "KSH Infra Park VI Private Limited",
     "start": 202,
     "end": 235,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Nexus Enterprises Private Limited"
+    "replacement": "Carroll Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -515,9 +1085,9 @@
     "text": "KSH Distriparks Private Limited",
     "start": 241,
     "end": 272,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Solstice Systems Private Limited"
+    "replacement": "Jackson Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -525,9 +1095,9 @@
     "text": "KSH Integrated Logistics Private Limited",
     "start": 279,
     "end": 319,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Titan Crest Private Limited"
+    "replacement": "Bell Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -535,9 +1105,19 @@
     "text": "Kushal Motors and Electricals Private Limited",
     "start": 327,
     "end": 372,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Crestview Capital Private Limited"
+    "replacement": "Bailey-Ward Private Limited"
+  },
+  {
+    "segment_id": "para_647",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial Park",
+    "start": 381,
+    "end": 405,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nicole Randolph"
   },
   {
     "segment_id": "para_647",
@@ -545,19 +1125,19 @@
     "text": "Private Limited",
     "start": 408,
     "end": 423,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "para_647",
-    "entity_type": "COMPANY",
-    "text": "Waterloo Industrial Park II Private Limited",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial",
     "start": 430,
-    "end": 473,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Vanguard Industries Private Limited"
+    "end": 449,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Valerie Costa"
   },
   {
     "segment_id": "para_647",
@@ -565,9 +1145,9 @@
     "text": "Waterloo Industrial Park III Private Limited",
     "start": 479,
     "end": 523,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Apex Dynamics Private Limited"
+    "replacement": "Roy, Cherry and Hernandez Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -575,9 +1155,9 @@
     "text": "Waterloo Industrial Park IV Private Limited",
     "start": 530,
     "end": 573,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Zenith Energy Private Limited"
+    "replacement": "Rowe, Coleman and Lee Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -585,9 +1165,9 @@
     "text": "Private Limited",
     "start": 608,
     "end": 623,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -595,29 +1175,39 @@
     "text": "Waterloo Industrial Park VI Private Limited",
     "start": 632,
     "end": 675,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Meridian Solutions Private Limited"
+    "replacement": "Frederick, Collins and Walter Private Limited"
   },
   {
     "segment_id": "para_647",
-    "entity_type": "COMPANY",
-    "text": "Waterloo Industrial Park VIII Private Limited",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial",
     "start": 683,
-    "end": 728,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Prism Ventures Private Limited"
+    "end": 702,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Valerie Costa"
   },
   {
     "segment_id": "para_647",
-    "entity_type": "COMPANY",
-    "text": "Waterloo Industrial Park IX Private Limited",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial",
     "start": 735,
-    "end": 778,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Omni Core Private Limited"
+    "end": 754,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Valerie Costa"
+  },
+  {
+    "segment_id": "para_647",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial",
+    "start": 786,
+    "end": 805,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Valerie Costa"
   },
   {
     "segment_id": "para_647",
@@ -625,9 +1215,19 @@
     "text": "Private Limited",
     "start": 816,
     "end": 831,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
+  },
+  {
+    "segment_id": "para_647",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial",
+    "start": 840,
+    "end": 859,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Valerie Costa"
   },
   {
     "segment_id": "para_647",
@@ -635,9 +1235,9 @@
     "text": "Private Limited",
     "start": 870,
     "end": 885,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "para_647",
@@ -645,9 +1245,59 @@
     "text": "KSH Infra Park IV Private Limited",
     "start": 899,
     "end": 932,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Horizon Holdings Private Limited"
+    "replacement": "Oconnell-Moon Private Limited"
+  },
+  {
+    "segment_id": "para_667",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 1125,
+    "end": 1139,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "para_673",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 1667,
+    "end": 1681,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "para_675",
+    "entity_type": "COMPANY",
+    "text": "Cloud Services",
+    "start": 1685,
+    "end": 1699,
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Caldwell-Johnson Limited"
+  },
+  {
+    "segment_id": "para_678",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 319,
+    "end": 332,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "para_678",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 586,
+    "end": 599,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
   },
   {
     "segment_id": "para_679",
@@ -657,7 +1307,7 @@
     "end": 223,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Hayes"
+    "replacement": "Kelly Lewis"
   },
   {
     "segment_id": "para_685",
@@ -667,7 +1317,7 @@
     "end": 68,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Blackwood"
+    "replacement": "Karen Mcgrath"
   },
   {
     "segment_id": "para_685",
@@ -677,7 +1327,37 @@
     "end": 100,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Riley Mitchell"
+    "replacement": "Laurie Williams"
+  },
+  {
+    "segment_id": "para_701",
+    "entity_type": "PERSON",
+    "text": "Other Regulatory",
+    "start": 521,
+    "end": 537,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brittany Scott"
+  },
+  {
+    "segment_id": "para_701",
+    "entity_type": "PERSON",
+    "text": "Statutory Disclosures",
+    "start": 542,
+    "end": 563,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christina Greene"
+  },
+  {
+    "segment_id": "para_707",
+    "entity_type": "PERSON",
+    "text": "Mutual Funds",
+    "start": 763,
+    "end": 775,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Rebecca Elliott"
   },
   {
     "segment_id": "para_718",
@@ -685,9 +1365,9 @@
     "text": "KSH International Limited",
     "start": 33,
     "end": 58,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Horizon Holdings Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Knight Limited"
   },
   {
     "segment_id": "para_723",
@@ -695,9 +1375,19 @@
     "text": "KSH International Limited",
     "start": 32,
     "end": 57,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Horizon Holdings Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Knight Limited"
+  },
+  {
+    "segment_id": "para_738",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 71,
+    "end": 85,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
   },
   {
     "segment_id": "para_741",
@@ -705,9 +1395,9 @@
     "text": "Sarthak Malvadkar",
     "start": 0,
     "end": 17,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Logan Sullivan"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Matthew Griffin"
   },
   {
     "segment_id": "para_741",
@@ -717,7 +1407,7 @@
     "end": 117,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Logan Prescott"
+    "replacement": "Steven Garrison"
   },
   {
     "segment_id": "para_744",
@@ -727,7 +1417,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 58861"
+    "replacement": "+1-555-837-5901"
   },
   {
     "segment_id": "para_745",
@@ -736,8 +1426,88 @@
     "start": 8,
     "end": 46,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "finley.reynolds80@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "brandy69@example.com"
+  },
+  {
+    "segment_id": "para_747",
+    "entity_type": "PERSON",
+    "text": "Book Running Lead Managers",
+    "start": 66,
+    "end": 92,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Teresa Perry"
+  },
+  {
+    "segment_id": "para_748",
+    "entity_type": "PERSON",
+    "text": "First Bidder",
+    "start": 273,
+    "end": 285,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Gail Anderson"
+  },
+  {
+    "segment_id": "para_748",
+    "entity_type": "PERSON",
+    "text": "Application Form",
+    "start": 295,
+    "end": 311,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brandon Ross"
+  },
+  {
+    "segment_id": "para_748",
+    "entity_type": "PERSON",
+    "text": "Bidder’s DP ID",
+    "start": 320,
+    "end": 334,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "John Crawford"
+  },
+  {
+    "segment_id": "para_748",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 516,
+    "end": 527,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "para_748",
+    "entity_type": "PERSON",
+    "text": "Designated Intermediary",
+    "start": 665,
+    "end": 688,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Rebecca Coleman"
+  },
+  {
+    "segment_id": "para_749",
+    "entity_type": "PERSON",
+    "text": "First Bidder",
+    "start": 153,
+    "end": 165,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Gail Anderson"
+  },
+  {
+    "segment_id": "para_749",
+    "entity_type": "PERSON",
+    "text": "Bid Amount",
+    "start": 350,
+    "end": 360,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christian Wilson"
   },
   {
     "segment_id": "para_753",
@@ -745,9 +1515,29 @@
     "text": "Nuvama Wealth Management Limited",
     "start": 0,
     "end": 32,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Vanguard Industries Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ball, Johnson and Hawkins Limited"
+  },
+  {
+    "segment_id": "para_754",
+    "entity_type": "PERSON",
+    "text": "Bandra Kurla Complex",
+    "start": 53,
+    "end": 73,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marissa Griffin"
+  },
+  {
+    "segment_id": "para_755",
+    "entity_type": "PERSON",
+    "text": "Bandra East",
+    "start": 0,
+    "end": 11,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mendoza"
   },
   {
     "segment_id": "para_756",
@@ -757,7 +1547,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 98765 99326"
+    "replacement": "+91 91237 91001"
   },
   {
     "segment_id": "para_756",
@@ -766,8 +1556,8 @@
     "start": 34,
     "end": 52,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "kendall.parker80@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "jking@example.com"
   },
   {
     "segment_id": "para_757",
@@ -776,8 +1566,8 @@
     "start": 27,
     "end": 56,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "taylor.harrison77@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "seanklein@example.com"
   },
   {
     "segment_id": "para_758",
@@ -787,7 +1577,7 @@
     "end": 27,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Kendall Whitman"
+    "replacement": "Ashley Arellano"
   },
   {
     "segment_id": "para_758",
@@ -797,7 +1587,7 @@
     "end": 43,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Alex Thornton"
+    "replacement": "Edward West"
   },
   {
     "segment_id": "para_761",
@@ -805,9 +1595,9 @@
     "text": "ICICI Securities Limited",
     "start": 0,
     "end": 24,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Meridian Solutions Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Stewart-Berg Limited"
   },
   {
     "segment_id": "para_762",
@@ -817,7 +1607,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91765 59043"
+    "replacement": "+91 99983 28470"
   },
   {
     "segment_id": "para_762",
@@ -826,8 +1616,8 @@
     "start": 35,
     "end": 58,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "peyton.caldwell94@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "thomas97@example.com"
   },
   {
     "segment_id": "para_762",
@@ -836,8 +1626,8 @@
     "start": 119,
     "end": 151,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "taylor.montgomery16@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "porterpamela@example.com"
   },
   {
     "segment_id": "para_763",
@@ -847,7 +1637,7 @@
     "end": 30,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Taylor Vance"
+    "replacement": "David Peters"
   },
   {
     "segment_id": "para_763",
@@ -857,7 +1647,7 @@
     "end": 44,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Avery Thornton"
+    "replacement": "Joshua Short"
   },
   {
     "segment_id": "para_775",
@@ -865,9 +1655,29 @@
     "text": "Nuvama Wealth Management Limited",
     "start": 0,
     "end": 32,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Vanguard Industries Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ball, Johnson and Hawkins Limited"
+  },
+  {
+    "segment_id": "para_777",
+    "entity_type": "PERSON",
+    "text": "Bandra Kurla Complex",
+    "start": 0,
+    "end": 20,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marissa Griffin"
+  },
+  {
+    "segment_id": "para_777",
+    "entity_type": "PERSON",
+    "text": "Bandra East Mumbai",
+    "start": 22,
+    "end": 40,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nicholas Duke"
   },
   {
     "segment_id": "para_779",
@@ -877,7 +1687,7 @@
     "end": 28,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91765 29376"
+    "replacement": "+1-555-770-8216"
   },
   {
     "segment_id": "para_780",
@@ -886,8 +1696,8 @@
     "start": 7,
     "end": 25,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "kendall.parker80@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "jking@example.com"
   },
   {
     "segment_id": "para_780",
@@ -896,8 +1706,8 @@
     "start": 27,
     "end": 53,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "drew.whitman44@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "erin97@example.com"
   },
   {
     "segment_id": "para_780",
@@ -906,8 +1716,8 @@
     "start": 59,
     "end": 83,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "skyler.hayes44@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "samuelburke@example.com"
   },
   {
     "segment_id": "para_782",
@@ -917,7 +1727,7 @@
     "end": 31,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Quinn Blackwood"
+    "replacement": "James Thomas"
   },
   {
     "segment_id": "para_785",
@@ -925,9 +1735,9 @@
     "text": "ICICI Securities Limited",
     "start": 0,
     "end": 24,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Meridian Solutions Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Stewart-Berg Limited"
   },
   {
     "segment_id": "para_786",
@@ -937,7 +1747,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91765 59043"
+    "replacement": "+91 99983 28470"
   },
   {
     "segment_id": "para_786",
@@ -946,8 +1756,8 @@
     "start": 35,
     "end": 58,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "peyton.caldwell94@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "thomas97@example.com"
   },
   {
     "segment_id": "para_787",
@@ -956,8 +1766,8 @@
     "start": 27,
     "end": 59,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "taylor.montgomery16@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "porterpamela@example.com"
   },
   {
     "segment_id": "para_788",
@@ -967,7 +1777,7 @@
     "end": 30,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Taylor Vance"
+    "replacement": "David Peters"
   },
   {
     "segment_id": "para_788",
@@ -977,17 +1787,17 @@
     "end": 44,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Avery Thornton"
+    "replacement": "Joshua Short"
   },
   {
-    "segment_id": "para_791",
-    "entity_type": "COMPANY",
-    "text": "Trilegal",
-    "start": 46,
-    "end": 54,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Titan Crest Limited"
+    "segment_id": "para_794",
+    "entity_type": "PERSON",
+    "text": "Bapat Marg",
+    "start": 9,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Joseph Wilson"
   },
   {
     "segment_id": "para_796",
@@ -996,8 +1806,8 @@
     "start": 7,
     "end": 23,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "kendall.blackwood10@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "conniemartin@example.com"
   },
   {
     "segment_id": "para_797",
@@ -1007,7 +1817,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 48068"
+    "replacement": "+91 90190 66626"
   },
   {
     "segment_id": "para_800",
@@ -1015,9 +1825,9 @@
     "text": "MUFG Intime India Private Limited",
     "start": 0,
     "end": 33,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Hudson-Faulkner Private Limited"
   },
   {
     "segment_id": "para_800",
@@ -1025,9 +1835,9 @@
     "text": "Formerly Link Intime India Private Limited",
     "start": 35,
     "end": 77,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "replacement": "Garcia, Weaver and Henry Private Limited"
   },
   {
     "segment_id": "para_801",
@@ -1037,7 +1847,7 @@
     "end": 101,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 38243"
+    "replacement": "+91 99741 77992"
   },
   {
     "segment_id": "para_802",
@@ -1046,8 +1856,8 @@
     "start": 8,
     "end": 45,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "jordan.parker73@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "douglas27@example.com"
   },
   {
     "segment_id": "para_803",
@@ -1056,8 +1866,8 @@
     "start": 27,
     "end": 64,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "jordan.parker73@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "douglas27@example.com"
   },
   {
     "segment_id": "para_804",
@@ -1067,7 +1877,7 @@
     "end": 66,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Skyler Foster"
+    "replacement": "Shelby Lewis"
   },
   {
     "segment_id": "para_804",
@@ -1077,7 +1887,7 @@
     "end": 87,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Avery Sullivan"
+    "replacement": "Jeffrey Anderson"
   },
   {
     "segment_id": "para_807",
@@ -1085,9 +1895,9 @@
     "text": "HDFC Bank Limited",
     "start": 44,
     "end": 61,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_808",
@@ -1095,9 +1905,9 @@
     "text": "HDFC Bank Limited",
     "start": 0,
     "end": 17,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_810",
@@ -1107,7 +1917,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 77382"
+    "replacement": "+91 91864 82677"
   },
   {
     "segment_id": "para_810",
@@ -1117,7 +1927,7 @@
     "end": 43,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 43647"
+    "replacement": "+91 92025 53370"
   },
   {
     "segment_id": "para_810",
@@ -1127,7 +1937,7 @@
     "end": 63,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 93210 39721"
+    "replacement": "+91 96149 77571"
   },
   {
     "segment_id": "para_811",
@@ -1136,8 +1946,8 @@
     "start": 7,
     "end": 36,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "emerson.reynolds16@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "charles81@example.com"
   },
   {
     "segment_id": "para_811",
@@ -1146,8 +1956,8 @@
     "start": 38,
     "end": 64,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "morgan.carter12@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "dholder@example.com"
   },
   {
     "segment_id": "para_811",
@@ -1156,8 +1966,8 @@
     "start": 65,
     "end": 88,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "harper.caldwell77@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "wbishop@example.com"
   },
   {
     "segment_id": "para_811",
@@ -1166,8 +1976,8 @@
     "start": 90,
     "end": 118,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "devon.ellington42@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "karen22@example.com"
   },
   {
     "segment_id": "para_811",
@@ -1176,8 +1986,8 @@
     "start": 124,
     "end": 149,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "hayden.bennett95@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "hendersonmary@example.com"
   },
   {
     "segment_id": "para_812",
@@ -1187,7 +1997,7 @@
     "end": 26,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Harper Vance"
+    "replacement": "Barbara Jones"
   },
   {
     "segment_id": "para_812",
@@ -1197,7 +2007,7 @@
     "end": 41,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Sam Ellington"
+    "replacement": "Elizabeth Martin"
   },
   {
     "segment_id": "para_812",
@@ -1207,7 +2017,7 @@
     "end": 54,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jordan Harrison"
+    "replacement": "Nicholas Howard"
   },
   {
     "segment_id": "para_812",
@@ -1217,7 +2027,7 @@
     "end": 72,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Emerson Prescott"
+    "replacement": "Donald White"
   },
   {
     "segment_id": "para_812",
@@ -1227,7 +2037,7 @@
     "end": 89,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Whitman"
+    "replacement": "Kyle Green"
   },
   {
     "segment_id": "para_817",
@@ -1235,9 +2045,19 @@
     "text": "ICICI Bank Limited",
     "start": 0,
     "end": 18,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Paramount Infra Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Liu Limited"
+  },
+  {
+    "segment_id": "para_819",
+    "entity_type": "PERSON",
+    "text": "Marg Backbay Reclamation Churchgate",
+    "start": 27,
+    "end": 62,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Tracy Carrillo"
   },
   {
     "segment_id": "para_819",
@@ -1247,7 +2067,7 @@
     "end": 103,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 78367"
+    "replacement": "96216 22521"
   },
   {
     "segment_id": "para_819",
@@ -1256,8 +2076,8 @@
     "start": 111,
     "end": 131,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "emerson.reynolds42@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "walkerrichard@example.com"
   },
   {
     "segment_id": "para_819",
@@ -1267,7 +2087,7 @@
     "end": 186,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Kendall Blackwood"
+    "replacement": "Mary Foster"
   },
   {
     "segment_id": "para_823",
@@ -1275,9 +2095,9 @@
     "text": "HDFC Bank Limited",
     "start": 0,
     "end": 17,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_824",
@@ -1285,9 +2105,9 @@
     "text": "HDFC Bank Limited",
     "start": 0,
     "end": 17,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_826",
@@ -1297,7 +2117,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 77382"
+    "replacement": "+91 91864 82677"
   },
   {
     "segment_id": "para_826",
@@ -1307,7 +2127,7 @@
     "end": 43,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 43647"
+    "replacement": "+91 92025 53370"
   },
   {
     "segment_id": "para_826",
@@ -1317,7 +2137,7 @@
     "end": 63,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 93210 39721"
+    "replacement": "+91 96149 77571"
   },
   {
     "segment_id": "para_827",
@@ -1326,8 +2146,8 @@
     "start": 7,
     "end": 36,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "emerson.reynolds16@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "charles81@example.com"
   },
   {
     "segment_id": "para_827",
@@ -1336,8 +2156,8 @@
     "start": 38,
     "end": 64,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "morgan.carter12@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "dholder@example.com"
   },
   {
     "segment_id": "para_827",
@@ -1346,8 +2166,8 @@
     "start": 65,
     "end": 88,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "harper.caldwell77@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "wbishop@example.com"
   },
   {
     "segment_id": "para_827",
@@ -1356,8 +2176,8 @@
     "start": 90,
     "end": 118,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "devon.ellington42@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "karen22@example.com"
   },
   {
     "segment_id": "para_827",
@@ -1366,8 +2186,8 @@
     "start": 124,
     "end": 149,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "hayden.bennett95@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "hendersonmary@example.com"
   },
   {
     "segment_id": "para_828",
@@ -1377,7 +2197,7 @@
     "end": 26,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Harper Vance"
+    "replacement": "Barbara Jones"
   },
   {
     "segment_id": "para_828",
@@ -1387,7 +2207,7 @@
     "end": 41,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Sam Ellington"
+    "replacement": "Elizabeth Martin"
   },
   {
     "segment_id": "para_828",
@@ -1397,7 +2217,7 @@
     "end": 54,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jordan Harrison"
+    "replacement": "Nicholas Howard"
   },
   {
     "segment_id": "para_828",
@@ -1407,7 +2227,7 @@
     "end": 72,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Emerson Prescott"
+    "replacement": "Donald White"
   },
   {
     "segment_id": "para_828",
@@ -1417,7 +2237,7 @@
     "end": 89,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Whitman"
+    "replacement": "Kyle Green"
   },
   {
     "segment_id": "para_833",
@@ -1425,9 +2245,19 @@
     "text": "ICICI Bank Limited",
     "start": 0,
     "end": 18,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Paramount Infra Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Liu Limited"
+  },
+  {
+    "segment_id": "para_835",
+    "entity_type": "PERSON",
+    "text": "Marg Backbay Reclamation Churchgate",
+    "start": 27,
+    "end": 62,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Tracy Carrillo"
   },
   {
     "segment_id": "para_835",
@@ -1437,7 +2267,7 @@
     "end": 103,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 78367"
+    "replacement": "96216 22521"
   },
   {
     "segment_id": "para_835",
@@ -1446,8 +2276,8 @@
     "start": 111,
     "end": 131,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "emerson.reynolds42@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "walkerrichard@example.com"
   },
   {
     "segment_id": "para_835",
@@ -1457,7 +2287,7 @@
     "end": 186,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Kendall Blackwood"
+    "replacement": "Mary Foster"
   },
   {
     "segment_id": "para_838",
@@ -1465,9 +2295,9 @@
     "text": "HDFC Bank Limited",
     "start": 0,
     "end": 17,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_839",
@@ -1475,9 +2305,9 @@
     "text": "HDFC Bank Limited",
     "start": 0,
     "end": 17,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_841",
@@ -1487,7 +2317,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 77382"
+    "replacement": "+91 91864 82677"
   },
   {
     "segment_id": "para_841",
@@ -1497,7 +2327,7 @@
     "end": 43,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 43647"
+    "replacement": "+91 92025 53370"
   },
   {
     "segment_id": "para_841",
@@ -1507,7 +2337,7 @@
     "end": 63,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 93210 39721"
+    "replacement": "+91 96149 77571"
   },
   {
     "segment_id": "para_842",
@@ -1516,8 +2346,8 @@
     "start": 7,
     "end": 36,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "emerson.reynolds16@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "charles81@example.com"
   },
   {
     "segment_id": "para_842",
@@ -1526,8 +2356,8 @@
     "start": 38,
     "end": 64,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "morgan.carter12@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "dholder@example.com"
   },
   {
     "segment_id": "para_842",
@@ -1536,8 +2366,8 @@
     "start": 65,
     "end": 88,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "harper.caldwell77@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "wbishop@example.com"
   },
   {
     "segment_id": "para_842",
@@ -1546,8 +2376,8 @@
     "start": 90,
     "end": 118,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "devon.ellington42@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "karen22@example.com"
   },
   {
     "segment_id": "para_842",
@@ -1556,8 +2386,8 @@
     "start": 124,
     "end": 149,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "hayden.bennett95@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "hendersonmary@example.com"
   },
   {
     "segment_id": "para_843",
@@ -1567,7 +2397,7 @@
     "end": 26,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Harper Vance"
+    "replacement": "Barbara Jones"
   },
   {
     "segment_id": "para_843",
@@ -1577,7 +2407,7 @@
     "end": 41,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Sam Ellington"
+    "replacement": "Elizabeth Martin"
   },
   {
     "segment_id": "para_843",
@@ -1587,7 +2417,7 @@
     "end": 54,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jordan Harrison"
+    "replacement": "Nicholas Howard"
   },
   {
     "segment_id": "para_843",
@@ -1597,7 +2427,7 @@
     "end": 72,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Emerson Prescott"
+    "replacement": "Donald White"
   },
   {
     "segment_id": "para_843",
@@ -1607,7 +2437,57 @@
     "end": 89,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Whitman"
+    "replacement": "Kyle Green"
+  },
+  {
+    "segment_id": "para_849",
+    "entity_type": "PERSON",
+    "text": "a Registered Broker",
+    "start": 379,
+    "end": 398,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Kenneth Mckee"
+  },
+  {
+    "segment_id": "para_851",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 50,
+    "end": 61,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "para_853",
+    "entity_type": "PERSON",
+    "text": "Application Forms",
+    "start": 229,
+    "end": 246,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Jennifer Green"
+  },
+  {
+    "segment_id": "para_859",
+    "entity_type": "PERSON",
+    "text": "Stock Exchanges",
+    "start": 177,
+    "end": 192,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Taylor Johnson"
+  },
+  {
+    "segment_id": "para_863",
+    "entity_type": "PERSON",
+    "text": "Red Herring Prospec",
+    "start": 267,
+    "end": 286,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "David Ortiz"
   },
   {
     "segment_id": "para_865",
@@ -1615,9 +2495,9 @@
     "text": "Co. LLP",
     "start": 77,
     "end": 84,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Meridian Solutions LLP"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Lee-Jacobs LLP"
   },
   {
     "segment_id": "para_873",
@@ -1626,8 +2506,8 @@
     "start": 8,
     "end": 39,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "alex.foster70@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "smithemily@example.com"
   },
   {
     "segment_id": "para_874",
@@ -1637,17 +2517,7 @@
     "end": 30,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 22582"
-  },
-  {
-    "segment_id": "para_884",
-    "entity_type": "COMPANY",
-    "text": "Citibank N.A",
-    "start": 0,
-    "end": 12,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Sterling Global Bank Limited"
+    "replacement": "+1-555-498-9293"
   },
   {
     "segment_id": "para_887",
@@ -1657,7 +2527,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 98765 73379"
+    "replacement": "+91 91485 82715"
   },
   {
     "segment_id": "para_888",
@@ -1667,7 +2537,7 @@
     "end": 29,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Quinn Parker"
+    "replacement": "Ralph Dixon"
   },
   {
     "segment_id": "para_890",
@@ -1676,8 +2546,8 @@
     "start": 7,
     "end": 29,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "harper.morgan51@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "nelsonabigail@example.com"
   },
   {
     "segment_id": "para_898",
@@ -1687,7 +2557,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 30062"
+    "replacement": "+91 95468 42239"
   },
   {
     "segment_id": "para_898",
@@ -1697,7 +2567,7 @@
     "end": 64,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Taylor Morgan"
+    "replacement": "Rachel Mccarty"
   },
   {
     "segment_id": "para_898",
@@ -1706,8 +2576,8 @@
     "start": 95,
     "end": 115,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "riley.mitchell23@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "tlopez@example.com"
   },
   {
     "segment_id": "para_902",
@@ -1715,9 +2585,9 @@
     "text": "IndusInd Bank Limited",
     "start": 0,
     "end": 21,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Zenith Energy Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Davis, Watson and Mathis Limited"
   },
   {
     "segment_id": "para_905",
@@ -1727,7 +2597,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 93210 91218"
+    "replacement": "+91 91214 76933"
   },
   {
     "segment_id": "para_905",
@@ -1737,7 +2607,7 @@
     "end": 65,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Quinn Foster"
+    "replacement": "Jacob Fitzgerald"
   },
   {
     "segment_id": "para_905",
@@ -1746,8 +2616,8 @@
     "start": 92,
     "end": 119,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "cameron.mitchell65@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "edward67@example.com"
   },
   {
     "segment_id": "para_907",
@@ -1755,9 +2625,19 @@
     "text": "ICICI Bank Limited",
     "start": 0,
     "end": 18,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Paramount Infra Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Liu Limited"
+  },
+  {
+    "segment_id": "para_908",
+    "entity_type": "PERSON",
+    "text": "Tanishq Showroom",
+    "start": 55,
+    "end": 71,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Cheyenne Gray"
   },
   {
     "segment_id": "para_910",
@@ -1767,7 +2647,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 77699"
+    "replacement": "+1-555-642-1089"
   },
   {
     "segment_id": "para_910",
@@ -1777,7 +2657,7 @@
     "end": 63,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Rowan Sullivan"
+    "replacement": "Lisa Noble"
   },
   {
     "segment_id": "para_910",
@@ -1786,8 +2666,8 @@
     "start": 90,
     "end": 116,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "emerson.reynolds45@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "kdawson@example.com"
   },
   {
     "segment_id": "para_912",
@@ -1795,9 +2675,9 @@
     "text": "HDFC Bank Limited",
     "start": 0,
     "end": 17,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Clark Limited"
   },
   {
     "segment_id": "para_916",
@@ -1807,7 +2687,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 98765 42984"
+    "replacement": "+91 95383 43040"
   },
   {
     "segment_id": "para_916",
@@ -1817,7 +2697,7 @@
     "end": 66,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Parker"
+    "replacement": "Dan Lopez"
   },
   {
     "segment_id": "para_917",
@@ -1826,18 +2706,18 @@
     "start": 7,
     "end": 34,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "hayden.anderson32@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "garciamichael@example.com"
   },
   {
-    "segment_id": "para_919",
-    "entity_type": "COMPANY",
-    "text": "State Bank of India",
+    "segment_id": "para_920",
+    "entity_type": "PERSON",
+    "text": "Tara Chambers",
     "start": 0,
-    "end": 19,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Horizon Holdings Bank Limited"
+    "end": 13,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Natalie Barnes"
   },
   {
     "segment_id": "para_923",
@@ -1847,7 +2727,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 33494"
+    "replacement": "+91 96525 86655"
   },
   {
     "segment_id": "para_923",
@@ -1857,7 +2737,7 @@
     "end": 66,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Casey Sullivan"
+    "replacement": "Tamara Conrad"
   },
   {
     "segment_id": "para_924",
@@ -1866,8 +2746,8 @@
     "start": 7,
     "end": 28,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "cameron.mercer76@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "williamcontreras@example.com"
   },
   {
     "segment_id": "para_928",
@@ -1875,9 +2755,29 @@
     "text": "Federal Bank Limited",
     "start": 4,
     "end": 24,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Beacon Financial Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Barton-Reyes Limited"
+  },
+  {
+    "segment_id": "para_928",
+    "entity_type": "PERSON",
+    "text": "Kubera Chambers Opp",
+    "start": 39,
+    "end": 58,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Lisa Barnett"
+  },
+  {
+    "segment_id": "para_928",
+    "entity_type": "PERSON",
+    "text": "Sancheti Hospital Shivajinagar",
+    "start": 60,
+    "end": 90,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Mark Bishop"
   },
   {
     "segment_id": "para_929",
@@ -1887,7 +2787,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 23839"
+    "replacement": "+1-555-197-9215"
   },
   {
     "segment_id": "para_930",
@@ -1897,7 +2797,7 @@
     "end": 37,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Devon Anderson"
+    "replacement": "Jeffery Norton"
   },
   {
     "segment_id": "para_932",
@@ -1906,8 +2806,8 @@
     "start": 7,
     "end": 33,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "kendall.foster39@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "howardalexander@example.com"
   },
   {
     "segment_id": "para_934",
@@ -1915,9 +2815,9 @@
     "text": "Bajaj Finance Limited",
     "start": 0,
     "end": 21,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Beacon Financial Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Gardner-Kent Limited"
   },
   {
     "segment_id": "para_937",
@@ -1927,7 +2827,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 77060"
+    "replacement": "+91 97524 96183"
   },
   {
     "segment_id": "para_937",
@@ -1937,7 +2837,7 @@
     "end": 62,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Cameron Sullivan"
+    "replacement": "Emily Collins"
   },
   {
     "segment_id": "para_937",
@@ -1946,8 +2846,8 @@
     "start": 92,
     "end": 118,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "hayden.foster94@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "rickylam@example.com"
   },
   {
     "segment_id": "para_945",
@@ -1955,29 +2855,109 @@
     "text": "CARE Ratings Limited",
     "start": 137,
     "end": 157,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Beacon Financial Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Gonzalez Limited"
   },
   {
-    "segment_id": "para_971",
+    "segment_id": "para_945",
     "entity_type": "PERSON",
-    "text": "Underwriting Agreement",
-    "start": 200,
-    "end": 222,
+    "text": "Net Proceeds",
+    "start": 216,
+    "end": 228,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Harper Whitman"
+    "replacement": "Kelly Lewis"
   },
   {
-    "segment_id": "table_0_r_1_c_2_p_1",
+    "segment_id": "para_956",
     "entity_type": "PERSON",
-    "text": "Sarthak Malvadkar",
+    "text": "Bandra Kurla Complex",
     "start": 0,
-    "end": 17,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Logan Sullivan"
+    "end": 20,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marissa Griffin"
+  },
+  {
+    "segment_id": "para_962",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 231,
+    "end": 242,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "para_964",
+    "entity_type": "PERSON",
+    "text": "Mutual Funds",
+    "start": 417,
+    "end": 429,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Rebecca Elliott"
+  },
+  {
+    "segment_id": "para_966",
+    "entity_type": "PERSON",
+    "text": "Book Running Lead Managers",
+    "start": 467,
+    "end": 493,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Teresa Perry"
+  },
+  {
+    "segment_id": "para_987",
+    "entity_type": "PERSON",
+    "text": "Certain Corporate Matters",
+    "start": 130,
+    "end": 155,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Matthew Johnson"
+  },
+  {
+    "segment_id": "para_989",
+    "entity_type": "PERSON",
+    "text": "Other Regulatory",
+    "start": 846,
+    "end": 862,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brittany Scott"
+  },
+  {
+    "segment_id": "para_989",
+    "entity_type": "PERSON",
+    "text": "Statutory Disclosures",
+    "start": 867,
+    "end": 888,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christina Greene"
+  },
+  {
+    "segment_id": "table_0_r_1_c_0_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/5 Village Birdewadi Chakan Taluka - Khed Pune – 410 501",
+    "start": 15,
+    "end": 73,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 858, James Avenue Industrial Area, Sector 19, Pune 411001, Maharashtra, India"
+  },
+  {
+    "segment_id": "table_0_r_1_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Baner Pune",
+    "start": 58,
+    "end": 68,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Daniel Erickson"
   },
   {
     "segment_id": "table_0_r_1_c_4_p_1",
@@ -1986,8 +2966,8 @@
     "start": 7,
     "end": 38,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "rowan.reynolds98@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "nicholasmercado@example.com"
   },
   {
     "segment_id": "table_0_r_1_c_4_p_1",
@@ -1997,17 +2977,7 @@
     "end": 66,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 58861"
-  },
-  {
-    "segment_id": "table_0_r_2_c_0_p_0",
-    "entity_type": "PERSON",
-    "text": "KUSHAL SUBBAYYA HEGDE",
-    "start": 15,
-    "end": 36,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "DREW BLACKWOOD"
+    "replacement": "+1-555-837-5901"
   },
   {
     "segment_id": "table_0_r_2_c_0_p_1",
@@ -2015,9 +2985,9 @@
     "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
     "start": 0,
     "end": 43,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "PRISM VENTURES PRIVATE LIMITED"
+    "replacement": "Frederick, Collins and Walter Private Limited"
   },
   {
     "segment_id": "table_0_r_8_c_0_p_0",
@@ -2025,9 +2995,39 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_0_r_9_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_0_r_10_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_0_r_11_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
   },
   {
     "segment_id": "table_0_r_12_c_0_p_0",
@@ -2035,9 +3035,19 @@
     "text": "Pandit LLP",
     "start": 27,
     "end": 37,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Vanguard Industries LLP"
+    "replacement": "Hill-Salazar LLP"
+  },
+  {
+    "segment_id": "table_1_r_4_c_0_p_0",
+    "entity_type": "COMPANY",
+    "text": "National Stock Exchange of India Limited",
+    "start": 119,
+    "end": 159,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Rodriguez, Johnson and Hester Limited"
   },
   {
     "segment_id": "table_1_r_7_c_1_p_0",
@@ -2045,9 +3055,9 @@
     "text": "Nuvama\tWealth Management Limited",
     "start": 0,
     "end": 32,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Crestview Capital Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Jackson-Mills Limited"
   },
   {
     "segment_id": "table_1_r_7_c_7_p_0",
@@ -2056,8 +3066,8 @@
     "start": 7,
     "end": 25,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "kendall.parker80@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "jking@example.com"
   },
   {
     "segment_id": "table_1_r_7_c_7_p_1",
@@ -2067,7 +3077,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 98765 57627"
+    "replacement": "+91 92706 79972"
   },
   {
     "segment_id": "table_1_r_8_c_1_p_1",
@@ -2075,9 +3085,19 @@
     "text": "ICICI\tSecurities Limited",
     "start": 0,
     "end": 24,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Pinnacle Advisory Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Bush, Mendez and Mitchell Limited"
+  },
+  {
+    "segment_id": "table_1_r_8_c_3_p_1",
+    "entity_type": "PERSON",
+    "text": "Kishan Rastogi/ Abhijit Diwan",
+    "start": 0,
+    "end": 29,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Robert Reed"
   },
   {
     "segment_id": "table_1_r_8_c_7_p_1",
@@ -2086,8 +3106,8 @@
     "start": 7,
     "end": 30,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "peyton.caldwell94@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "thomas97@example.com"
   },
   {
     "segment_id": "table_1_r_8_c_7_p_2",
@@ -2097,7 +3117,7 @@
     "end": 27,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91765 59043"
+    "replacement": "+91 99983 28470"
   },
   {
     "segment_id": "table_1_r_11_c_0_p_0",
@@ -2105,9 +3125,9 @@
     "text": "MUFG Intime India Private Limited",
     "start": 0,
     "end": 33,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Hudson-Faulkner Private Limited"
   },
   {
     "segment_id": "table_1_r_11_c_0_p_1",
@@ -2115,9 +3135,19 @@
     "text": "Formerly Link Intime India Private Limited",
     "start": 1,
     "end": 43,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "replacement": "Garcia, Weaver and Henry Private Limited"
+  },
+  {
+    "segment_id": "table_1_r_11_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Shanti Gopalkrishnan",
+    "start": 0,
+    "end": 20,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Shelby Lewis"
   },
   {
     "segment_id": "table_1_r_11_c_3_p_0",
@@ -2127,7 +3157,7 @@
     "end": 26,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 38243"
+    "replacement": "+91 99741 77992"
   },
   {
     "segment_id": "table_1_r_11_c_3_p_1",
@@ -2136,18 +3166,8 @@
     "start": 8,
     "end": 45,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "jordan.parker73@example.com"
-  },
-  {
-    "segment_id": "table_2_r_0_c_0_p_0",
-    "entity_type": "PERSON",
-    "text": "KUSHAL SUBBAYYA HEGDE",
-    "start": 15,
-    "end": 36,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "DREW BLACKWOOD"
+    "source": "regex_rfc5322",
+    "replacement": "douglas27@example.com"
   },
   {
     "segment_id": "table_2_r_0_c_0_p_1",
@@ -2155,9 +3175,9 @@
     "text": "TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
     "start": 99,
     "end": 152,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "PRISM VENTURES PRIVATE LIMITED"
+    "replacement": "Ellis Private Limited"
   },
   {
     "segment_id": "table_2_r_1_c_0_p_0",
@@ -2165,19 +3185,39 @@
     "text": "KSH INTERNATIONAL LIMITED",
     "start": 97,
     "end": 122,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "APEX DYNAMICS LIMITED"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Knight Limited"
   },
   {
-    "segment_id": "table_2_r_1_c_0_p_0",
+    "segment_id": "table_2_r_2_c_0_p_0",
     "entity_type": "PERSON",
-    "text": "KUSHAL SUBBAYYA HEGDE",
-    "start": 635,
-    "end": 656,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "DREW BLACKWOOD"
+    "text": "Designated Intermediaries",
+    "start": 885,
+    "end": 910,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Austin Hernandez"
+  },
+  {
+    "segment_id": "table_2_r_2_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Sponsor Ba",
+    "start": 919,
+    "end": 929,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Adam Valencia"
+  },
+  {
+    "segment_id": "table_2_r_3_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Mutual Funds",
+    "start": 1255,
+    "end": 1267,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Rebecca Elliott"
   },
   {
     "segment_id": "table_2_r_14_c_0_p_0",
@@ -2185,9 +3225,19 @@
     "text": "Nuvama Wealth Management Limited",
     "start": 0,
     "end": 32,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Vanguard Industries Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ball, Johnson and Hawkins Limited"
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_1",
+    "entity_type": "ADDRESS",
+    "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051",
+    "start": 0,
+    "end": 104,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 670, Joel Meadow Industrial Area, Sector 11, Pune 411001, Maharashtra, India"
   },
   {
     "segment_id": "table_2_r_14_c_0_p_2",
@@ -2197,7 +3247,7 @@
     "end": 20,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 98765 99326"
+    "replacement": "+91 91237 91001"
   },
   {
     "segment_id": "table_2_r_14_c_0_p_3",
@@ -2206,8 +3256,8 @@
     "start": 8,
     "end": 26,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "kendall.parker80@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "jking@example.com"
   },
   {
     "segment_id": "table_2_r_14_c_0_p_5",
@@ -2216,8 +3266,8 @@
     "start": 26,
     "end": 55,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "taylor.harrison77@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "seanklein@example.com"
   },
   {
     "segment_id": "table_2_r_14_c_0_p_6",
@@ -2227,7 +3277,7 @@
     "end": 27,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Kendall Whitman"
+    "replacement": "Ashley Arellano"
   },
   {
     "segment_id": "table_2_r_14_c_0_p_6",
@@ -2237,7 +3287,7 @@
     "end": 43,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Alex Thornton"
+    "replacement": "Edward West"
   },
   {
     "segment_id": "table_2_r_14_c_2_p_0",
@@ -2245,9 +3295,19 @@
     "text": "ICICI Securities Limited",
     "start": 0,
     "end": 24,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Meridian Solutions Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Stewart-Berg Limited"
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_1",
+    "entity_type": "PERSON",
+    "text": "Appasaheb Marathe Marg,",
+    "start": 21,
+    "end": 44,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Lisa Parks"
   },
   {
     "segment_id": "table_2_r_14_c_2_p_2",
@@ -2257,7 +3317,7 @@
     "end": 21,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91765 59043"
+    "replacement": "+91 99983 28470"
   },
   {
     "segment_id": "table_2_r_14_c_2_p_3",
@@ -2266,8 +3326,8 @@
     "start": 8,
     "end": 31,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "peyton.caldwell94@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "thomas97@example.com"
   },
   {
     "segment_id": "table_2_r_14_c_2_p_5",
@@ -2276,8 +3336,8 @@
     "start": 26,
     "end": 58,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "taylor.montgomery16@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "porterpamela@example.com"
   },
   {
     "segment_id": "table_2_r_14_c_2_p_6",
@@ -2287,7 +3347,7 @@
     "end": 30,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Taylor Vance"
+    "replacement": "David Peters"
   },
   {
     "segment_id": "table_2_r_14_c_2_p_6",
@@ -2297,7 +3357,7 @@
     "end": 44,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Avery Thornton"
+    "replacement": "Joshua Short"
   },
   {
     "segment_id": "table_2_r_14_c_6_p_0",
@@ -2305,9 +3365,9 @@
     "text": "MUFG Intime India Private Limited",
     "start": 0,
     "end": 33,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Hudson-Faulkner Private Limited"
   },
   {
     "segment_id": "table_2_r_14_c_6_p_1",
@@ -2315,9 +3375,9 @@
     "text": "Formerly Link Intime India Private Limited",
     "start": 1,
     "end": 43,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "replacement": "Garcia, Weaver and Henry Private Limited"
   },
   {
     "segment_id": "table_2_r_14_c_6_p_3",
@@ -2327,7 +3387,7 @@
     "end": 20,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 97654 38243"
+    "replacement": "+91 99741 77992"
   },
   {
     "segment_id": "table_2_r_14_c_6_p_4",
@@ -2336,8 +3396,8 @@
     "start": 8,
     "end": 45,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "jordan.parker73@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "douglas27@example.com"
   },
   {
     "segment_id": "table_2_r_14_c_6_p_6",
@@ -2346,8 +3406,8 @@
     "start": 27,
     "end": 64,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "jordan.parker73@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "douglas27@example.com"
   },
   {
     "segment_id": "table_2_r_14_c_6_p_7",
@@ -2357,7 +3417,7 @@
     "end": 36,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Skyler Foster"
+    "replacement": "Shelby Lewis"
   },
   {
     "segment_id": "table_3_r_1_c_1_p_0",
@@ -2365,9 +3425,19 @@
     "text": "KSH International Limited",
     "start": 0,
     "end": 25,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Horizon Holdings Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Knight Limited"
+  },
+  {
+    "segment_id": "table_3_r_1_c_1_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501",
+    "start": 143,
+    "end": 204,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001, Maharashtra, India"
   },
   {
     "segment_id": "table_4_r_3_c_1_p_0",
@@ -2375,9 +3445,19 @@
     "text": "Pandit LLP",
     "start": 63,
     "end": 73,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Vanguard Industries LLP"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Hill-Salazar LLP"
+  },
+  {
+    "segment_id": "table_4_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 65,
+    "end": 79,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
   },
   {
     "segment_id": "table_4_r_7_c_1_p_0",
@@ -2387,7 +3467,17 @@
     "end": 79,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Drew Blackwood"
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_4_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 107,
+    "end": 121,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
   },
   {
     "segment_id": "table_4_r_8_c_1_p_0",
@@ -2397,7 +3487,37 @@
     "end": 65,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Emerson Caldwell"
+    "replacement": "Cory Tran"
+  },
+  {
+    "segment_id": "table_4_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 93,
+    "end": 107,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_4_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Key Managerial Personnel",
+    "start": 110,
+    "end": 134,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "David Rowe"
+  },
+  {
+    "segment_id": "table_4_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 139,
+    "end": 156,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
   },
   {
     "segment_id": "table_4_r_9_c_1_p_0",
@@ -2407,7 +3527,37 @@
     "end": 60,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Foster"
+    "replacement": "Darius Decker"
+  },
+  {
+    "segment_id": "table_4_r_9_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 88,
+    "end": 102,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_4_r_9_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Key Managerial Personnel",
+    "start": 105,
+    "end": 129,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "David Rowe"
+  },
+  {
+    "segment_id": "table_4_r_9_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 134,
+    "end": 151,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
   },
   {
     "segment_id": "table_4_r_10_c_1_p_0",
@@ -2417,7 +3567,37 @@
     "end": 84,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Logan Sullivan"
+    "replacement": "Matthew Griffin"
+  },
+  {
+    "segment_id": "table_4_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 138,
+    "end": 152,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_4_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Key Manage",
+    "start": 155,
+    "end": 165,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Jenny Barrera"
+  },
+  {
+    "segment_id": "table_4_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 184,
+    "end": 201,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
   },
   {
     "segment_id": "table_5_r_2_c_1_p_0",
@@ -2425,9 +3605,69 @@
     "text": "Waterloo Industrial Park VI Private Limited",
     "start": 0,
     "end": 43,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Meridian Solutions Private Limited"
+    "replacement": "Frederick, Collins and Walter Private Limited"
+  },
+  {
+    "segment_id": "table_5_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 56,
+    "end": 70,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_5_r_6_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 62,
+    "end": 76,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_5_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Employee Stock Option Scheme",
+    "start": 59,
+    "end": 87,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Schultz"
+  },
+  {
+    "segment_id": "table_5_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Parents Branch",
+    "start": 0,
+    "end": 14,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Michael Boyd"
+  },
+  {
+    "segment_id": "table_5_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Branch",
+    "start": 16,
+    "end": 29,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Gregory Matthews"
+  },
+  {
+    "segment_id": "table_5_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Sangeeta Branch",
+    "start": 31,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Dennis Soto"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2435,9 +3675,9 @@
     "text": "Waterloo Motors Private Limited",
     "start": 18,
     "end": 49,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Horizon Holdings Private Limited"
+    "replacement": "Beck-Walker Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2445,9 +3685,19 @@
     "text": "KSH Project Management Services Private Limited",
     "start": 51,
     "end": 98,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Prism Ventures Private Limited"
+    "replacement": "Johnson, Wallace and Rogers Private Limited"
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Infra Park",
+    "start": 104,
+    "end": 114,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Hannah Collins"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2455,9 +3705,9 @@
     "text": "Private Limited",
     "start": 117,
     "end": 132,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2465,9 +3715,9 @@
     "text": "KSH Infra Park VI Private Limited",
     "start": 134,
     "end": 167,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Nexus Enterprises Private Limited"
+    "replacement": "Carroll Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2475,9 +3725,9 @@
     "text": "KSH Distriparks Private Limited",
     "start": 169,
     "end": 200,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Solstice Systems Private Limited"
+    "replacement": "Jackson Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2485,9 +3735,9 @@
     "text": "KSH Integrated Logistics Private Limited",
     "start": 202,
     "end": 242,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Titan Crest Private Limited"
+    "replacement": "Bell Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2495,9 +3745,19 @@
     "text": "Kushal Motors and Electricals Private Limited",
     "start": 244,
     "end": 289,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Crestview Capital Private Limited"
+    "replacement": "Bailey-Ward Private Limited"
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial Park",
+    "start": 291,
+    "end": 315,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nicole Randolph"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2505,9 +3765,9 @@
     "text": "Private Limited",
     "start": 318,
     "end": 333,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2515,9 +3775,9 @@
     "text": "Waterloo Industrial Park II Private Limited",
     "start": 335,
     "end": 378,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Vanguard Industries Private Limited"
+    "replacement": "Shields-Garrett Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2525,9 +3785,9 @@
     "text": "Waterloo Industrial Park III Private Limited",
     "start": 380,
     "end": 424,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Apex Dynamics Private Limited"
+    "replacement": "Roy, Cherry and Hernandez Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2535,9 +3795,9 @@
     "text": "Waterloo Industrial Park IV Private Limited",
     "start": 426,
     "end": 469,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Zenith Energy Private Limited"
+    "replacement": "Rowe, Coleman and Lee Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2545,9 +3805,9 @@
     "text": "Private Limited",
     "start": 498,
     "end": 513,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2555,9 +3815,9 @@
     "text": "Waterloo Industrial Park VI Private Limited",
     "start": 515,
     "end": 558,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Meridian Solutions Private Limited"
+    "replacement": "Frederick, Collins and Walter Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2565,9 +3825,9 @@
     "text": "Waterloo Industrial Park VIII Private Limited",
     "start": 560,
     "end": 605,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Prism Ventures Private Limited"
+    "replacement": "Davila-Colon Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2575,9 +3835,9 @@
     "text": "Waterloo Industrial Park IX Private Limited",
     "start": 607,
     "end": 650,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Omni Core Private Limited"
+    "replacement": "Pena, Mcgee and Wright Private Limited"
   },
   {
     "segment_id": "table_5_r_10_c_1_p_0",
@@ -2585,9 +3845,49 @@
     "text": "Private Limited",
     "start": 682,
     "end": 697,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Waterloo Industrial Park IX",
+    "start": 699,
+    "end": 726,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Vanessa Smith"
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_1",
+    "entity_type": "COMPANY",
+    "text": "KSH Infra Park IV Private Limited",
+    "start": 13,
+    "end": 46,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Oconnell-Moon Private Limited"
+  },
+  {
+    "segment_id": "table_5_r_11_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 82,
+    "end": 96,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_5_r_12_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Lalit Muljibhai Sarvaiya",
+    "start": 69,
+    "end": 93,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brittany Olson"
   },
   {
     "segment_id": "table_5_r_13_c_1_p_0",
@@ -2595,9 +3895,9 @@
     "text": "CARE Analytics and Advisory Private Limited",
     "start": 34,
     "end": 77,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Green Private Limited"
   },
   {
     "segment_id": "table_5_r_15_c_1_p_0",
@@ -2607,7 +3907,37 @@
     "end": 68,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Quinn Mercer"
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "table_5_r_15_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 96,
+    "end": 110,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_5_r_16_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "KMP/ Key Managerial Personnel",
+    "start": 0,
+    "end": 29,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Lisa Patterson"
+  },
+  {
+    "segment_id": "table_5_r_16_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 221,
+    "end": 238,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
   },
   {
     "segment_id": "table_5_r_17_c_1_p_0",
@@ -2617,7 +3947,47 @@
     "end": 64,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Skyler Carter"
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_5_r_17_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 96,
+    "end": 110,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_5_r_18_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Draft Red",
+    "start": 284,
+    "end": 293,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kelly Mitchell"
+  },
+  {
+    "segment_id": "table_5_r_21_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 75,
+    "end": 89,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_5_r_22_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Parents Branch",
+    "start": 0,
+    "end": 14,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Michael Boyd"
   },
   {
     "segment_id": "table_5_r_22_c_1_p_0",
@@ -2625,9 +3995,19 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_5_r_22_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 23,
+    "end": 42,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
   },
   {
     "segment_id": "table_5_r_24_c_1_p_0",
@@ -2635,9 +4015,39 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_5_r_24_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 23,
+    "end": 42,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_5_r_24_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 44,
+    "end": 63,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_5_r_24_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 65,
+    "end": 83,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
   },
   {
     "segment_id": "table_5_r_24_c_1_p_1",
@@ -2645,9 +4055,9 @@
     "text": "Trust and Waterloo Industrial Park VI Private Limited",
     "start": 58,
     "end": 111,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Ellis Private Limited"
   },
   {
     "segment_id": "table_5_r_25_c_1_p_0",
@@ -2655,9 +4065,129 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_5_r_25_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 23,
+    "end": 42,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_5_r_25_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 44,
+    "end": 63,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_5_r_25_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 68,
+    "end": 86,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "table_5_r_27_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Branch",
+    "start": 0,
+    "end": 13,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Gregory Matthews"
+  },
+  {
+    "segment_id": "table_5_r_27_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_5_r_29_c_1_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/5, Village Birdewadi, Chakan Taluka-Khed, Pune – 410 501",
+    "start": 63,
+    "end": 122,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 727, Sharp Loop Industrial Area, Sector 8, Pune 411001, Maharashtra, India"
+  },
+  {
+    "segment_id": "table_6_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "table_6_r_5_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Sangeeta Branch",
+    "start": 0,
+    "end": 15,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Dennis Soto"
+  },
+  {
+    "segment_id": "table_6_r_5_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Sangeeta Ramprasad Rai",
+    "start": 0,
+    "end": 22,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Patrick Keller"
+  },
+  {
+    "segment_id": "table_6_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Senior Management",
+    "start": 152,
+    "end": 169,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kyle Sandoval"
+  },
+  {
+    "segment_id": "table_6_r_10_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Supa Facility",
+    "start": 0,
+    "end": 13,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Christopher Warner"
+  },
+  {
+    "segment_id": "table_6_r_12_c_1_p_0",
+    "entity_type": "ADDRESS",
+    "text": "11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501",
+    "start": 53,
+    "end": 114,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 804, Donna Flats Industrial Area, Sector 5, Pune 411001, Maharashtra, India"
   },
   {
     "segment_id": "table_6_r_14_c_1_p_0",
@@ -2667,7 +4197,77 @@
     "end": 65,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Jamie Harrison"
+    "replacement": "Derek Finley"
+  },
+  {
+    "segment_id": "table_6_r_14_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Our Management",
+    "start": 97,
+    "end": 111,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Tammy Baird"
+  },
+  {
+    "segment_id": "table_7_r_2_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Acknowledgement Slip",
+    "start": 0,
+    "end": 20,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcus Bowman"
+  },
+  {
+    "segment_id": "table_8_r_3_c_1_p_1",
+    "entity_type": "PERSON",
+    "text": "Mutual Funds",
+    "start": 29,
+    "end": 41,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Rebecca Elliott"
+  },
+  {
+    "segment_id": "table_8_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Bid Amount",
+    "start": 121,
+    "end": 131,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christian Wilson"
+  },
+  {
+    "segment_id": "table_8_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 199,
+    "end": 210,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "table_8_r_9_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "Refund Bank",
+    "start": 46,
+    "end": 57,
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Adams Limited"
+  },
+  {
+    "segment_id": "table_8_r_9_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "Public Offer Account Bank",
+    "start": 63,
+    "end": 88,
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Garcia, Burns and Watkins Limited"
   },
   {
     "segment_id": "table_9_r_6_c_1_p_0",
@@ -2675,9 +4275,9 @@
     "text": "Nuvama Wealth Management Limited",
     "start": 52,
     "end": 84,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Vanguard Industries Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Ball, Johnson and Hawkins Limited"
   },
   {
     "segment_id": "table_9_r_6_c_1_p_0",
@@ -2685,19 +4285,129 @@
     "text": "ICICI Securities Limited",
     "start": 89,
     "end": 113,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Meridian Solutions Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Stewart-Berg Limited"
   },
   {
-    "segment_id": "table_10_r_9_c_1_p_0",
-    "entity_type": "COMPANY",
-    "text": "HDFC Bank Limited",
-    "start": 182,
-    "end": 199,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "segment_id": "table_9_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 101,
+    "end": 112,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "table_9_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Registered Brokers",
+    "start": 292,
+    "end": 310,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Kelly Finley"
+  },
+  {
+    "segment_id": "table_9_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Book Running Lead Managers",
+    "start": 138,
+    "end": 164,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Teresa Perry"
+  },
+  {
+    "segment_id": "table_9_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Syndicate Members",
+    "start": 170,
+    "end": 187,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christina Thomas"
+  },
+  {
+    "segment_id": "table_9_r_15_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Collecting Depository Participants",
+    "start": 188,
+    "end": 222,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Katherine Williams"
+  },
+  {
+    "segment_id": "table_9_r_17_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Bid Amount",
+    "start": 114,
+    "end": 124,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christian Wilson"
+  },
+  {
+    "segment_id": "table_9_r_17_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Designated Intermediaries",
+    "start": 146,
+    "end": 171,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Austin Hernandez"
+  },
+  {
+    "segment_id": "table_10_r_1_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 39,
+    "end": 50,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "table_10_r_1_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 135,
+    "end": 146,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "table_10_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "a Bid",
+    "start": 192,
+    "end": 197,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Morales"
+  },
+  {
+    "segment_id": "table_10_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Application Form",
+    "start": 52,
+    "end": 68,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Brandon Ross"
+  },
+  {
+    "segment_id": "table_10_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Revision Form",
+    "start": 76,
+    "end": 89,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Matthew Ryan"
   },
   {
     "segment_id": "table_10_r_18_c_1_p_0",
@@ -2705,9 +4415,9 @@
     "text": "ICICI Securities Limited",
     "start": 0,
     "end": 24,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Meridian Solutions Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Stewart-Berg Limited"
   },
   {
     "segment_id": "table_11_r_3_c_1_p_0",
@@ -2715,9 +4425,9 @@
     "text": "Nuvama Wealth Management Limited",
     "start": 0,
     "end": 32,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Vanguard Industries Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ball, Johnson and Hawkins Limited"
   },
   {
     "segment_id": "table_11_r_6_c_1_p_0",
@@ -2725,29 +4435,89 @@
     "text": "Kushal Subbayya Hegde",
     "start": 218,
     "end": 239,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
   },
   {
-    "segment_id": "table_11_r_14_c_1_p_0",
-    "entity_type": "COMPANY",
-    "text": "ICICI Bank Limited",
-    "start": 173,
-    "end": 191,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Paramount Infra Limited"
+    "segment_id": "table_11_r_6_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 329,
+    "end": 348,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
   },
   {
-    "segment_id": "table_12_r_3_c_1_p_0",
+    "segment_id": "table_11_r_6_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 436,
+    "end": 455,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_11_r_6_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 546,
+    "end": 564,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "table_11_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pricing Date",
+    "start": 349,
+    "end": 361,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Sandra Thomas"
+  },
+  {
+    "segment_id": "table_11_r_7_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Anchor Investors",
+    "start": 397,
+    "end": 413,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Derek Carroll"
+  },
+  {
+    "segment_id": "table_11_r_15_c_1_p_0",
     "entity_type": "COMPANY",
-    "text": "HDFC Bank Limited",
-    "start": 153,
-    "end": 170,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "text": "Public Offer Account Bank",
+    "start": 29,
+    "end": 54,
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Garcia, Burns and Watkins Limited"
+  },
+  {
+    "segment_id": "table_12_r_1_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "corrigenda thereto",
+    "start": 314,
+    "end": 332,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Deborah Odom"
+  },
+  {
+    "segment_id": "table_12_r_1_c_1_p_2",
+    "entity_type": "PERSON",
+    "text": "corrigenda thereto",
+    "start": 85,
+    "end": 103,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Deborah Odom"
   },
   {
     "segment_id": "table_12_r_7_c_1_p_0",
@@ -2755,9 +4525,9 @@
     "text": "MUFG Intime India Private Limited",
     "start": 0,
     "end": 33,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Hudson-Faulkner Private Limited"
   },
   {
     "segment_id": "table_12_r_7_c_1_p_0",
@@ -2765,9 +4535,19 @@
     "text": "Formerly Link Intime India Private Limited",
     "start": 35,
     "end": 77,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Pinnacle Advisory Private Limited"
+    "replacement": "Garcia, Weaver and Henry Private Limited"
+  },
+  {
+    "segment_id": "table_12_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Individual Bidders",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Douglas Flynn"
   },
   {
     "segment_id": "table_12_r_13_c_1_p_0",
@@ -2775,29 +4555,19 @@
     "text": "MUFG Intime India Private Limited",
     "start": 81,
     "end": 114,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Sterling Global Private Limited"
+    "replacement": "Hudson-Faulkner Private Limited"
   },
   {
     "segment_id": "table_12_r_13_c_1_p_0",
-    "entity_type": "COMPANY",
-    "text": "Formerly Link Intime India Private Limited",
+    "entity_type": "PERSON",
+    "text": "Formerly Link Intime India",
     "start": 116,
-    "end": 158,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Pinnacle Advisory Private Limited"
-  },
-  {
-    "segment_id": "table_12_r_16_c_1_p_1",
-    "entity_type": "COMPANY",
-    "text": "HDFC Bank Limited",
-    "start": 149,
-    "end": 166,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Nexus Enterprises Limited"
+    "end": 142,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Joseph Butler"
   },
   {
     "segment_id": "table_12_r_16_c_1_p_1",
@@ -2805,9 +4575,29 @@
     "text": "ICICI Bank Limited",
     "start": 171,
     "end": 189,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Paramount Infra Limited"
+    "confidence": 0.95,
+    "source": "company_context",
+    "replacement": "Liu Limited"
+  },
+  {
+    "segment_id": "table_12_r_17_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "BSE Limited",
+    "start": 14,
+    "end": 25,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Gill, Smith and Ramirez Limited"
+  },
+  {
+    "segment_id": "table_12_r_17_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "National Stock Exchange of India Limited",
+    "start": 30,
+    "end": 70,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Rodriguez, Johnson and Hester Limited"
   },
   {
     "segment_id": "table_12_r_20_c_1_p_1",
@@ -2815,9 +4605,9 @@
     "text": "Nuvama Wealth Management Limited",
     "start": 8,
     "end": 40,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Vanguard Industries Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Ball, Johnson and Hawkins Limited"
   },
   {
     "segment_id": "table_12_r_20_c_1_p_1",
@@ -2825,9 +4615,9 @@
     "text": "ICICI Securities Limited",
     "start": 45,
     "end": 69,
-    "confidence": 0.98,
-    "source": "known_entity",
-    "replacement": "Meridian Solutions Limited"
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Stewart-Berg Limited"
   },
   {
     "segment_id": "table_13_r_4_c_1_p_0",
@@ -2837,7 +4627,67 @@
     "end": 135,
     "confidence": 0.96,
     "source": "role_context",
-    "replacement": "Cameron Vance"
+    "replacement": "Sandra Thomas"
+  },
+  {
+    "segment_id": "table_13_r_9_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Bid Amount",
+    "start": 355,
+    "end": 365,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Christian Wilson"
+  },
+  {
+    "segment_id": "table_13_r_10_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "UPI Bidders",
+    "start": 42,
+    "end": 53,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Marcia Webb"
+  },
+  {
+    "segment_id": "table_13_r_12_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Wilful Defaulter",
+    "start": 0,
+    "end": 16,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jocelyn Dawson"
+  },
+  {
+    "segment_id": "table_14_r_3_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "BSE Limited",
+    "start": 0,
+    "end": 11,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Gill, Smith and Ramirez Limited"
+  },
+  {
+    "segment_id": "table_15_r_3_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Identification Number",
+    "start": 9,
+    "end": 30,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "James Le"
+  },
+  {
+    "segment_id": "table_15_r_5_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "DP/ Depository Participant",
+    "start": 0,
+    "end": 26,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Eric Carey"
   },
   {
     "segment_id": "table_15_r_40_c_1_p_0",
@@ -2845,9 +4695,89 @@
     "text": "National Payments Corporation",
     "start": 0,
     "end": 29,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Prism Ventures Limited"
+    "replacement": "Leach, Brown and Richard Limited"
+  },
+  {
+    "segment_id": "table_15_r_44_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "National Securities Depository Limited",
+    "start": 0,
+    "end": 38,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Lawrence, Adams and Johnson Limited"
+  },
+  {
+    "segment_id": "table_15_r_45_c_1_p_0",
+    "entity_type": "COMPANY",
+    "text": "National Stock Exchange of India Limited",
+    "start": 0,
+    "end": 40,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Rodriguez, Johnson and Hester Limited"
+  },
+  {
+    "segment_id": "table_17_r_16_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Circuit Kilometers",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jennifer Wilson"
+  },
+  {
+    "segment_id": "table_17_r_19_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Gram Jyoti",
+    "start": 21,
+    "end": 31,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Sue Davis"
+  },
+  {
+    "segment_id": "table_18_r_16_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Air Conditioning",
+    "start": 26,
+    "end": 42,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Tonya Anderson"
+  },
+  {
+    "segment_id": "table_18_r_31_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Mega Volt-Amperes",
+    "start": 0,
+    "end": 17,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Miguel Tapia"
+  },
+  {
+    "segment_id": "table_18_r_44_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Kisan Urja Suraksha",
+    "start": 15,
+    "end": 34,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jordan Lopez"
+  },
+  {
+    "segment_id": "table_18_r_45_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Photo Voltaic",
+    "start": 0,
+    "end": 13,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Emma Hendrix"
   },
   {
     "segment_id": "table_18_r_46_c_1_p_0",
@@ -2855,9 +4785,9 @@
     "text": "Precision Wires India Limited",
     "start": 0,
     "end": 29,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Omni Core Limited"
+    "replacement": "Nichols Limited"
   },
   {
     "segment_id": "table_18_r_57_c_1_p_0",
@@ -2865,9 +4795,9 @@
     "text": "Solar Energy Corporation of India Limited",
     "start": 0,
     "end": 41,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Crestview Capital Limited"
+    "replacement": "Elliott Limited"
   },
   {
     "segment_id": "table_23_r_3_c_1_p_0",
@@ -2875,19 +4805,89 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
   },
   {
-    "segment_id": "table_24_r_4_c_0_p_0",
+    "segment_id": "table_23_r_4_c_1_p_0",
     "entity_type": "PERSON",
-    "text": "Kushal\tSubbayya Hegde",
+    "text": "Pushpa Kushal Hegde",
     "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_23_r_5_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_23_r_6_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 6,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_23_r_16_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Hegde",
+    "start": 9,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Caldwell"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nancy Taylor"
+  },
+  {
+    "segment_id": "table_25_r_3_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 7,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_25_r_4_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh\tKushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Steven Vasquez"
+  },
+  {
+    "segment_id": "table_25_r_5_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 6,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_25_r_15_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Hegde",
+    "start": 9,
+    "end": 21,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nancy Taylor"
   },
   {
     "segment_id": "table_25_r_19_c_0_p_0",
@@ -2895,9 +4895,69 @@
     "text": "Malabar India Fund Limited",
     "start": 0,
     "end": 26,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Omni Core Limited"
+    "replacement": "Roberts, White and Swanson Limited"
+  },
+  {
+    "segment_id": "table_25_r_21_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Salil Ajay Bhargava",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Austin Fox"
+  },
+  {
+    "segment_id": "table_25_r_22_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Ajay Menon",
+    "start": 7,
+    "end": 17,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "John Jefferson"
+  },
+  {
+    "segment_id": "table_25_r_23_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Ajay Menon",
+    "start": 0,
+    "end": 10,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "John Jefferson"
+  },
+  {
+    "segment_id": "table_28_r_7_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 25,
+    "end": 44,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
+  },
+  {
+    "segment_id": "table_28_r_10_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 49,
+    "end": 68,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
+  },
+  {
+    "segment_id": "table_31_r_1_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Electricals",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Lauren Wilson"
   },
   {
     "segment_id": "table_31_r_3_c_1_p_2",
@@ -2905,9 +4965,29 @@
     "text": "Private Limited",
     "start": 0,
     "end": 15,
-    "confidence": 0.92,
+    "confidence": 0.9,
     "source": "regex_suffix",
-    "replacement": "Beacon Financial Private Limited"
+    "replacement": "Pena-Gutierrez Private Limited"
+  },
+  {
+    "segment_id": "table_31_r_7_c_1_p_1",
+    "entity_type": "PERSON",
+    "text": "Key Managerial",
+    "start": 13,
+    "end": 27,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Darren Bishop"
+  },
+  {
+    "segment_id": "table_31_r_8_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Key Managerial",
+    "start": 32,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Darren Bishop"
   },
   {
     "segment_id": "table_32_r_1_c_0_p_0",
@@ -2915,9 +4995,39 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_33_r_1_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_33_r_2_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_33_r_3_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 6,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
   },
   {
     "segment_id": "table_35_r_1_c_0_p_0",
@@ -2925,19 +5035,59 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
   },
   {
-    "segment_id": "table_36_r_2_c_0_p_0",
+    "segment_id": "table_35_r_2_c_0_p_0",
     "entity_type": "PERSON",
-    "text": "Kushal Subbayya Hegde",
+    "text": "Pushpa Kushal Hegde",
     "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_35_r_3_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_35_r_4_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 6,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_36_r_4_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde*^&",
+    "start": 0,
+    "end": 22,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Judy Mayer"
+  },
+  {
+    "segment_id": "table_36_r_15_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Hegde",
+    "start": 9,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nancy Taylor"
   },
   {
     "segment_id": "table_37_r_1_c_1_p_0",
@@ -2945,9 +5095,9 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
   },
   {
     "segment_id": "table_37_r_2_c_1_p_0",
@@ -2955,9 +5105,9 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
   },
   {
     "segment_id": "table_37_r_3_c_1_p_0",
@@ -2965,29 +5115,289 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_37_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_37_r_5_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_37_r_6_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_53_r_1_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_1_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Gopal BO",
+    "start": 66,
+    "end": 74,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Trevor Smith"
+  },
+  {
+    "segment_id": "table_53_r_2_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_3_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_4_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_4_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Karunakar Hegde",
+    "start": 50,
+    "end": 65,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Madeline Erickson"
+  },
+  {
+    "segment_id": "table_53_r_6_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Karunakar Hegde HUF",
+    "start": 34,
+    "end": 53,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Ricardo Thomas"
+  },
+  {
+    "segment_id": "table_53_r_6_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Karunakar Hegde",
+    "start": 59,
+    "end": 74,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Madeline Erickson"
+  },
+  {
+    "segment_id": "table_53_r_7_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 34,
+    "end": 53,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
   },
   {
     "segment_id": "table_53_r_8_c_3_p_0",
-    "entity_type": "COMPANY",
-    "text": "Hegde from Shubhkamal Leasing and Investment Private Limited",
-    "start": 41,
-    "end": 101,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Nexus Enterprises Private Limited"
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_9_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Hegde",
+    "start": 34,
+    "end": 45,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Benjamin Page"
+  },
+  {
+    "segment_id": "table_53_r_9_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Karunakar Hegde HUF",
+    "start": 51,
+    "end": 70,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Ricardo Thomas"
   },
   {
     "segment_id": "table_53_r_10_c_3_p_0",
-    "entity_type": "COMPANY",
-    "text": "Hegde from Shubhkamal Leasing and Investment Private Limited",
-    "start": 48,
-    "end": 108,
-    "confidence": 0.92,
-    "source": "regex_suffix",
-    "replacement": "Nexus Enterprises Private Limited"
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 34,
+    "end": 53,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_53_r_11_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nancy Taylor"
+  },
+  {
+    "segment_id": "table_53_r_11_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Vijay Hegde",
+    "start": 50,
+    "end": 61,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Mary Dougherty"
+  },
+  {
+    "segment_id": "table_53_r_12_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Hegde",
+    "start": 34,
+    "end": 45,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Benjamin Page"
+  },
+  {
+    "segment_id": "table_53_r_12_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Vijay Hegde",
+    "start": 49,
+    "end": 60,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Mary Dougherty"
+  },
+  {
+    "segment_id": "table_53_r_13_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 34,
+    "end": 46,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_13_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Hegde",
+    "start": 50,
+    "end": 62,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nancy Taylor"
+  },
+  {
+    "segment_id": "table_53_r_13_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Hegde",
+    "start": 67,
+    "end": 78,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Benjamin Page"
+  },
+  {
+    "segment_id": "table_53_r_16_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Kushal Hegde",
+    "start": 37,
+    "end": 49,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Felicia Robertson"
+  },
+  {
+    "segment_id": "table_53_r_16_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Hegde",
+    "start": 51,
+    "end": 63,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Nancy Taylor"
+  },
+  {
+    "segment_id": "table_53_r_16_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Hegde",
+    "start": 68,
+    "end": 79,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Benjamin Page"
+  },
+  {
+    "segment_id": "table_55_r_7_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 25,
+    "end": 44,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
+  },
+  {
+    "segment_id": "table_55_r_10_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Executive Directors",
+    "start": 49,
+    "end": 68,
+    "confidence": 0.96,
+    "source": "role_context",
+    "replacement": "Dave Terry"
   },
   {
     "segment_id": "table_69_r_1_c_1_p_0",
@@ -2995,9 +5405,39 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_69_r_2_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpa Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Richard Mata"
+  },
+  {
+    "segment_id": "table_69_r_3_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_69_r_4_c_1_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
   },
   {
     "segment_id": "table_70_r_1_c_0_p_0",
@@ -3005,9 +5445,149 @@
     "text": "Kushal Subbayya Hegde",
     "start": 0,
     "end": 21,
-    "confidence": 0.97,
-    "source": "known_management",
-    "replacement": "Drew Blackwood"
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Karen Mcgrath"
+  },
+  {
+    "segment_id": "table_70_r_1_c_3_p_0",
+    "entity_type": "ADDRESS",
+    "text": "3 Prabhat Road, opposite PYC basketball court, Deccan Gymkhana, Pune – 411 004",
+    "start": 64,
+    "end": 142,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 172, Neil Greens Industrial Area, Sector 13, Pune 411001, Maharashtra, India"
+  },
+  {
+    "segment_id": "table_70_r_2_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rajesh Kushal Hegde",
+    "start": 0,
+    "end": 19,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brandon Smith"
+  },
+  {
+    "segment_id": "table_70_r_2_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Buena Monte",
+    "start": 3,
+    "end": 14,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Kristin Carter"
+  },
+  {
+    "segment_id": "table_70_r_3_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Rohit Kushal Hegde",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jonathan Jackson"
+  },
+  {
+    "segment_id": "table_70_r_3_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Pushpakamal Apartment,",
+    "start": 0,
+    "end": 22,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Lori Carroll"
+  },
+  {
+    "segment_id": "table_70_r_3_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Shivaji Nagar",
+    "start": 75,
+    "end": 88,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Abigail Barajas"
+  },
+  {
+    "segment_id": "table_70_r_3_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Deccan Gymkhana",
+    "start": 90,
+    "end": 105,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Zachary Skinner"
+  },
+  {
+    "segment_id": "table_70_r_4_c_3_p_1",
+    "entity_type": "ADDRESS",
+    "text": "3 Prabhat Road, opposite PYC basketball court, Erandawane, Deccan Gymkhana, Pune – 411 004",
+    "start": 0,
+    "end": 90,
+    "confidence": 0.91,
+    "source": "structural_address",
+    "replacement": "Plot 71, Brown Alley Industrial Area, Sector 12, Pune 411001, Maharashtra, India"
+  },
+  {
+    "segment_id": "table_70_r_5_c_3_p_0",
+    "entity_type": "PERSON",
+    "text": "Model Colony",
+    "start": 72,
+    "end": 84,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Steven Pennington"
+  },
+  {
+    "segment_id": "table_70_r_6_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Ajay Shriram Patil",
+    "start": 0,
+    "end": 18,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Amy Pugh"
+  },
+  {
+    "segment_id": "table_70_r_7_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Kumar Tiwari",
+    "start": 4,
+    "end": 16,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Brenda Cooper"
+  },
+  {
+    "segment_id": "table_70_r_8_c_0_p_0",
+    "entity_type": "PERSON",
+    "text": "Indu Jacob",
+    "start": 0,
+    "end": 10,
+    "confidence": 0.75,
+    "source": "ner_candidate",
+    "replacement": "Jessica Lewis"
+  },
+  {
+    "segment_id": "table_72_r_6_c_1_p_2",
+    "entity_type": "COMPANY",
+    "text": "Finalising centres for holding",
+    "start": 0,
+    "end": 30,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "West-Mcdonald Limited"
+  },
+  {
+    "segment_id": "table_72_r_7_c_1_p_3",
+    "entity_type": "COMPANY",
+    "text": "Finalizing centres for holding",
+    "start": 0,
+    "end": 30,
+    "confidence": 0.9,
+    "source": "regex_suffix",
+    "replacement": "Pitts Limited"
   },
   {
     "segment_id": "table_73_r_1_c_0_p_4",
@@ -3016,8 +5596,8 @@
     "start": 8,
     "end": 39,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "alex.foster70@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "smithemily@example.com"
   },
   {
     "segment_id": "table_73_r_1_c_0_p_5",
@@ -3027,7 +5607,7 @@
     "end": 28,
     "confidence": 0.98,
     "source": "phonenumbers",
-    "replacement": "+91 91234 57066"
+    "replacement": "+1-555-691-6286"
   },
   {
     "segment_id": "table_73_r_2_c_0_p_1",
@@ -3036,7 +5616,7 @@
     "start": 8,
     "end": 28,
     "confidence": 0.99,
-    "source": "regex",
-    "replacement": "alex.anderson53@example.com"
+    "source": "regex_rfc5322",
+    "replacement": "jessica80@example.com"
   }
 ]
