@@ -1,0 +1,10 @@
+PATIENT INTAKE RECORD
+=====================
+Patient Name: Eleanor Vance
+Date of Birth: 14/07/1982
+Residential Address: 450 Sunset Boulevard, Los Angeles, CA 90028, USA
+Contact Phone: +1-555-789-0123
+Email Address: eleanor.vance@patientcare.net
+Emergency Contact: Mr. Thomas Vance (Spouse) - Tel: +1-555-789-0124
+Attending Physician: Dr. Gregory House
+Health Insurance Provider: Blue Cross Shield Corporation

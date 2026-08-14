@@ -1,0 +1,4 @@
+InvoiceID,CustomerName,Company,BillingAddress,Email,Phone,TotalAmount
+INV-2026-001,Jonathan Reed,Vanguard Financial Services Limited,"Suite 500, 100 Wall Street, New York, NY 10005, USA",jonathan.reed@vanguard.com,+1-555-890-1234,$45000.00
+INV-2026-002,Priya Sundaram,Horizon Digital Private Limited,"Flat 12B, Palm Grove, Baner Road, Pune 411045, Maharashtra, India",priya.sundaram@horizondigital.in,+91 91234 56780,$12800.00
+INV-2026-003,Robert Chen,Pacific Trading Corporation,"888 Market Street, San Francisco, CA 94102, USA",robert.chen@pacifictrade.org,+1-555-432-8765,$9450.00

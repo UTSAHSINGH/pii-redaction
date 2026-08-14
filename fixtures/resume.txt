@@ -1,0 +1,19 @@
+Alex Morgan
+Email: alex.morgan@cloudtech.io | Phone: +1-555-234-5678
+Address: 742 Evergreen Terrace, Springfield, OR 97477, USA
+LinkedIn: linkedin.com/in/alexmorgan-cloud
+
+PROFESSIONAL SUMMARY
+Senior Cloud Systems Engineer with 8+ years of experience in distributed infrastructure, microservices, and Kubernetes orchestration.
+
+WORK EXPERIENCE
+Lead Infrastructure Engineer | Apex Cloud Solutions LLC | July 2021 – Present
+- Architected zero-trust Kubernetes clusters handling 50M+ requests daily.
+- Managed emergency incidents; Contact Person: Dr. Marcus Vance, VP of Engineering.
+
+DevOps Engineer | NexaCorp Technologies Inc. | June 2018 – June 2021
+- Deployed CI/CD pipelines reducing deployment friction by 40%.
+- Reported directly to Sarah Jenkins (Director of Platform).
+
+EDUCATION
+B.S. in Computer Science | Oregon State University | Graduated May 2018
