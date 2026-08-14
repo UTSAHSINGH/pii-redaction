@@ -2,14 +2,14 @@
   "per_type": {
     "PERSON": {
       "gold": 29,
-      "predicted": 113,
+      "predicted": 40,
       "TP": 23,
-      "FP": 90,
+      "FP": 17,
       "FN": 6,
-      "precision": 0.2035,
+      "precision": 0.575,
       "recall": 0.7931,
-      "f1": 0.3239,
-      "accuracy": 0.1933
+      "f1": 0.6667,
+      "accuracy": 0.5
     },
     "EMAIL": {
       "gold": 24,
@@ -35,25 +35,25 @@
     },
     "COMPANY": {
       "gold": 7,
-      "predicted": 49,
+      "predicted": 51,
       "TP": 7,
-      "FP": 42,
+      "FP": 44,
       "FN": 0,
-      "precision": 0.1429,
+      "precision": 0.1373,
       "recall": 1.0,
-      "f1": 0.25,
-      "accuracy": 0.1429
+      "f1": 0.2414,
+      "accuracy": 0.1373
     },
     "ADDRESS": {
       "gold": 3,
-      "predicted": 7,
-      "TP": 3,
-      "FP": 4,
-      "FN": 0,
-      "precision": 0.4286,
-      "recall": 1.0,
-      "f1": 0.6,
-      "accuracy": 0.4286
+      "predicted": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.0
     },
     "SSN": {
       "gold": 0,
@@ -106,25 +106,37 @@
   },
   "overall": {
     "micro": {
-      "precision": 0.3134,
-      "recall": 0.9189,
-      "f1": 0.4674,
-      "accuracy": 0.3049
+      "precision": 0.4676,
+      "recall": 0.8784,
+      "f1": 0.6103,
+      "accuracy": 0.4392
     },
     "macro": {
-      "precision": 0.4396,
-      "recall": 0.9586,
-      "f1": 0.5601
+      "precision": 0.4271,
+      "recall": 0.7586,
+      "f1": 0.507
     },
-    "total_TP": 68,
-    "total_FP": 149,
-    "total_FN": 6
+    "total_TP": 65,
+    "total_FP": 74,
+    "total_FN": 9
   },
   "negative_preservation": {
     "total_tested": 18,
     "passed": 18,
     "failed": 0,
     "pass_rate": 1.0,
-    "failed_phrases": []
+    "failed_details": []
+  },
+  "integrity_report": {
+    "segments_checked": 4639,
+    "segments_with_expected_redactions": 184,
+    "segments_with_unexpected_changes": 0,
+    "unauthorized_changed_characters": 0,
+    "total_original_characters": 324718,
+    "unauthorized_change_rate": 0.0,
+    "non_pii_preservation_rate": 1.0,
+    "total_approved_spans": 304,
+    "status": "PASS",
+    "failed_segments_sample": []
   }
 }

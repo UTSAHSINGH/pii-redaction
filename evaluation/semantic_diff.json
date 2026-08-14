@@ -1,0 +1,2738 @@
+[
+  {
+    "segment_id": "para_11",
+    "start": 0,
+    "end": 25,
+    "entity_type": "COMPANY",
+    "original_text": "KSH INTERNATIONAL LIMITED",
+    "replacement": "APEX DYNAMICS LIMITED",
+    "approved": true
+  },
+  {
+    "segment_id": "para_23",
+    "start": 0,
+    "end": 25,
+    "entity_type": "COMPANY",
+    "original_text": "KSH INTERNATIONAL LIMITED",
+    "replacement": "APEX DYNAMICS LIMITED",
+    "approved": true
+  },
+  {
+    "segment_id": "para_24",
+    "start": 44,
+    "end": 84,
+    "entity_type": "COMPANY",
+    "original_text": "Bhandary Metal Extrusion Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_24",
+    "start": 316,
+    "end": 356,
+    "entity_type": "COMPANY",
+    "original_text": "Bhandary Metal Extrusion Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_24",
+    "start": 362,
+    "end": 395,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Private Limited",
+    "replacement": "Omni Core Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_24",
+    "start": 1529,
+    "end": 1554,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Limited",
+    "replacement": "Horizon Holdings Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_28",
+    "start": 16,
+    "end": 33,
+    "entity_type": "PERSON",
+    "original_text": "Sarthak Malvadkar",
+    "replacement": "Logan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_28",
+    "start": 88,
+    "end": 105,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 20 4505 3237",
+    "replacement": "+91 91234 32754",
+    "approved": true
+  },
+  {
+    "segment_id": "para_29",
+    "start": 8,
+    "end": 39,
+    "entity_type": "EMAIL",
+    "original_text": "cs.connect@kshinternational.com",
+    "replacement": "rowan.reynolds98@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_48",
+    "start": 129,
+    "end": 154,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Limited",
+    "replacement": "Horizon Holdings Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_166",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_166",
+    "start": 238,
+    "end": 291,
+    "entity_type": "COMPANY",
+    "original_text": "Trust and Waterloo Industrial Park VI Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_220",
+    "start": 185,
+    "end": 203,
+    "entity_type": "PERSON",
+    "original_text": "Materiality Policy",
+    "replacement": "Logan Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "para_225",
+    "start": 31,
+    "end": 52,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_226",
+    "start": 52,
+    "end": 62,
+    "entity_type": "PERSON",
+    "original_text": "Amod Joshi",
+    "replacement": "Jamie Foster",
+    "approved": true
+  },
+  {
+    "segment_id": "para_226",
+    "start": 69,
+    "end": 86,
+    "entity_type": "PERSON",
+    "original_text": "Sarthak Malvadkar",
+    "replacement": "Logan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_226",
+    "start": 119,
+    "end": 132,
+    "entity_type": "PERSON",
+    "original_text": "Ganesh Prasad",
+    "replacement": "Jamie Mitchell",
+    "approved": true
+  },
+  {
+    "segment_id": "para_262",
+    "start": 30,
+    "end": 40,
+    "entity_type": "COMPANY",
+    "original_text": "Pandit LLP",
+    "replacement": "Vanguard Industries LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "para_267",
+    "start": 28,
+    "end": 38,
+    "entity_type": "COMPANY",
+    "original_text": "Pandit LLP",
+    "replacement": "Vanguard Industries LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "para_276",
+    "start": 30,
+    "end": 40,
+    "entity_type": "COMPANY",
+    "original_text": "Pandit LLP",
+    "replacement": "Vanguard Industries LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "para_282",
+    "start": 28,
+    "end": 38,
+    "entity_type": "COMPANY",
+    "original_text": "Pandit LLP",
+    "replacement": "Vanguard Industries LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "para_319",
+    "start": 61,
+    "end": 82,
+    "entity_type": "COMPANY",
+    "original_text": "Bharat Bijlee Limited",
+    "replacement": "Solstice Systems Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_319",
+    "start": 84,
+    "end": 125,
+    "entity_type": "COMPANY",
+    "original_text": "CG Power and Industrial Solutions Limited",
+    "replacement": "Omni Core Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_319",
+    "start": 150,
+    "end": 168,
+    "entity_type": "COMPANY",
+    "original_text": "Switchgear Limited",
+    "replacement": "Prism Ventures Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_319",
+    "start": 170,
+    "end": 201,
+    "entity_type": "COMPANY",
+    "original_text": "Georgia Transformer Corporation",
+    "replacement": "Crestview Capital Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_319",
+    "start": 203,
+    "end": 252,
+    "entity_type": "COMPANY",
+    "original_text": "Nidec Industrial Automation India Private Limited",
+    "replacement": "Summit Technologies Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_347",
+    "start": 55,
+    "end": 73,
+    "entity_type": "COMPANY",
+    "original_text": "Cindus Corporation",
+    "replacement": "Pinnacle Advisory Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_347",
+    "start": 75,
+    "end": 101,
+    "entity_type": "COMPANY",
+    "original_text": "Elantas Beck India Limited",
+    "replacement": "Sterling Global Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_347",
+    "start": 103,
+    "end": 130,
+    "entity_type": "COMPANY",
+    "original_text": "Hindalco Industries Limited",
+    "replacement": "Summit Technologies Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_347",
+    "start": 152,
+    "end": 189,
+    "entity_type": "COMPANY",
+    "original_text": "Savli Copper Products Private Limited",
+    "replacement": "Paramount Infra Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_428",
+    "start": 280,
+    "end": 313,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Private Limited",
+    "replacement": "Omni Core Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_440",
+    "start": 103,
+    "end": 143,
+    "entity_type": "COMPANY",
+    "original_text": "Bhandary Metal Extrusion Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_440",
+    "start": 149,
+    "end": 182,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Private Limited",
+    "replacement": "Omni Core Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_455",
+    "start": 169,
+    "end": 184,
+    "entity_type": "COMPANY",
+    "original_text": "Kanj and Co LLP",
+    "replacement": "Omni Core LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "para_456",
+    "start": 153,
+    "end": 174,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_487",
+    "start": 31,
+    "end": 52,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_488",
+    "start": 52,
+    "end": 62,
+    "entity_type": "PERSON",
+    "original_text": "Amod Joshi",
+    "replacement": "Jamie Foster",
+    "approved": true
+  },
+  {
+    "segment_id": "para_488",
+    "start": 69,
+    "end": 86,
+    "entity_type": "PERSON",
+    "original_text": "Sarthak Malvadkar",
+    "replacement": "Logan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_488",
+    "start": 119,
+    "end": 132,
+    "entity_type": "PERSON",
+    "original_text": "Ganesh Prasad",
+    "replacement": "Jamie Mitchell",
+    "approved": true
+  },
+  {
+    "segment_id": "para_616",
+    "start": 58,
+    "end": 82,
+    "entity_type": "PERSON",
+    "original_text": "Key Management Personnel",
+    "replacement": "Riley Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_617",
+    "start": 39,
+    "end": 60,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_617",
+    "start": 62,
+    "end": 81,
+    "entity_type": "PERSON",
+    "original_text": "Pushpa Kushal Hegde",
+    "replacement": "Hayden Morgan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_617",
+    "start": 83,
+    "end": 102,
+    "entity_type": "PERSON",
+    "original_text": "Rajesh Kushal Hegde",
+    "replacement": "Skyler Carter",
+    "approved": true
+  },
+  {
+    "segment_id": "para_617",
+    "start": 104,
+    "end": 122,
+    "entity_type": "PERSON",
+    "original_text": "Rohit Kushal Hegde",
+    "replacement": "Quinn Mercer",
+    "approved": true
+  },
+  {
+    "segment_id": "para_617",
+    "start": 127,
+    "end": 146,
+    "entity_type": "PERSON",
+    "original_text": "Rakhi Girija Shetty",
+    "replacement": "Jamie Harrison",
+    "approved": true
+  },
+  {
+    "segment_id": "para_633",
+    "start": 359,
+    "end": 381,
+    "entity_type": "PERSON",
+    "original_text": "Dinesh Hirachand Munot",
+    "replacement": "Robin Mercer",
+    "approved": true
+  },
+  {
+    "segment_id": "para_633",
+    "start": 386,
+    "end": 404,
+    "entity_type": "PERSON",
+    "original_text": "Ajay Shriram Patil",
+    "replacement": "Casey Hayes",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 70,
+    "end": 101,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Motors Private Limited",
+    "replacement": "Horizon Holdings Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 108,
+    "end": 155,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Project Management Services Private Limited",
+    "replacement": "Prism Ventures Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 180,
+    "end": 195,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 202,
+    "end": 235,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Infra Park VI Private Limited",
+    "replacement": "Nexus Enterprises Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 241,
+    "end": 272,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Distriparks Private Limited",
+    "replacement": "Solstice Systems Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 279,
+    "end": 319,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Integrated Logistics Private Limited",
+    "replacement": "Titan Crest Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 327,
+    "end": 372,
+    "entity_type": "COMPANY",
+    "original_text": "Kushal Motors and Electricals Private Limited",
+    "replacement": "Crestview Capital Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 408,
+    "end": 423,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 430,
+    "end": 473,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park II Private Limited",
+    "replacement": "Vanguard Industries Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 479,
+    "end": 523,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park III Private Limited",
+    "replacement": "Apex Dynamics Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 530,
+    "end": 573,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park IV Private Limited",
+    "replacement": "Zenith Energy Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 608,
+    "end": 623,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 632,
+    "end": 675,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park VI Private Limited",
+    "replacement": "Meridian Solutions Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 683,
+    "end": 728,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park VIII Private Limited",
+    "replacement": "Prism Ventures Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 735,
+    "end": 778,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park IX Private Limited",
+    "replacement": "Omni Core Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 816,
+    "end": 831,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 870,
+    "end": 885,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_647",
+    "start": 899,
+    "end": 932,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Infra Park IV Private Limited",
+    "replacement": "Horizon Holdings Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_679",
+    "start": 211,
+    "end": 223,
+    "entity_type": "PERSON",
+    "original_text": "Net Proceeds",
+    "replacement": "Jamie Hayes",
+    "approved": true
+  },
+  {
+    "segment_id": "para_685",
+    "start": 47,
+    "end": 68,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_685",
+    "start": 88,
+    "end": 100,
+    "entity_type": "PERSON",
+    "original_text": "Pushpa Hegde",
+    "replacement": "Riley Mitchell",
+    "approved": true
+  },
+  {
+    "segment_id": "para_718",
+    "start": 33,
+    "end": 58,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Limited",
+    "replacement": "Horizon Holdings Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_723",
+    "start": 32,
+    "end": 57,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Limited",
+    "replacement": "Horizon Holdings Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_741",
+    "start": 0,
+    "end": 17,
+    "entity_type": "PERSON",
+    "original_text": "Sarthak Malvadkar",
+    "replacement": "Logan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_741",
+    "start": 111,
+    "end": 117,
+    "entity_type": "PERSON",
+    "original_text": "Gat No",
+    "replacement": "Logan Prescott",
+    "approved": true
+  },
+  {
+    "segment_id": "para_744",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 20 45053237",
+    "replacement": "+91 91234 58861",
+    "approved": true
+  },
+  {
+    "segment_id": "para_745",
+    "start": 8,
+    "end": 46,
+    "entity_type": "EMAIL",
+    "original_text": "Sarthak.malvadkar@kshinterantional.com",
+    "replacement": "finley.reynolds80@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_753",
+    "start": 0,
+    "end": 32,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama Wealth Management Limited",
+    "replacement": "Vanguard Industries Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_756",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 40094400",
+    "replacement": "+91 98765 99326",
+    "approved": true
+  },
+  {
+    "segment_id": "para_756",
+    "start": 34,
+    "end": 52,
+    "entity_type": "EMAIL",
+    "original_text": "ksh.ipo@nuvama.com",
+    "replacement": "kendall.parker80@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_757",
+    "start": 27,
+    "end": 56,
+    "entity_type": "EMAIL",
+    "original_text": "customerservice.mb@nuvama.com",
+    "replacement": "taylor.harrison77@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_758",
+    "start": 16,
+    "end": 27,
+    "entity_type": "PERSON",
+    "original_text": "Lokesh Shah",
+    "replacement": "Kendall Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "para_758",
+    "start": 29,
+    "end": 43,
+    "entity_type": "PERSON",
+    "original_text": "Soumavo Sarkar",
+    "replacement": "Alex Thornton",
+    "approved": true
+  },
+  {
+    "segment_id": "para_761",
+    "start": 0,
+    "end": 24,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Securities Limited",
+    "replacement": "Meridian Solutions Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_762",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 6807 7100",
+    "replacement": "+91 91765 59043",
+    "approved": true
+  },
+  {
+    "segment_id": "para_762",
+    "start": 35,
+    "end": 58,
+    "entity_type": "EMAIL",
+    "original_text": "ksh@icicisecurities.com",
+    "replacement": "peyton.caldwell94@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_762",
+    "start": 119,
+    "end": 151,
+    "entity_type": "EMAIL",
+    "original_text": "customercare@icicisecurities.com",
+    "replacement": "taylor.montgomery16@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_763",
+    "start": 16,
+    "end": 30,
+    "entity_type": "PERSON",
+    "original_text": "Kishan Rastogi",
+    "replacement": "Taylor Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "para_763",
+    "start": 31,
+    "end": 44,
+    "entity_type": "PERSON",
+    "original_text": "Abhijit Diwan",
+    "replacement": "Avery Thornton",
+    "approved": true
+  },
+  {
+    "segment_id": "para_775",
+    "start": 0,
+    "end": 32,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama Wealth Management Limited",
+    "replacement": "Vanguard Industries Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_779",
+    "start": 11,
+    "end": 28,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 22 4009 4400",
+    "replacement": "+91 91765 29376",
+    "approved": true
+  },
+  {
+    "segment_id": "para_780",
+    "start": 7,
+    "end": 25,
+    "entity_type": "EMAIL",
+    "original_text": "ksh.ipo@nuvama.com",
+    "replacement": "kendall.parker80@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_780",
+    "start": 27,
+    "end": 53,
+    "entity_type": "EMAIL",
+    "original_text": "prakash.boricha@nuvama.com",
+    "replacement": "drew.whitman44@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_780",
+    "start": 59,
+    "end": 83,
+    "entity_type": "EMAIL",
+    "original_text": "sheetal.parab@nuvama.com",
+    "replacement": "skyler.hayes44@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_782",
+    "start": 16,
+    "end": 31,
+    "entity_type": "PERSON",
+    "original_text": "Prakash Boricha",
+    "replacement": "Quinn Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_785",
+    "start": 0,
+    "end": 24,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Securities Limited",
+    "replacement": "Meridian Solutions Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_786",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 6807 7100",
+    "replacement": "+91 91765 59043",
+    "approved": true
+  },
+  {
+    "segment_id": "para_786",
+    "start": 35,
+    "end": 58,
+    "entity_type": "EMAIL",
+    "original_text": "ksh@icicisecurities.com",
+    "replacement": "peyton.caldwell94@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_787",
+    "start": 27,
+    "end": 59,
+    "entity_type": "EMAIL",
+    "original_text": "customercare@icicisecurities.com",
+    "replacement": "taylor.montgomery16@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_788",
+    "start": 16,
+    "end": 30,
+    "entity_type": "PERSON",
+    "original_text": "Kishan Rastogi",
+    "replacement": "Taylor Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "para_788",
+    "start": 31,
+    "end": 44,
+    "entity_type": "PERSON",
+    "original_text": "Abhijit Diwan",
+    "replacement": "Avery Thornton",
+    "approved": true
+  },
+  {
+    "segment_id": "para_791",
+    "start": 46,
+    "end": 54,
+    "entity_type": "COMPANY",
+    "original_text": "Trilegal",
+    "replacement": "Titan Crest Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_796",
+    "start": 7,
+    "end": 23,
+    "entity_type": "EMAIL",
+    "original_text": "ipo@trilegal.com",
+    "replacement": "kendall.blackwood10@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_797",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 4079 1000",
+    "replacement": "+91 91234 48068",
+    "approved": true
+  },
+  {
+    "segment_id": "para_800",
+    "start": 0,
+    "end": 33,
+    "entity_type": "COMPANY",
+    "original_text": "MUFG Intime India Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_800",
+    "start": 35,
+    "end": 77,
+    "entity_type": "COMPANY",
+    "original_text": "Formerly Link Intime India Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_801",
+    "start": 86,
+    "end": 101,
+    "entity_type": "PHONE",
+    "original_text": "+91 81081 14949",
+    "replacement": "+91 97654 38243",
+    "approved": true
+  },
+  {
+    "segment_id": "para_802",
+    "start": 8,
+    "end": 45,
+    "entity_type": "EMAIL",
+    "original_text": "kshinternational.ipo@in.mpms.mufg.com",
+    "replacement": "jordan.parker73@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_803",
+    "start": 27,
+    "end": 64,
+    "entity_type": "EMAIL",
+    "original_text": "kshinternational.ipo@in.mpms.mufg.com",
+    "replacement": "jordan.parker73@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_804",
+    "start": 46,
+    "end": 66,
+    "entity_type": "PERSON",
+    "original_text": "Shanti Gopalkrishnan",
+    "replacement": "Skyler Foster",
+    "approved": true
+  },
+  {
+    "segment_id": "para_804",
+    "start": 72,
+    "end": 87,
+    "entity_type": "PERSON",
+    "original_text": "Registration No",
+    "replacement": "Avery Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_807",
+    "start": 44,
+    "end": 61,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_808",
+    "start": 0,
+    "end": 17,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_810",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752929",
+    "replacement": "+91 97654 77382",
+    "approved": true
+  },
+  {
+    "segment_id": "para_810",
+    "start": 28,
+    "end": 43,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752928",
+    "replacement": "+91 91234 43647",
+    "approved": true
+  },
+  {
+    "segment_id": "para_810",
+    "start": 48,
+    "end": 63,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752914",
+    "replacement": "+91 93210 39721",
+    "approved": true
+  },
+  {
+    "segment_id": "para_811",
+    "start": 7,
+    "end": 36,
+    "entity_type": "EMAIL",
+    "original_text": "siddharth.jadhav@hdfcbank.com",
+    "replacement": "emerson.reynolds16@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_811",
+    "start": 38,
+    "end": 64,
+    "entity_type": "EMAIL",
+    "original_text": "sachin.gawade@hdfcbank.com",
+    "replacement": "morgan.carter12@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_811",
+    "start": 65,
+    "end": 88,
+    "entity_type": "EMAIL",
+    "original_text": "eric.bacha@hdfcbank.com",
+    "replacement": "harper.caldwell77@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_811",
+    "start": 90,
+    "end": 118,
+    "entity_type": "EMAIL",
+    "original_text": "tushar.gavankar@hdfcbank.com",
+    "replacement": "devon.ellington42@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_811",
+    "start": 124,
+    "end": 149,
+    "entity_type": "EMAIL",
+    "original_text": "pravin.teli2@hdfcbank.com",
+    "replacement": "hayden.bennett95@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_812",
+    "start": 16,
+    "end": 26,
+    "entity_type": "PERSON",
+    "original_text": "Eric Bacha",
+    "replacement": "Harper Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "para_812",
+    "start": 28,
+    "end": 41,
+    "entity_type": "PERSON",
+    "original_text": "Sachin Gawade",
+    "replacement": "Sam Ellington",
+    "approved": true
+  },
+  {
+    "segment_id": "para_812",
+    "start": 43,
+    "end": 54,
+    "entity_type": "PERSON",
+    "original_text": "Pravin Teli",
+    "replacement": "Jordan Harrison",
+    "approved": true
+  },
+  {
+    "segment_id": "para_812",
+    "start": 56,
+    "end": 72,
+    "entity_type": "PERSON",
+    "original_text": "Siddharth Jadhav",
+    "replacement": "Emerson Prescott",
+    "approved": true
+  },
+  {
+    "segment_id": "para_812",
+    "start": 74,
+    "end": 89,
+    "entity_type": "PERSON",
+    "original_text": "Tushar Gavankar",
+    "replacement": "Drew Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "para_817",
+    "start": 0,
+    "end": 18,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Bank Limited",
+    "replacement": "Paramount Infra Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_819",
+    "start": 91,
+    "end": 103,
+    "entity_type": "PHONE",
+    "original_text": "022-68052182",
+    "replacement": "+91 91234 78367",
+    "approved": true
+  },
+  {
+    "segment_id": "para_819",
+    "start": 111,
+    "end": 131,
+    "entity_type": "EMAIL",
+    "original_text": "Ipocmg@icicibank.com",
+    "replacement": "emerson.reynolds42@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_819",
+    "start": 175,
+    "end": 186,
+    "entity_type": "PERSON",
+    "original_text": "Varun Badai",
+    "replacement": "Kendall Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_823",
+    "start": 0,
+    "end": 17,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_824",
+    "start": 0,
+    "end": 17,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_826",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752929",
+    "replacement": "+91 97654 77382",
+    "approved": true
+  },
+  {
+    "segment_id": "para_826",
+    "start": 28,
+    "end": 43,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752928",
+    "replacement": "+91 91234 43647",
+    "approved": true
+  },
+  {
+    "segment_id": "para_826",
+    "start": 48,
+    "end": 63,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752914",
+    "replacement": "+91 93210 39721",
+    "approved": true
+  },
+  {
+    "segment_id": "para_827",
+    "start": 7,
+    "end": 36,
+    "entity_type": "EMAIL",
+    "original_text": "siddharth.jadhav@hdfcbank.com",
+    "replacement": "emerson.reynolds16@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_827",
+    "start": 38,
+    "end": 64,
+    "entity_type": "EMAIL",
+    "original_text": "sachin.gawade@hdfcbank.com",
+    "replacement": "morgan.carter12@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_827",
+    "start": 65,
+    "end": 88,
+    "entity_type": "EMAIL",
+    "original_text": "eric.bacha@hdfcbank.com",
+    "replacement": "harper.caldwell77@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_827",
+    "start": 90,
+    "end": 118,
+    "entity_type": "EMAIL",
+    "original_text": "tushar.gavankar@hdfcbank.com",
+    "replacement": "devon.ellington42@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_827",
+    "start": 124,
+    "end": 149,
+    "entity_type": "EMAIL",
+    "original_text": "pravin.teli2@hdfcbank.com",
+    "replacement": "hayden.bennett95@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_828",
+    "start": 16,
+    "end": 26,
+    "entity_type": "PERSON",
+    "original_text": "Eric Bacha",
+    "replacement": "Harper Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "para_828",
+    "start": 28,
+    "end": 41,
+    "entity_type": "PERSON",
+    "original_text": "Sachin Gawade",
+    "replacement": "Sam Ellington",
+    "approved": true
+  },
+  {
+    "segment_id": "para_828",
+    "start": 43,
+    "end": 54,
+    "entity_type": "PERSON",
+    "original_text": "Pravin Teli",
+    "replacement": "Jordan Harrison",
+    "approved": true
+  },
+  {
+    "segment_id": "para_828",
+    "start": 56,
+    "end": 72,
+    "entity_type": "PERSON",
+    "original_text": "Siddharth Jadhav",
+    "replacement": "Emerson Prescott",
+    "approved": true
+  },
+  {
+    "segment_id": "para_828",
+    "start": 74,
+    "end": 89,
+    "entity_type": "PERSON",
+    "original_text": "Tushar Gavankar",
+    "replacement": "Drew Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "para_833",
+    "start": 0,
+    "end": 18,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Bank Limited",
+    "replacement": "Paramount Infra Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_835",
+    "start": 91,
+    "end": 103,
+    "entity_type": "PHONE",
+    "original_text": "022-68052182",
+    "replacement": "+91 91234 78367",
+    "approved": true
+  },
+  {
+    "segment_id": "para_835",
+    "start": 111,
+    "end": 131,
+    "entity_type": "EMAIL",
+    "original_text": "Ipocmg@icicibank.com",
+    "replacement": "emerson.reynolds42@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_835",
+    "start": 175,
+    "end": 186,
+    "entity_type": "PERSON",
+    "original_text": "Varun Badai",
+    "replacement": "Kendall Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "para_838",
+    "start": 0,
+    "end": 17,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_839",
+    "start": 0,
+    "end": 17,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_841",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752929",
+    "replacement": "+91 97654 77382",
+    "approved": true
+  },
+  {
+    "segment_id": "para_841",
+    "start": 28,
+    "end": 43,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752928",
+    "replacement": "+91 91234 43647",
+    "approved": true
+  },
+  {
+    "segment_id": "para_841",
+    "start": 48,
+    "end": 63,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 30752914",
+    "replacement": "+91 93210 39721",
+    "approved": true
+  },
+  {
+    "segment_id": "para_842",
+    "start": 7,
+    "end": 36,
+    "entity_type": "EMAIL",
+    "original_text": "siddharth.jadhav@hdfcbank.com",
+    "replacement": "emerson.reynolds16@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_842",
+    "start": 38,
+    "end": 64,
+    "entity_type": "EMAIL",
+    "original_text": "sachin.gawade@hdfcbank.com",
+    "replacement": "morgan.carter12@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_842",
+    "start": 65,
+    "end": 88,
+    "entity_type": "EMAIL",
+    "original_text": "eric.bacha@hdfcbank.com",
+    "replacement": "harper.caldwell77@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_842",
+    "start": 90,
+    "end": 118,
+    "entity_type": "EMAIL",
+    "original_text": "tushar.gavankar@hdfcbank.com",
+    "replacement": "devon.ellington42@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_842",
+    "start": 124,
+    "end": 149,
+    "entity_type": "EMAIL",
+    "original_text": "pravin.teli2@hdfcbank.com",
+    "replacement": "hayden.bennett95@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_843",
+    "start": 16,
+    "end": 26,
+    "entity_type": "PERSON",
+    "original_text": "Eric Bacha",
+    "replacement": "Harper Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "para_843",
+    "start": 28,
+    "end": 41,
+    "entity_type": "PERSON",
+    "original_text": "Sachin Gawade",
+    "replacement": "Sam Ellington",
+    "approved": true
+  },
+  {
+    "segment_id": "para_843",
+    "start": 43,
+    "end": 54,
+    "entity_type": "PERSON",
+    "original_text": "Pravin Teli",
+    "replacement": "Jordan Harrison",
+    "approved": true
+  },
+  {
+    "segment_id": "para_843",
+    "start": 56,
+    "end": 72,
+    "entity_type": "PERSON",
+    "original_text": "Siddharth Jadhav",
+    "replacement": "Emerson Prescott",
+    "approved": true
+  },
+  {
+    "segment_id": "para_843",
+    "start": 74,
+    "end": 89,
+    "entity_type": "PERSON",
+    "original_text": "Tushar Gavankar",
+    "replacement": "Drew Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "para_865",
+    "start": 77,
+    "end": 84,
+    "entity_type": "COMPANY",
+    "original_text": "Co. LLP",
+    "replacement": "Meridian Solutions LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "para_873",
+    "start": 8,
+    "end": 39,
+    "entity_type": "EMAIL",
+    "original_text": "parag.pansare@kirtanepandit.com",
+    "replacement": "alex.foster70@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_874",
+    "start": 11,
+    "end": 30,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 (20) 6729 5100",
+    "replacement": "+91 91234 22582",
+    "approved": true
+  },
+  {
+    "segment_id": "para_884",
+    "start": 0,
+    "end": 12,
+    "entity_type": "COMPANY",
+    "original_text": "Citibank N.A",
+    "replacement": "Sterling Global Bank Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_887",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 20 6606 4494",
+    "replacement": "+91 98765 73379",
+    "approved": true
+  },
+  {
+    "segment_id": "para_888",
+    "start": 16,
+    "end": 29,
+    "entity_type": "PERSON",
+    "original_text": "Hitesh Ramani",
+    "replacement": "Quinn Parker",
+    "approved": true
+  },
+  {
+    "segment_id": "para_890",
+    "start": 7,
+    "end": 29,
+    "entity_type": "EMAIL",
+    "original_text": "hitesh.ramani@citi.com",
+    "replacement": "harper.morgan51@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_898",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 20 2640 3100",
+    "replacement": "+91 91234 30062",
+    "approved": true
+  },
+  {
+    "segment_id": "para_898",
+    "start": 44,
+    "end": 64,
+    "entity_type": "PERSON",
+    "original_text": "Chitra Raste Website",
+    "replacement": "Taylor Morgan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_898",
+    "start": 95,
+    "end": 115,
+    "entity_type": "EMAIL",
+    "original_text": "pro@eximbankindia.in",
+    "replacement": "riley.mitchell23@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_902",
+    "start": 0,
+    "end": 21,
+    "entity_type": "COMPANY",
+    "original_text": "IndusInd Bank Limited",
+    "replacement": "Zenith Energy Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_905",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+91-20-26234000",
+    "replacement": "+91 93210 91218",
+    "approved": true
+  },
+  {
+    "segment_id": "para_905",
+    "start": 43,
+    "end": 65,
+    "entity_type": "PERSON",
+    "original_text": "Sharmila Joshi Website",
+    "replacement": "Quinn Foster",
+    "approved": true
+  },
+  {
+    "segment_id": "para_905",
+    "start": 92,
+    "end": 119,
+    "entity_type": "EMAIL",
+    "original_text": "sharmila.joshi@indusind.com",
+    "replacement": "cameron.mitchell65@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_907",
+    "start": 0,
+    "end": 18,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Bank Limited",
+    "replacement": "Paramount Infra Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_910",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 8879770456",
+    "replacement": "+91 91234 77699",
+    "approved": true
+  },
+  {
+    "segment_id": "para_910",
+    "start": 43,
+    "end": 63,
+    "entity_type": "PERSON",
+    "original_text": "Cherag Gyara Website",
+    "replacement": "Rowan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_910",
+    "start": 90,
+    "end": 116,
+    "entity_type": "EMAIL",
+    "original_text": "cherag.gyara@icicibank.com",
+    "replacement": "emerson.reynolds45@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_912",
+    "start": 0,
+    "end": 17,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_916",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 20 6769 4648",
+    "replacement": "+91 98765 42984",
+    "approved": true
+  },
+  {
+    "segment_id": "para_916",
+    "start": 44,
+    "end": 66,
+    "entity_type": "PERSON",
+    "original_text": "Manisha Shukla Website",
+    "replacement": "Drew Parker",
+    "approved": true
+  },
+  {
+    "segment_id": "para_917",
+    "start": 7,
+    "end": 34,
+    "entity_type": "EMAIL",
+    "original_text": "manisha.shukla@hdfcbank.com",
+    "replacement": "hayden.anderson32@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_919",
+    "start": 0,
+    "end": 19,
+    "entity_type": "COMPANY",
+    "original_text": "State Bank of India",
+    "replacement": "Horizon Holdings Bank Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_923",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 20 2561 8211",
+    "replacement": "+91 97654 33494",
+    "approved": true
+  },
+  {
+    "segment_id": "para_923",
+    "start": 44,
+    "end": 66,
+    "entity_type": "PERSON",
+    "original_text": "Tushar Wakhele Website",
+    "replacement": "Casey Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_924",
+    "start": 7,
+    "end": 28,
+    "entity_type": "EMAIL",
+    "original_text": "rm6.ifbpune@sbi.co.in",
+    "replacement": "cameron.mercer76@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_928",
+    "start": 4,
+    "end": 24,
+    "entity_type": "COMPANY",
+    "original_text": "Federal Bank Limited",
+    "replacement": "Beacon Financial Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_929",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 91586 40360",
+    "replacement": "+91 97654 23839",
+    "approved": true
+  },
+  {
+    "segment_id": "para_930",
+    "start": 16,
+    "end": 37,
+    "entity_type": "PERSON",
+    "original_text": "Ashish Mathew Pulloor",
+    "replacement": "Devon Anderson",
+    "approved": true
+  },
+  {
+    "segment_id": "para_932",
+    "start": 7,
+    "end": 33,
+    "entity_type": "EMAIL",
+    "original_text": "ashishmp@federalbank.co.in",
+    "replacement": "kendall.foster39@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_934",
+    "start": 0,
+    "end": 21,
+    "entity_type": "COMPANY",
+    "original_text": "Bajaj Finance Limited",
+    "replacement": "Beacon Financial Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_937",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 20 7157 6403",
+    "replacement": "+91 91234 77060",
+    "approved": true
+  },
+  {
+    "segment_id": "para_937",
+    "start": 44,
+    "end": 62,
+    "entity_type": "PERSON",
+    "original_text": "Anand Soni Website",
+    "replacement": "Cameron Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "para_937",
+    "start": 92,
+    "end": 118,
+    "entity_type": "EMAIL",
+    "original_text": "anand.soni@bajajfinserv.in",
+    "replacement": "hayden.foster94@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "para_945",
+    "start": 137,
+    "end": 157,
+    "entity_type": "COMPANY",
+    "original_text": "CARE Ratings Limited",
+    "replacement": "Beacon Financial Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "para_971",
+    "start": 200,
+    "end": 222,
+    "entity_type": "PERSON",
+    "original_text": "Underwriting Agreement",
+    "replacement": "Harper Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_1_c_2_p_1",
+    "start": 0,
+    "end": 17,
+    "entity_type": "PERSON",
+    "original_text": "Sarthak Malvadkar",
+    "replacement": "Logan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_1_c_4_p_1",
+    "start": 7,
+    "end": 38,
+    "entity_type": "EMAIL",
+    "original_text": "cs.connect@kshinternational.com",
+    "replacement": "rowan.reynolds98@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_1_c_4_p_1",
+    "start": 50,
+    "end": 66,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 20 45053237",
+    "replacement": "+91 91234 58861",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_2_c_0_p_0",
+    "start": 15,
+    "end": 36,
+    "entity_type": "PERSON",
+    "original_text": "KUSHAL SUBBAYYA HEGDE",
+    "replacement": "DREW BLACKWOOD",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_2_c_0_p_1",
+    "start": 0,
+    "end": 43,
+    "entity_type": "COMPANY",
+    "original_text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+    "replacement": "PRISM VENTURES PRIVATE LIMITED",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_8_c_0_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_0_r_12_c_0_p_0",
+    "start": 27,
+    "end": 37,
+    "entity_type": "COMPANY",
+    "original_text": "Pandit LLP",
+    "replacement": "Vanguard Industries LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_7_c_1_p_0",
+    "start": 0,
+    "end": 32,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama\tWealth Management Limited",
+    "replacement": "Crestview Capital Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_7_c_7_p_0",
+    "start": 7,
+    "end": 25,
+    "entity_type": "EMAIL",
+    "original_text": "ksh.ipo@nuvama.com",
+    "replacement": "kendall.parker80@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_7_c_7_p_1",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 4009 4400",
+    "replacement": "+91 98765 57627",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_8_c_1_p_1",
+    "start": 0,
+    "end": 24,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI\tSecurities Limited",
+    "replacement": "Pinnacle Advisory Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_8_c_7_p_1",
+    "start": 7,
+    "end": 30,
+    "entity_type": "EMAIL",
+    "original_text": "ksh@icicisecurities.com",
+    "replacement": "peyton.caldwell94@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_8_c_7_p_2",
+    "start": 11,
+    "end": 27,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 6807 7100",
+    "replacement": "+91 91765 59043",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_11_c_0_p_0",
+    "start": 0,
+    "end": 33,
+    "entity_type": "COMPANY",
+    "original_text": "MUFG Intime India Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_11_c_0_p_1",
+    "start": 1,
+    "end": 43,
+    "entity_type": "COMPANY",
+    "original_text": "Formerly Link Intime India Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_11_c_3_p_0",
+    "start": 11,
+    "end": 26,
+    "entity_type": "PHONE",
+    "original_text": "+91 81081 14949",
+    "replacement": "+91 97654 38243",
+    "approved": true
+  },
+  {
+    "segment_id": "table_1_r_11_c_3_p_1",
+    "start": 8,
+    "end": 45,
+    "entity_type": "EMAIL",
+    "original_text": "kshinternational.ipo@in.mpms.mufg.com",
+    "replacement": "jordan.parker73@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_0_c_0_p_0",
+    "start": 15,
+    "end": 36,
+    "entity_type": "PERSON",
+    "original_text": "KUSHAL SUBBAYYA HEGDE",
+    "replacement": "DREW BLACKWOOD",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_0_c_0_p_1",
+    "start": 99,
+    "end": 152,
+    "entity_type": "COMPANY",
+    "original_text": "TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+    "replacement": "PRISM VENTURES PRIVATE LIMITED",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_1_c_0_p_0",
+    "start": 97,
+    "end": 122,
+    "entity_type": "COMPANY",
+    "original_text": "KSH INTERNATIONAL LIMITED",
+    "replacement": "APEX DYNAMICS LIMITED",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_1_c_0_p_0",
+    "start": 635,
+    "end": 656,
+    "entity_type": "PERSON",
+    "original_text": "KUSHAL SUBBAYYA HEGDE",
+    "replacement": "DREW BLACKWOOD",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_0",
+    "start": 0,
+    "end": 32,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama Wealth Management Limited",
+    "replacement": "Vanguard Industries Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_2",
+    "start": 5,
+    "end": 20,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 40094400",
+    "replacement": "+91 98765 99326",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_3",
+    "start": 8,
+    "end": 26,
+    "entity_type": "EMAIL",
+    "original_text": "ksh.ipo@nuvama.com",
+    "replacement": "kendall.parker80@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_5",
+    "start": 26,
+    "end": 55,
+    "entity_type": "EMAIL",
+    "original_text": "customerservice.mb@nuvama.com",
+    "replacement": "taylor.harrison77@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_6",
+    "start": 16,
+    "end": 27,
+    "entity_type": "PERSON",
+    "original_text": "Lokesh Shah",
+    "replacement": "Kendall Whitman",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_0_p_6",
+    "start": 29,
+    "end": 43,
+    "entity_type": "PERSON",
+    "original_text": "Soumavo Sarkar",
+    "replacement": "Alex Thornton",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_0",
+    "start": 0,
+    "end": 24,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Securities Limited",
+    "replacement": "Meridian Solutions Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_2",
+    "start": 5,
+    "end": 21,
+    "entity_type": "PHONE",
+    "original_text": "+91 22 6807 7100",
+    "replacement": "+91 91765 59043",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_3",
+    "start": 8,
+    "end": 31,
+    "entity_type": "EMAIL",
+    "original_text": "ksh@icicisecurities.com",
+    "replacement": "peyton.caldwell94@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_5",
+    "start": 26,
+    "end": 58,
+    "entity_type": "EMAIL",
+    "original_text": "customercare@icicisecurities.com",
+    "replacement": "taylor.montgomery16@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_6",
+    "start": 16,
+    "end": 30,
+    "entity_type": "PERSON",
+    "original_text": "Kishan Rastogi",
+    "replacement": "Taylor Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_2_p_6",
+    "start": 31,
+    "end": 44,
+    "entity_type": "PERSON",
+    "original_text": "Abhijit Diwan",
+    "replacement": "Avery Thornton",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_6_p_0",
+    "start": 0,
+    "end": 33,
+    "entity_type": "COMPANY",
+    "original_text": "MUFG Intime India Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_6_p_1",
+    "start": 1,
+    "end": 43,
+    "entity_type": "COMPANY",
+    "original_text": "Formerly Link Intime India Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_6_p_3",
+    "start": 5,
+    "end": 20,
+    "entity_type": "PHONE",
+    "original_text": "+91 81081 14949",
+    "replacement": "+91 97654 38243",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_6_p_4",
+    "start": 8,
+    "end": 45,
+    "entity_type": "EMAIL",
+    "original_text": "kshinternational.ipo@in.mpms.mufg.com",
+    "replacement": "jordan.parker73@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_6_p_6",
+    "start": 27,
+    "end": 64,
+    "entity_type": "EMAIL",
+    "original_text": "kshinternational.ipo@in.mpms.mufg.com",
+    "replacement": "jordan.parker73@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_2_r_14_c_6_p_7",
+    "start": 16,
+    "end": 36,
+    "entity_type": "PERSON",
+    "original_text": "Shanti Gopalkrishnan",
+    "replacement": "Skyler Foster",
+    "approved": true
+  },
+  {
+    "segment_id": "table_3_r_1_c_1_p_0",
+    "start": 0,
+    "end": 25,
+    "entity_type": "COMPANY",
+    "original_text": "KSH International Limited",
+    "replacement": "Horizon Holdings Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_4_r_3_c_1_p_0",
+    "start": 63,
+    "end": 73,
+    "entity_type": "COMPANY",
+    "original_text": "Pandit LLP",
+    "replacement": "Vanguard Industries LLP",
+    "approved": true
+  },
+  {
+    "segment_id": "table_4_r_7_c_1_p_0",
+    "start": 58,
+    "end": 79,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_4_r_8_c_1_p_0",
+    "start": 50,
+    "end": 65,
+    "entity_type": "PERSON",
+    "original_text": "Sandesh Bhagwat",
+    "replacement": "Emerson Caldwell",
+    "approved": true
+  },
+  {
+    "segment_id": "table_4_r_9_c_1_p_0",
+    "start": 50,
+    "end": 60,
+    "entity_type": "PERSON",
+    "original_text": "Amod Joshi",
+    "replacement": "Jamie Foster",
+    "approved": true
+  },
+  {
+    "segment_id": "table_4_r_10_c_1_p_0",
+    "start": 67,
+    "end": 84,
+    "entity_type": "PERSON",
+    "original_text": "Sarthak Malvadkar",
+    "replacement": "Logan Sullivan",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_2_c_1_p_0",
+    "start": 0,
+    "end": 43,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park VI Private Limited",
+    "replacement": "Meridian Solutions Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 18,
+    "end": 49,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Motors Private Limited",
+    "replacement": "Horizon Holdings Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 51,
+    "end": 98,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Project Management Services Private Limited",
+    "replacement": "Prism Ventures Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 117,
+    "end": 132,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 134,
+    "end": 167,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Infra Park VI Private Limited",
+    "replacement": "Nexus Enterprises Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 169,
+    "end": 200,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Distriparks Private Limited",
+    "replacement": "Solstice Systems Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 202,
+    "end": 242,
+    "entity_type": "COMPANY",
+    "original_text": "KSH Integrated Logistics Private Limited",
+    "replacement": "Titan Crest Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 244,
+    "end": 289,
+    "entity_type": "COMPANY",
+    "original_text": "Kushal Motors and Electricals Private Limited",
+    "replacement": "Crestview Capital Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 318,
+    "end": 333,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 335,
+    "end": 378,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park II Private Limited",
+    "replacement": "Vanguard Industries Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 380,
+    "end": 424,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park III Private Limited",
+    "replacement": "Apex Dynamics Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 426,
+    "end": 469,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park IV Private Limited",
+    "replacement": "Zenith Energy Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 498,
+    "end": 513,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 515,
+    "end": 558,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park VI Private Limited",
+    "replacement": "Meridian Solutions Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 560,
+    "end": 605,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park VIII Private Limited",
+    "replacement": "Prism Ventures Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 607,
+    "end": 650,
+    "entity_type": "COMPANY",
+    "original_text": "Waterloo Industrial Park IX Private Limited",
+    "replacement": "Omni Core Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_10_c_1_p_0",
+    "start": 682,
+    "end": 697,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_13_c_1_p_0",
+    "start": 34,
+    "end": 77,
+    "entity_type": "COMPANY",
+    "original_text": "CARE Analytics and Advisory Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_15_c_1_p_0",
+    "start": 50,
+    "end": 68,
+    "entity_type": "PERSON",
+    "original_text": "Rohit Kushal Hegde",
+    "replacement": "Quinn Mercer",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_17_c_1_p_0",
+    "start": 45,
+    "end": 64,
+    "entity_type": "PERSON",
+    "original_text": "Rajesh Kushal Hegde",
+    "replacement": "Skyler Carter",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_22_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_24_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_24_c_1_p_1",
+    "start": 58,
+    "end": 111,
+    "entity_type": "COMPANY",
+    "original_text": "Trust and Waterloo Industrial Park VI Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_5_r_25_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_6_r_14_c_1_p_0",
+    "start": 46,
+    "end": 65,
+    "entity_type": "PERSON",
+    "original_text": "Rakhi Girija Shetty",
+    "replacement": "Jamie Harrison",
+    "approved": true
+  },
+  {
+    "segment_id": "table_9_r_6_c_1_p_0",
+    "start": 52,
+    "end": 84,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama Wealth Management Limited",
+    "replacement": "Vanguard Industries Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_9_r_6_c_1_p_0",
+    "start": 89,
+    "end": 113,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Securities Limited",
+    "replacement": "Meridian Solutions Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_10_r_9_c_1_p_0",
+    "start": 182,
+    "end": 199,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_10_r_18_c_1_p_0",
+    "start": 0,
+    "end": 24,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Securities Limited",
+    "replacement": "Meridian Solutions Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_11_r_3_c_1_p_0",
+    "start": 0,
+    "end": 32,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama Wealth Management Limited",
+    "replacement": "Vanguard Industries Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_11_r_6_c_1_p_0",
+    "start": 218,
+    "end": 239,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_11_r_14_c_1_p_0",
+    "start": 173,
+    "end": 191,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Bank Limited",
+    "replacement": "Paramount Infra Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_3_c_1_p_0",
+    "start": 153,
+    "end": 170,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_7_c_1_p_0",
+    "start": 0,
+    "end": 33,
+    "entity_type": "COMPANY",
+    "original_text": "MUFG Intime India Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_7_c_1_p_0",
+    "start": 35,
+    "end": 77,
+    "entity_type": "COMPANY",
+    "original_text": "Formerly Link Intime India Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_13_c_1_p_0",
+    "start": 81,
+    "end": 114,
+    "entity_type": "COMPANY",
+    "original_text": "MUFG Intime India Private Limited",
+    "replacement": "Sterling Global Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_13_c_1_p_0",
+    "start": 116,
+    "end": 158,
+    "entity_type": "COMPANY",
+    "original_text": "Formerly Link Intime India Private Limited",
+    "replacement": "Pinnacle Advisory Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_16_c_1_p_1",
+    "start": 149,
+    "end": 166,
+    "entity_type": "COMPANY",
+    "original_text": "HDFC Bank Limited",
+    "replacement": "Nexus Enterprises Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_16_c_1_p_1",
+    "start": 171,
+    "end": 189,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Bank Limited",
+    "replacement": "Paramount Infra Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_20_c_1_p_1",
+    "start": 8,
+    "end": 40,
+    "entity_type": "COMPANY",
+    "original_text": "Nuvama Wealth Management Limited",
+    "replacement": "Vanguard Industries Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_12_r_20_c_1_p_1",
+    "start": 45,
+    "end": 69,
+    "entity_type": "COMPANY",
+    "original_text": "ICICI Securities Limited",
+    "replacement": "Meridian Solutions Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_13_r_4_c_1_p_0",
+    "start": 123,
+    "end": 135,
+    "entity_type": "PERSON",
+    "original_text": "Pricing Date",
+    "replacement": "Cameron Vance",
+    "approved": true
+  },
+  {
+    "segment_id": "table_15_r_40_c_1_p_0",
+    "start": 0,
+    "end": 29,
+    "entity_type": "COMPANY",
+    "original_text": "National Payments Corporation",
+    "replacement": "Prism Ventures Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_18_r_46_c_1_p_0",
+    "start": 0,
+    "end": 29,
+    "entity_type": "COMPANY",
+    "original_text": "Precision Wires India Limited",
+    "replacement": "Omni Core Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_18_r_57_c_1_p_0",
+    "start": 0,
+    "end": 41,
+    "entity_type": "COMPANY",
+    "original_text": "Solar Energy Corporation of India Limited",
+    "replacement": "Crestview Capital Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_23_r_3_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_24_r_4_c_0_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal\tSubbayya Hegde",
+    "replacement": "Drew Caldwell",
+    "approved": true
+  },
+  {
+    "segment_id": "table_25_r_19_c_0_p_0",
+    "start": 0,
+    "end": 26,
+    "entity_type": "COMPANY",
+    "original_text": "Malabar India Fund Limited",
+    "replacement": "Omni Core Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_31_r_3_c_1_p_2",
+    "start": 0,
+    "end": 15,
+    "entity_type": "COMPANY",
+    "original_text": "Private Limited",
+    "replacement": "Beacon Financial Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_32_r_1_c_0_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_35_r_1_c_0_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_36_r_2_c_0_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_37_r_1_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_37_r_2_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_37_r_3_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_53_r_8_c_3_p_0",
+    "start": 41,
+    "end": 101,
+    "entity_type": "COMPANY",
+    "original_text": "Hegde from Shubhkamal Leasing and Investment Private Limited",
+    "replacement": "Nexus Enterprises Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_53_r_10_c_3_p_0",
+    "start": 48,
+    "end": 108,
+    "entity_type": "COMPANY",
+    "original_text": "Hegde from Shubhkamal Leasing and Investment Private Limited",
+    "replacement": "Nexus Enterprises Private Limited",
+    "approved": true
+  },
+  {
+    "segment_id": "table_69_r_1_c_1_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_70_r_1_c_0_p_0",
+    "start": 0,
+    "end": 21,
+    "entity_type": "PERSON",
+    "original_text": "Kushal Subbayya Hegde",
+    "replacement": "Drew Blackwood",
+    "approved": true
+  },
+  {
+    "segment_id": "table_73_r_1_c_0_p_4",
+    "start": 8,
+    "end": 39,
+    "entity_type": "EMAIL",
+    "original_text": "parag.pansare@kirtanepandit.com",
+    "replacement": "alex.foster70@example.com",
+    "approved": true
+  },
+  {
+    "segment_id": "table_73_r_1_c_0_p_5",
+    "start": 11,
+    "end": 28,
+    "entity_type": "PHONE",
+    "original_text": "+ 91 20 6729 5100",
+    "replacement": "+91 91234 57066",
+    "approved": true
+  },
+  {
+    "segment_id": "table_73_r_2_c_0_p_1",
+    "start": 8,
+    "end": 28,
+    "entity_type": "EMAIL",
+    "original_text": "hingnetare@gmail.com",
+    "replacement": "alex.anderson53@example.com",
+    "approved": true
+  }
+]

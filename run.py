@@ -87,7 +87,7 @@ def main() -> None:
     input_path = Path(args.input)
     output_path = Path(args.output)
 
-    # 1. Execute Redaction Pipeline
+    # 1. Execute Redaction Pipeline with Integrated Integrity Gate
     log.info("STEP 1: Executing PII Redaction Pipeline...")
     redactor = PIIRedactor(
         input_path=input_path,
@@ -96,6 +96,7 @@ def main() -> None:
     )
     summary = redactor.run()
     output_path = Path(summary["output"])
+    integrity_report = summary.get("integrity_report", {})
     log.info("Redaction completed successfully → %s", output_path)
 
     # 2. Extract Predictions for Evaluation
@@ -147,6 +148,7 @@ def main() -> None:
                 "per_type": per_type,
                 "overall": overall,
                 "negative_preservation": negative_eval,
+                "integrity_report": integrity_report,
             },
             METRICS_PATH,
         )
@@ -159,6 +161,7 @@ def main() -> None:
             doc_stats=summary.get("document_stats"),
             negative_eval=negative_eval,
             residual_count=len(residual_findings),
+            integrity_report=integrity_report,
         )
 
         # Print Evaluation Summary to Console
@@ -196,6 +199,17 @@ def main() -> None:
         print(f"  Total TP: {overall.get('total_TP', 0)}  FP: {overall.get('total_FP', 0)}  FN: {overall.get('total_FN', 0)}")
         print(f"  Non-PII Protection Pass Rate: {negative_eval.get('pass_rate', 1.0) * 100:.1f}% ({negative_eval.get('passed', 0)}/{negative_eval.get('total_tested', 0)} preserved)")
         print(f"  Residual Original PII Remaining: {len(residual_findings)}")
+
+    print("\n" + "=" * 60)
+    print("DOCUMENT INTEGRITY REPORT")
+    print("=" * 60)
+    print(f"  Integrity Status:               {integrity_report.get('status', 'N/A')}")
+    print(f"  Segments Checked:               {integrity_report.get('segments_checked', 0)}")
+    print(f"  Approved PII Spans Replaced:    {integrity_report.get('total_approved_spans', 0)}")
+    print(f"  Unauthorized Changed Segments:  {integrity_report.get('segments_with_unexpected_changes', 0)}")
+    print(f"  Unauthorized Changed Characters:{integrity_report.get('unauthorized_changed_characters', 0)}")
+    print(f"  UNAUTHORIZED_CHANGE_RATE:       {integrity_report.get('unauthorized_change_rate', 0.0):.6f}")
+    print(f"  Non-PII Preservation Rate:      {integrity_report.get('non_pii_preservation_rate', 1.0) * 100:.4f}%")
 
     print("\n" + "=" * 60)
     print("FINAL SUMMARY")

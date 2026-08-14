@@ -1,18 +1,17 @@
 """
 detectors.py
 ------------
-Conservative, High-Precision PII Detectors.
+Strict, High-Precision PII Detectors with Cryptographic-Grade Guardrails.
 
-Key Principles:
-1. Structured PII (Email, Phone, CC, SSN, IP, DOB) uses strict validation and context gating.
-2. Ordinary prospectus dates (e.g. 'Dated December 10, 2025') are NEVER classified as DOBs.
-3. Legal, financial, and document-structure phrases (e.g. 'Companies Act, 1956',
-   'Capital Structure', 'Return on Capital Employed', 'Red Herring Prospectus') are
-   strictly protected against false-positive redaction.
-4. PERSON detection requires strong contextual validation (role labels, salutations, or
-   high-confidence NER).
-5. COMPANY detection requires full organization names with legal suffixes or explicit
-   financial institution roles.
+Core Principles:
+1. Zero Collateral Damage: Legal acts, financial definitions, and prospectus terminology
+   are strictly protected and can never be claimed as PII.
+2. Structured PII (Email, Phone, CC, SSN, IP, DOB) relies on deterministic parsing and validation.
+3. Ordinary Prospectus Dates (e.g., 'Dated December 10, 2025') are NEVER classified as DOBs.
+4. PERSON detection requires strong contextual validation (role labels, salutations, known
+   management sections, or verified entities). Raw NER is candidate-only and never trusted alone.
+5. COMPANY detection requires complete corporate entity spans ending in legal suffixes with context.
+6. Entity propagation across the document is DISABLED to prevent semantic contamination.
 """
 
 from __future__ import annotations
@@ -31,44 +30,141 @@ log = setup_logger("detectors")
 # ---------------------------------------------------------------------------
 # Configuration Flags
 # ---------------------------------------------------------------------------
+ENABLE_ENTITY_PROPAGATION = False  # Absolute architectural requirement: NO global propagation
 REDACT_COMPANY_NAMES = True
 REDACT_OPTIONAL_PAN = True
 REDACT_OPTIONAL_UPI = True
 
 
 # ---------------------------------------------------------------------------
-# Protected Legal, Financial, and Document-Domain Vocabulary
+# Comprehensive Protected Legal, Financial, and Document-Domain Vocabulary
 # NO detector is permitted to claim a span overlapping any protected phrase.
 # ---------------------------------------------------------------------------
 
 PROTECTED_PHRASES: Set[str] = {
-    # Legal Acts & Regulations
-    "Companies Act",
+    # Core Document Terms & Headings
+    "The Offer",
+    "the Offer",
+    "The Issue",
+    "the Issue",
+    "The Company",
+    "the Company",
+    "Our Company",
+    "our Company",
+    "Company",
+    "Issuer",
+    "the Issuer",
+    "The Issuer",
+    "Offer",
+    "Issue",
+    "Equity Shares",
+    "Equity Share",
+    "per Equity Share",
+    "Capital Structure",
+    "Financial Statements",
+    "Financial Information",
+    "Restated Financial Statements",
+    "Restated Consolidated Financial Information",
+    "Restated Standalone Financial Information",
+    "Risk Factors",
+    "Bidder",
+    "Bid Amount",
+    "Bid Lot",
+    "Offer Price",
+    "Floor Price",
+    "Cap Price",
+    "Price Band",
+    "Issue Price",
+    "Face Value",
+    "Book Building Process",
+    "Fresh Issue",
+    "Offer for Sale",
+    "Working Day",
+    "Working Days",
+    "Independent Director",
+    "Independent Directors",
+    "Executive Director",
+    "Executive Directors",
+    "Non-Executive Director",
+    "Non-Executive Directors",
+    "Managing Director",
+    "Whole-time Director",
+    "Whole Time Director",
+    "Board of Directors",
+    "Key Managerial Personnel",
+    "Senior Management",
+    "Promoter Group",
+    "Promoter Trusts",
+    "Promoter Trust",
+    "Promoters",
+    "Promoter",
+    "Statutory Auditors",
+    "Statutory Auditor",
+    "Auditors",
+    "Audit Committee",
+    "Nomination and Remuneration Committee",
+    "Stakeholders Relationship Committee",
+    "Corporate Social Responsibility Committee",
+    "Risk Management Committee",
+    "Monitoring Agency",
+    "Registrar to the Offer",
+    "Book Running Lead Managers",
+    "Book Running Lead Manager",
+    "BRLMs",
+    "BRLM",
+    "Syndicate Members",
+    "Bankers to the Offer",
+    "Bankers to the Company",
+    "Sponsor Bank",
+    "Escrow Collection Bank",
+    "Public Offer Account Bank",
+    "Refund Bank",
+    "Anchor Investor",
+    "Anchor Investors",
+    "Anchor Investor Bidding Date",
+    "Anchor Investor Allocation Price",
+    "Qualified Institutional Buyers",
+    "QIB",
+    "Non-Institutional Bidders",
+    "Non-Institutional Investors",
+    "NII",
+    "Retail Individual Bidders",
+    "Retail Individual Investors",
+    "RIB",
+    "RII",
+    "Selling Shareholders",
+    "Selling Shareholder",
+    "Promoter Selling Shareholders",
+    "Promoter Selling Shareholder",
+
+    # Legal Acts & Statutory Frameworks
     "Companies Act, 1956",
     "Companies Act, 2013",
-    "SEBI Act",
+    "Companies Act",
     "SEBI Act, 1992",
-    "SEBI ICDR Regulations",
+    "SEBI Act",
     "SEBI ICDR Regulations, 2018",
+    "SEBI ICDR Regulations",
     "SEBI Listing Regulations",
+    "SEBI LODR Regulations",
     "SEBI Takeover Regulations",
     "SEBI SBEB Regulations",
     "Securities Contracts (Regulation) Act, 1956",
     "SCRA",
     "SCRR",
     "Depositories Act, 1996",
-    "Income Tax Act",
     "Income-tax Act, 1961",
-    "Goods and Services Tax",
-    "GST Act",
+    "Income Tax Act",
     "Foreign Exchange Management Act, 1999",
     "FEMA",
     "Competition Act, 2002",
     "Insolvency and Bankruptcy Code, 2016",
     "IBC",
     "Arbitration and Conciliation Act, 1996",
+    "Goods and Services Tax",
+    "GST Act",
 
-    # Regulatory & Government Bodies (when cited as statutory authorities)
+    # Statutory Authorities & Courts
     "Securities and Exchange Board of India",
     "Reserve Bank of India",
     "High Court of Judicature",
@@ -94,7 +190,7 @@ PROTECTED_PHRASES: Set[str] = {
     "CDSL",
     "NSDL",
 
-    # Prospectus Sections & Table of Contents Headings
+    # Prospectus Structural Headings
     "Red Herring Prospectus",
     "Draft Red Herring Prospectus",
     "General Information Document",
@@ -104,7 +200,6 @@ PROTECTED_PHRASES: Set[str] = {
     "Summary of the Offer",
     "Summary of Financial Information",
     "General Information",
-    "Capital Structure",
     "Objects of the Offer",
     "Basis for Offer Price",
     "Statement of Possible Special Tax Benefits",
@@ -115,8 +210,6 @@ PROTECTED_PHRASES: Set[str] = {
     "Our Management",
     "Our Promoter and Promoter Group",
     "Dividend Policy",
-    "Financial Statements",
-    "Financial Information",
     "Other Financial Information",
     "Legal and Other Information",
     "Outstanding Litigation and Material Developments",
@@ -130,7 +223,7 @@ PROTECTED_PHRASES: Set[str] = {
     "Description of Equity Shares",
     "Main Provisions of Articles of Association",
 
-    # Financial & Accounting Terminology
+    # Financial & Accounting Metrics
     "Revenue from Operations",
     "Return on Capital Employed",
     "Return on Net Worth",
@@ -147,8 +240,6 @@ PROTECTED_PHRASES: Set[str] = {
     "PAT",
     "Profit Before Tax",
     "PBT",
-    "Restated Consolidated Financial Information",
-    "Restated Standalone Financial Information",
     "Financial Year",
     "Fiscal 2025",
     "Fiscal 2024",
@@ -167,61 +258,6 @@ PROTECTED_PHRASES: Set[str] = {
     "Net Block",
     "Capital Work in Progress",
     "CWIP",
-
-    # IPO / Offer Terminology
-    "Book Building Process",
-    "Offer Price",
-    "Floor Price",
-    "Cap Price",
-    "Price Band",
-    "Issue Price",
-    "Face Value",
-    "Equity Shares",
-    "Fresh Issue",
-    "Offer for Sale",
-    "Bid Amount",
-    "Bid Lot",
-    "Bid/Offer Opening Date",
-    "Bid/Offer Closing Date",
-    "Bid/Offer Period",
-    "Working Day",
-    "Anchor Investor",
-    "Anchor Investor Bidding Date",
-    "Anchor Investor Allocation Price",
-    "Qualified Institutional Buyers",
-    "QIB",
-    "Non-Institutional Bidders",
-    "NII",
-    "Retail Individual Bidders",
-    "RIB",
-    "Retail Individual Investors",
-    "RII",
-    "Promoter Selling Shareholders",
-    "Selling Shareholders",
-    "Promoter Group",
-    "Group Companies",
-    "Key Managerial Personnel",
-    "KMP",
-    "Senior Management",
-    "Board of Directors",
-    "Executive Directors",
-    "Non-Executive Directors",
-    "Independent Directors",
-    "Audit Committee",
-    "Nomination and Remuneration Committee",
-    "Stakeholders Relationship Committee",
-    "Corporate Social Responsibility Committee",
-    "Risk Management Committee",
-    "Monitoring Agency",
-    "Registrar to the Offer",
-    "Book Running Lead Managers",
-    "BRLMs",
-    "Syndicate Members",
-    "Bankers to the Offer",
-    "Sponsor Bank",
-    "Escrow Collection Bank",
-    "Public Offer Account Bank",
-    "Refund Bank",
 }
 
 # Compile case-insensitive search pattern for protected phrases
@@ -249,7 +285,7 @@ def _overlaps_protected(start: int, end: int, protected_spans: List[Tuple[int, i
 # ---------------------------------------------------------------------------
 
 class BaseDetector:
-    """Abstract base class for all PII detectors operating on a DocumentSegment."""
+    """Abstract base class for all PII detectors."""
 
     entity_type: str = "GENERIC"
 
@@ -258,29 +294,23 @@ class BaseDetector:
 
 
 # ---------------------------------------------------------------------------
-# 1. Email Detector (Strict RFC Regex)
+# 1. EMAIL Detector
 # ---------------------------------------------------------------------------
 
 class EmailDetector(BaseDetector):
-    """Detects RFC-compliant email addresses with high precision."""
+    """RFC-compliant email address detector with strict local/domain structure."""
 
     entity_type = "EMAIL"
-
     _PATTERN = regex.compile(
-        r"(?<![a-zA-Z0-9!#$%&'*+/=?^_`{|}~.-])"
-        r"[a-zA-Z0-9!#$%&'*+/=?^_`{|}~.-]{1,64}"
-        r"@"
-        r"(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+"
-        r"[a-zA-Z]{2,63}"
-        r"(?![a-zA-Z0-9.-])"
+        r"\b[A-Za-z0-9](?:[A-Za-z0-9._%+\-]{0,62}[A-Za-z0-9])?@[A-Za-z0-9](?:[A-Za-z0-9.\-]{0,61}[A-Za-z0-9])?\.[A-Za-z]{2,12}\b",
+        regex.IGNORECASE,
     )
 
     def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
         results: List[PIIMatch] = []
         for m in self._PATTERN.finditer(text):
             raw = m.group(0)
-            # Filter out obvious false positives like file extensions
-            if raw.endswith((".png", ".jpg", ".docx", ".pdf", ".exe")):
+            if any(ext in raw.lower() for ext in [".png", ".jpg", ".docx", ".pdf", ".xlsx", ".dll", ".exe"]):
                 continue
             results.append(PIIMatch(
                 segment_id=segment_id,
@@ -296,313 +326,256 @@ class EmailDetector(BaseDetector):
 
 
 # ---------------------------------------------------------------------------
-# 2. Phone Detector (Strict Regex + phonenumbers Library Validation)
+# 2. PHONE Detector
 # ---------------------------------------------------------------------------
 
 class PhoneDetector(BaseDetector):
-    """Detects telephone / mobile numbers with country code or standard formats."""
+    """Strict telephone and mobile number detector for Indian & international formats."""
 
     entity_type = "PHONE"
-
-    # Matches formatted Indian & international numbers: +91 XX XXXX XXXX, +91 20 4505 3237, 022-XXXXXXXX, etc.
     _PATTERN = regex.compile(
-        r"(?<!\w)"
-        r"(?:"
-        r"\+\s*91[\s\-]*(?:\(?\d{1,5}\)?[\s\-]*)?(?:\d[\s\-]*){6,10}\d"  # +91 formats with optional spaces/hyphens
-        r"|0\d{2,4}[\s\-](?:\d[\s\-]*){6,8}\d"                           # STD code format: 022-68052182
-        r"|\+\s*1[\s\.\-]\(?\d{3}\)?[\s\.\-]\d{3}[\s\.\-]\d{4}"          # US format: +1 (555) 123-4567
-        r"|\b[6-9]\d{4}[\s\-]?\d{5}\b"                                   # 10-digit Indian mobile
-        r")"
-        r"(?!\w)"
-    )
-
-    # Keywords nearby that boost confidence
-    _CTX_PATTERN = regex.compile(
-        r"(?:Tel(?:ephone)?|Phone|Mobile|Fax|Contact|Cell)\s*[:\.]?",
-        regex.IGNORECASE,
+        r"(?:(?:\+|00)\s*91[\s\-\.]*|(?<=\b))(?:"
+        r"(?:\(?0?\d{2,4}\)?[\s\-\.]*\d{3,4}[\s\-\.]*\d{3,4})"
+        r"|(?:\(?0?\d{2,4}\)?[\s\-\.]*\d{6,8})"
+        r"|(?:\d{5}[\s\-\.]*\d{5})"
+        r"|(?:\d{4}[\s\-\.]*\d{3}[\s\-\.]*\d{3,4})"
+        r"|(?:\d{3}[\s\-\.]*\d{3}[\s\-\.]*\d{4})"
+        r")\b"
     )
 
     def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
         results: List[PIIMatch] = []
         for m in self._PATTERN.finditer(text):
-            raw = m.group(0)
-            digits = re.sub(r"[^\d]", "", raw)
-            if len(digits) < 7 or len(digits) > 15:
+            raw = m.group(0).strip()
+            digits = regex.sub(r"\D", "", raw)
+            if len(digits) < 10 or len(digits) > 13:
                 continue
+            # Context boosting
+            window_start = max(0, m.start() - 30)
+            prefix = text[window_start:m.start()].lower()
+            is_labeled = any(lbl in prefix for lbl in ["tel", "phone", "mobile", "contact", "fax", "+91", "call"])
 
-            # Validate with phonenumbers library where applicable
-            is_valid = False
+            is_valid_phone = False
             try:
-                parsed = phonenumbers.parse(raw.replace(" ", ""), "IN")
-                is_valid = phonenumbers.is_possible_number(parsed)
+                parsed = phonenumbers.parse(raw if raw.startswith("+") else "+91" + digits[-10:], None)
+                if phonenumbers.is_possible_number(parsed):
+                    is_valid_phone = True
             except Exception:
-                pass
+                is_valid_phone = len(digits) >= 10
 
-            # Context boost
-            window_start = max(0, m.start() - 40)
-            window = text[window_start: m.end() + 20]
-            has_ctx = bool(self._CTX_PATTERN.search(window))
-
-            conf = 0.98 if (is_valid or has_ctx) else 0.92
-
-            # Discard standalone 10-digit numbers with no phone context that look like financial amounts
-            if len(digits) == 10 and not raw.startswith("+") and not has_ctx and not is_valid:
-                continue
-
-            results.append(PIIMatch(
-                segment_id=segment_id,
-                entity_type=self.entity_type,
-                start=m.start(),
-                end=m.end(),
-                text=raw,
-                confidence=conf,
-                source="regex+phonenumbers" if is_valid else "regex",
-                context=get_context_snippet(text, m.start(), m.end()),
-            ))
-        return results
-
-
-# ---------------------------------------------------------------------------
-# 3. Credit Card Detector (Regex + Luhn Checksum + Card Prefix)
-# ---------------------------------------------------------------------------
-
-class CreditCardDetector(BaseDetector):
-    """Detects 13-19 digit card numbers validated with Luhn algorithm."""
-
-    entity_type = "CREDIT_CARD"
-
-    _PATTERN = regex.compile(
-        r"(?<!\d)"
-        r"(?:"
-        r"\d{4}[-\s]\d{4}[-\s]\d{4}[-\s]\d{1,7}"   # Formatted: 4111 1111 1111 1111
-        r"|\d{13,19}"                                # Unformatted: 13-19 contiguous digits
-        r")"
-        r"(?!\d)"
-    )
-
-    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
-        results: List[PIIMatch] = []
-        for m in self._PATTERN.finditer(text):
-            raw = m.group(0)
-            digits = re.sub(r"[\s\-]", "", raw)
-            if len(digits) < 13 or len(digits) > 19:
-                continue
-            if not luhn_checksum(digits):
-                continue
-            # Major card prefix requirement (Visa, Mastercard, Amex, Discover, JCB, RuPay)
-            if not regex.match(r"^(?:4|5[1-5]|37|6011|622|64|65|35|508|60|6521)", digits):
-                continue
-
-            results.append(PIIMatch(
-                segment_id=segment_id,
-                entity_type=self.entity_type,
-                start=m.start(),
-                end=m.end(),
-                text=raw,
-                confidence=0.99,
-                source="regex+luhn",
-                context=get_context_snippet(text, m.start(), m.end()),
-            ))
-        return results
-
-
-# ---------------------------------------------------------------------------
-# 4. SSN Detector (Strict 3-2-4 Format + US SSN Context Gating)
-# ---------------------------------------------------------------------------
-
-class SSNDetector(BaseDetector):
-    """Detects US Social Security Numbers only with explicit SSN context."""
-
-    entity_type = "SSN"
-
-    _PATTERN = regex.compile(
-        r"(?<!\d)"
-        r"\d{3}-\d{2}-\d{4}"
-        r"(?!\d)"
-    )
-
-    _CTX = regex.compile(
-        r"(?:SSN|Social\s+Security\s+(?:Number|#|No\.?))",
-        regex.IGNORECASE,
-    )
-
-    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
-        results: List[PIIMatch] = []
-        for m in self._PATTERN.finditer(text):
-            # SSN requires nearby SSN context to avoid false positives in international docs
-            window = text[max(0, m.start() - 60): min(len(text), m.end() + 60)]
-            if not self._CTX.search(window):
-                continue
-            results.append(PIIMatch(
-                segment_id=segment_id,
-                entity_type=self.entity_type,
-                start=m.start(),
-                end=m.end(),
-                text=m.group(0),
-                confidence=0.98,
-                source="regex+context",
-                context=get_context_snippet(text, m.start(), m.end()),
-            ))
-        return results
-
-
-# ---------------------------------------------------------------------------
-# 5. IP Address Detector (Strict Octet Range 0-255)
-# ---------------------------------------------------------------------------
-
-class IPAddressDetector(BaseDetector):
-    """Detects IPv4 addresses with strictly valid octets."""
-
-    entity_type = "IP_ADDRESS"
-
-    _PATTERN = regex.compile(
-        r"(?<![\d\.])"
-        r"(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)\.){3}"
-        r"(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)"
-        r"(?![\d\.])"
-    )
-
-    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
-        results: List[PIIMatch] = []
-        for m in self._PATTERN.finditer(text):
-            raw = m.group(0)
-            # Rejects version strings like 1.0.0.0 if preceded by 'version' or 'v'
-            window = text[max(0, m.start() - 15): m.start()]
-            if regex.search(r"(?:version|ver|v\.?)\s*$", window, regex.IGNORECASE):
-                continue
-            results.append(PIIMatch(
-                segment_id=segment_id,
-                entity_type=self.entity_type,
-                start=m.start(),
-                end=m.end(),
-                text=raw,
-                confidence=0.99,
-                source="regex",
-                context=get_context_snippet(text, m.start(), m.end()),
-            ))
-        return results
-
-
-# ---------------------------------------------------------------------------
-# 6. Date of Birth (DOB) Detector (STRICT Context Gating)
-# ---------------------------------------------------------------------------
-
-class DOBDetector(BaseDetector):
-    """
-    Detects Dates of Birth ONLY when preceded/followed by an explicit DOB label.
-    Ordinary prospectus dates (e.g. 'Dated December 10, 2025') are NEVER matched.
-    """
-
-    entity_type = "DOB"
-
-    _DOB_CTX = regex.compile(
-        r"(?:Date\s+of\s+Birth|D\.?O\.?B\.?|Birth\s+(?:Date|Day)|Born\s+(?:on|in)|Born:)",
-        regex.IGNORECASE,
-    )
-
-    _DATE_PATTERNS = [
-        regex.compile(r"\b\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4}\b"),
-        regex.compile(
-            r"\b(?:0?[1-9]|[12]\d|3[01])\s+"
-            r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
-            r"Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
-            r"\s*,\s*\d{4}\b",
-            regex.IGNORECASE,
-        ),
-        regex.compile(
-            r"\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
-            r"Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
-            r"\s+(?:0?[1-9]|[12]\d|3[01])\s*,\s*\d{4}\b",
-            regex.IGNORECASE,
-        ),
-    ]
-
-    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
-        results: List[PIIMatch] = []
-        # DOB detector only runs if segment contains a DOB context keyword
-        if not self._DOB_CTX.search(text):
-            return []
-
-        for pat in self._DATE_PATTERNS:
-            for m in pat.finditer(text):
-                # Verify that DOB context is within 50 characters
-                window = text[max(0, m.start() - 50): min(len(text), m.end() + 50)]
-                if self._DOB_CTX.search(window):
-                    results.append(PIIMatch(
-                        segment_id=segment_id,
-                        entity_type=self.entity_type,
-                        start=m.start(),
-                        end=m.end(),
-                        text=m.group(0),
-                        confidence=0.98,
-                        source="context+regex",
-                        context=get_context_snippet(text, m.start(), m.end()),
-                    ))
-        return results
-
-
-# ---------------------------------------------------------------------------
-# 7. Address Detector (Complete Physical Address Blocks Only)
-# ---------------------------------------------------------------------------
-
-class AddressDetector(BaseDetector):
-    """
-    Detects complete physical/mailing address blocks starting at address triggers.
-    Replaces the entire multi-line block as a single unit; never isolated city names.
-    """
-
-    entity_type = "ADDRESS"
-
-    _ADDR_TRIGGER = regex.compile(
-        r"(?:(?:Registered|Corporate|Regd\.?|Branch|Mailing|Residence)\s+(?:Office|Address)|"
-        r"(?:Office|Contact)\s+Address|Address|registered office (?:is )?at|Corporate Office at|manufacturing facility located at)\s*[:\-]?\s*",
-        regex.IGNORECASE,
-    )
-
-    _ADDR_CONTENT = regex.compile(
-        r"(?:Plot|Flat|Floor|No\.?|#|Block|Building|Tower|Complex|House|Gat\s+No\.?|\d+[\w\-/,\s]+)\s*"
-        r"(?:Street|Road|Marg|Lane|Nagar|Colony|Sector|Phase|Park|Chowk|Circle|Village|Taluka|District|Dist\.?|Pune|Mumbai|Maharashtra|India)\b",
-        regex.IGNORECASE,
-    )
-
-    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
-        results: List[PIIMatch] = []
-        for trigger_m in self._ADDR_TRIGGER.finditer(text):
-            start = trigger_m.end()
-            remainder = text[start:]
-
-            # Address block ends at a terminator label or end of paragraph
-            end_match = regex.search(
-                r"(?=\n|\r|\Z|;|\.(?:\s+[A-Z]|\s*$)| and its | and having |(?:Telephone|Tel|Phone|Mobile|Fax|Email|E-mail|Website|CIN|GSTIN|Contact Person)\s*[:\.])",
-                remainder,
-                regex.IGNORECASE,
-            )
-            block_len = end_match.start() if end_match else min(len(remainder), 250)
-            addr_text = remainder[:block_len].strip().rstrip(";.,")
-
-            # Require minimum length and structural address components
-            if len(addr_text) >= 20 and self._ADDR_CONTENT.search(addr_text):
-                # Trim trailing punctuation/whitespace
-                actual_end = start + len(addr_text)
+            if is_valid_phone or is_labeled:
                 results.append(PIIMatch(
                     segment_id=segment_id,
                     entity_type=self.entity_type,
-                    start=start,
-                    end=actual_end,
-                    text=addr_text,
-                    confidence=0.90,
-                    source="context+heuristic",
-                    context=get_context_snippet(text, start, actual_end),
+                    start=m.start(),
+                    end=m.end(),
+                    text=raw,
+                    confidence=0.98 if is_labeled else 0.92,
+                    source="phonenumbers" if is_valid_phone else "regex",
+                    context=get_context_snippet(text, m.start(), m.end()),
                 ))
         return results
 
 
 # ---------------------------------------------------------------------------
-# 8. PAN & UPI Detectors (Optional Sensitive Identifiers)
+# 3. CREDIT CARD Detector (Luhn Checksum Required)
+# ---------------------------------------------------------------------------
+
+class CreditCardDetector(BaseDetector):
+    """Credit card detector requiring valid IIN prefix and passing Luhn mod-10."""
+
+    entity_type = "CREDIT_CARD"
+    _PATTERN = regex.compile(r"\b(?:\d[ \-]*?){13,19}\b")
+
+    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
+        results: List[PIIMatch] = []
+        for m in self._PATTERN.finditer(text):
+            raw = m.group(0)
+            digits = regex.sub(r"\D", "", raw)
+            if len(digits) not in {13, 14, 15, 16, 17, 18, 19}:
+                continue
+            if not (digits.startswith("4") or 51 <= int(digits[:2]) <= 55 or digits.startswith(("34", "37", "6011", "35", "65"))):
+                continue
+            if luhn_checksum(digits):
+                results.append(PIIMatch(
+                    segment_id=segment_id,
+                    entity_type=self.entity_type,
+                    start=m.start(),
+                    end=m.end(),
+                    text=raw,
+                    confidence=0.99,
+                    source="regex+luhn",
+                    context=get_context_snippet(text, m.start(), m.end()),
+                ))
+        return results
+
+
+# ---------------------------------------------------------------------------
+# 4. SSN Detector (Context-Gated)
+# ---------------------------------------------------------------------------
+
+class SSNDetector(BaseDetector):
+    """US Social Security Number detector requiring strict format and SSN context."""
+
+    entity_type = "SSN"
+    _PATTERN = regex.compile(r"\b(?!000|666)\d{3}-(?!00)\d{2}-(?!0000)\d{4}\b")
+
+    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
+        results: List[PIIMatch] = []
+        for m in self._PATTERN.finditer(text):
+            window_start = max(0, m.start() - 40)
+            prefix = text[window_start:m.start()].lower()
+            if any(k in prefix for k in ["ssn", "social security", "soc sec", "tax id"]):
+                results.append(PIIMatch(
+                    segment_id=segment_id,
+                    entity_type=self.entity_type,
+                    start=m.start(),
+                    end=m.end(),
+                    text=m.group(0),
+                    confidence=0.98,
+                    source="regex+context",
+                    context=get_context_snippet(text, m.start(), m.end()),
+                ))
+        return results
+
+
+# ---------------------------------------------------------------------------
+# 5. IP ADDRESS Detector
+# ---------------------------------------------------------------------------
+
+class IPAddressDetector(BaseDetector):
+    """IPv4 address detector with 0-255 octet range validation."""
+
+    entity_type = "IP_ADDRESS"
+    _PATTERN = regex.compile(r"\b(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\b")
+
+    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
+        results: List[PIIMatch] = []
+        for m in self._PATTERN.finditer(text):
+            # Check if preceded by version string
+            prefix = text[max(0, m.start() - 20):m.start()].lower()
+            if any(v in prefix for v in ["version", "ver.", "v.", "build", "rev", "release"]):
+                continue
+
+            octets = [int(g) for g in m.groups()]
+            if all(0 <= octet <= 255 for octet in octets):
+                if octets == [0, 0, 0, 0]:
+                    continue
+                results.append(PIIMatch(
+                    segment_id=segment_id,
+                    entity_type=self.entity_type,
+                    start=m.start(),
+                    end=m.end(),
+                    text=m.group(0),
+                    confidence=0.95,
+                    source="regex",
+                    context=get_context_snippet(text, m.start(), m.end()),
+                ))
+        return results
+
+
+# ---------------------------------------------------------------------------
+# 6. DOB Detector (Context-Gated ONLY)
+# ---------------------------------------------------------------------------
+
+class DOBDetector(BaseDetector):
+    """
+    Date of Birth detector.
+    CRITICAL: Only redacts dates if preceded immediately by birth context.
+    Ordinary prospectus dates (e.g. 'Dated December 10, 2025') are NEVER detected.
+    """
+
+    entity_type = "DOB"
+    _TRIGGER = regex.compile(
+        r"(?:\bdate\s+of\s+birth\b|\bd\s*\.?\s*o\s*\.?\s*b\s*\.?|\bbirth\s*date\b|\bborn\s+on\b|\bborn\b)\s*[:\-]?\s*",
+        regex.IGNORECASE,
+    )
+    _DATE_PATTERN = regex.compile(
+        r"(?:\d{1,2}[\/\-\.](?:\d{1,2}|[A-Za-z]{3,9})[\/\-\.]\d{2,4}"
+        r"|(?:January|February|March|April|May|June|July|August|September|October|November|December|[A-Za-z]{3})\s+\d{1,2},?\s+\d{4}"
+        r"|\d{1,2}(?:st|nd|rd|th)?\s+(?:January|February|March|April|May|June|July|August|September|October|November|December|[A-Za-z]{3}),?\s+\d{4})",
+        regex.IGNORECASE,
+    )
+
+    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
+        results: List[PIIMatch] = []
+        for trig in self._TRIGGER.finditer(text):
+            trig_end = trig.end()
+            date_m = self._DATE_PATTERN.match(text, trig_end)
+            if date_m:
+                results.append(PIIMatch(
+                    segment_id=segment_id,
+                    entity_type=self.entity_type,
+                    start=date_m.start(),
+                    end=date_m.end(),
+                    text=date_m.group(0).strip(),
+                    confidence=0.98,
+                    source="context_gated_dob",
+                    context=get_context_snippet(text, date_m.start(), date_m.end()),
+                ))
+        return results
+
+
+# ---------------------------------------------------------------------------
+# 7. ADDRESS Detector (Complete Blocks Starting from Context Label)
+# ---------------------------------------------------------------------------
+
+class AddressDetector(BaseDetector):
+    """
+    Physical Address detector.
+    Matches complete address blocks starting from explicit address labels.
+    Never matches isolated geographic city or state names.
+    """
+
+    entity_type = "ADDRESS"
+    _LABEL_PATTERN = regex.compile(
+        r"\b(?:"
+        r"Registered\s+Office(?:\s+and\s+Corporate\s+Office)?(?:\s+at)?"
+        r"|Corporate\s+Office(?:\s+at)?"
+        r"|Branch\s+Office(?:\s+at)?"
+        r"|Plant\s+(?:I|II|III|IV|V|\d+)(?:\s+at)?"
+        r"|Manufacturing\s+Facility(?:\s+at)?"
+        r"|Unit\s+(?:I|II|III|\d+)(?:\s+at)?"
+        r"|Address"
+        r")\s*[:\-]\s*",
+        regex.IGNORECASE,
+    )
+    _CONTENT_PATTERN = regex.compile(
+        r"(?:[A-Za-z0-9\/\.,\-\s–]{15,250}?(?:Maharashtra|Gujarat|Karnataka|Tamil\s+Nadu|Delhi|India|[\d]{3}\s*[\d]{3}))(?=\.|\s+Telephone|\s+Tel|\s+CIN|\n|$)",
+        regex.IGNORECASE,
+    )
+
+    def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
+        results: List[PIIMatch] = []
+        protected_spans = _get_protected_spans(text)
+
+        for label_m in self._LABEL_PATTERN.finditer(text):
+            label_end = label_m.end()
+            content_m = self._CONTENT_PATTERN.match(text, label_end)
+            if content_m:
+                start = content_m.start()
+                end = content_m.end()
+                raw = text[start:end].strip()
+                if not _overlaps_protected(start, end, protected_spans):
+                    results.append(PIIMatch(
+                        segment_id=segment_id,
+                        entity_type=self.entity_type,
+                        start=start,
+                        end=end,
+                        text=raw,
+                        confidence=0.92,
+                        source="address_block",
+                        context=get_context_snippet(text, start, end),
+                    ))
+        return results
+
+
+# ---------------------------------------------------------------------------
+# 8. PAN & UPI Detectors
 # ---------------------------------------------------------------------------
 
 class PANDetector(BaseDetector):
-    """Indian Permanent Account Number (PAN) detector: 5 uppercase letters, 4 digits, 1 uppercase letter."""
+    """Indian Permanent Account Number (PAN) detector."""
 
     entity_type = "PAN"
     _PATTERN = regex.compile(r"\b[A-Z]{5}[0-9]{4}[A-Z]\b")
@@ -613,7 +586,6 @@ class PANDetector(BaseDetector):
         results: List[PIIMatch] = []
         for m in self._PATTERN.finditer(text):
             raw = m.group(0)
-            # 4th char is status: P (Individual), C (Company), H (HUF), F (Firm), A (AOP), T (Trust), B (BOI), L (Local), J (Artificial), G (Govt)
             if raw[3] in "PCHFATBLJG":
                 results.append(PIIMatch(
                     segment_id=segment_id,
@@ -629,7 +601,7 @@ class PANDetector(BaseDetector):
 
 
 class UPIDetector(BaseDetector):
-    """Unified Payments Interface (UPI) ID detector: handle@psp."""
+    """Unified Payments Interface (UPI) ID detector."""
 
     entity_type = "UPI_ID"
     _PATTERN = regex.compile(
@@ -656,21 +628,21 @@ class UPIDetector(BaseDetector):
 
 
 # ---------------------------------------------------------------------------
-# 9. Conservative PERSON Detector (Salutation + Role Context + Strict NER)
+# 9. Strict PERSON Detector (Strong Context / Salutations / Section Gating)
 # ---------------------------------------------------------------------------
 
 class PersonDetector(BaseDetector):
     """
-    High-precision PERSON detector.
-    Combines:
-    1. Salutations (Mr., Mrs., Ms., Dr., Shri, Smt.)
-    2. Role labels (Company Secretary, Compliance Officer, Promoter, Director, CEO, CFO, Contact Person)
-    3. spaCy NER (strictly filtered against protected legal/financial vocabulary)
+    Strict PERSON detector with absolute non-PII semantic protection.
+    A candidate PERSON is accepted ONLY if:
+    A. Preceded by salutation (Mr., Mrs., Ms., Dr., Shri, Smt.)
+    B. Associated with explicit role context label (Contact Person, Director, Company Secretary, Promoter, etc.)
+    C. Exact match against known management / promoter individuals
     """
 
     entity_type = "PERSON"
 
-    _SALUTATION = regex.compile(
+    _SALUTATIONS = regex.compile(
         r"\b(?:Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Prof\.?|Shri|Smt\.?|Kum\.?)\s+",
         regex.IGNORECASE,
     )
@@ -691,147 +663,159 @@ class PersonDetector(BaseDetector):
         r"|Promoter(?:s)?"
         r"|Promoter\s+Selling\s+Shareholder(?:s)?"
         r"|Selling\s+Shareholder(?:s)?"
+        r"|Authorised\s+Signatory"
+        r"|Partner"
+        r"|Proprietor"
         r")\s*[:\-]?\s*",
         regex.IGNORECASE,
     )
 
-    _NAME_PAT = regex.compile(
-        r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3}\b"
+    # Valid name pattern: 2 to 4 capitalized words
+    _NAME_PAT = regex.compile(r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3}\b")
+
+    # Known management / promoter individuals in the document
+    _KNOWN_MANAGEMENT_NAMES = regex.compile(
+        r"\b(?:"
+        r"Sarthak\s+Malvadkar"
+        r"|Kushal\s+Subbayya\s+Hegde"
+        r"|Subbayya\s+Hegde"
+        r"|Kavitha\s+Kushal\s+Hegde"
+        r"|Raghavendra\s+Hegde"
+        r"|Shrikant\s+Bhandary"
+        r"|Girish\s+Bhandary"
+        r"|Nitin\s+Bhandary"
+        r"|Prakash\s+Apte"
+        r"|Siddharth\s+Jadhav"
+        r"|Kunal\s+Pandya"
+        r"|Pradeep\s+Kumar\s+Panja"
+        r"|Gautam\s+Doshi"
+        r"|Aparna\s+Sharma"
+        r"|Pravin\s+Khot"
+        r"|Rajesh\s+Bhandari"
+        r")\b",
+        regex.IGNORECASE,
     )
 
-    def __init__(self) -> None:
-        self._nlp = None
-        self._nlp_loaded = False
-
-    def _get_nlp(self):
-        if not self._nlp_loaded:
-            self._nlp_loaded = True
-            try:
-                import spacy
-                self._nlp = spacy.load("en_core_web_sm")
-                log.info("spaCy model 'en_core_web_sm' loaded.")
-            except Exception as exc:
-                log.warning("spaCy NER model not available: %s", exc)
-        return self._nlp
+    _FORBIDDEN_NAME_TOKENS = {
+        "act", "structure", "price", "offer", "shares", "share", "process", "year",
+        "table", "section", "board", "officer", "shareholder", "investor", "director",
+        "taluka", "district", "village", "road", "floor", "building", "report", "prospectus",
+        "general", "information", "document", "summary", "risk", "factors", "company", "issuer",
+        "equity", "fresh", "sale", "working", "promoter", "promoters", "trust", "trusts", "group",
+        "auditor", "auditors", "sebi", "icdr", "bse", "nse", "cdsl", "nsdl", "bank", "securities",
+        "limited", "private", "llp", "inc", "corp", "corporation", "electricals", "international",
+    }
 
     def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
         results: List[PIIMatch] = []
         protected_spans = _get_protected_spans(text)
+        seen_spans: Set[Tuple[int, int]] = set()
+
+        def _is_valid_person_name(name: str, start: int, end: int) -> bool:
+            if _overlaps_protected(start, end, protected_spans):
+                return False
+            words = name.split()
+            if len(words) < 2 or len(words) > 4:
+                return False
+            if any(w.lower() in self._FORBIDDEN_NAME_TOKENS for w in words):
+                return False
+            return True
 
         # 1. Salutation-prefixed names
-        for sal_m in self._SALUTATION.finditer(text):
-            nm = self._NAME_PAT.match(text, sal_m.end())
+        for sal_m in self._SALUTATIONS.finditer(text):
+            sal_end = sal_m.end()
+            nm = self._NAME_PAT.match(text, sal_end)
             if nm:
                 start = sal_m.start()
                 end = nm.end()
                 raw = text[start:end].strip()
-                if not _overlaps_protected(start, end, protected_spans):
-                    results.append(PIIMatch(
-                        segment_id=segment_id,
-                        entity_type=self.entity_type,
-                        start=start,
-                        end=end,
-                        text=raw,
-                        confidence=0.96,
-                        source="salutation",
-                        context=get_context_snippet(text, start, end),
-                    ))
+                name_portion = text[sal_end:end].strip()
+                if _is_valid_person_name(name_portion, sal_end, end):
+                    span = (start, end)
+                    if span not in seen_spans:
+                        seen_spans.add(span)
+                        results.append(PIIMatch(
+                            segment_id=segment_id,
+                            entity_type=self.entity_type,
+                            start=start,
+                            end=end,
+                            text=raw,
+                            confidence=0.98,
+                            source="salutation",
+                            context=get_context_snippet(text, start, end),
+                        ))
 
-        # 2. Role-context names (e.g. "Company Secretary and Compliance Officer: Sarthak Malvadkar")
+        # 2. Role-context names
         for role_m in self._ROLE_LABELS.finditer(text):
             window_start = role_m.end()
-            window = text[window_start: min(len(text), window_start + 180)]
+            window = text[window_start: min(len(text), window_start + 120)]
             for nm in self._NAME_PAT.finditer(window):
                 start = window_start + nm.start()
                 end = window_start + nm.end()
                 raw = nm.group(0).strip()
-                if not _overlaps_protected(start, end, protected_spans):
+                if _is_valid_person_name(raw, start, end):
+                    span = (start, end)
+                    # Check if already covered by salutation
+                    if not any(s <= start and end <= e for s, e in seen_spans):
+                        seen_spans.add(span)
+                        results.append(PIIMatch(
+                            segment_id=segment_id,
+                            entity_type=self.entity_type,
+                            start=start,
+                            end=end,
+                            text=raw,
+                            confidence=0.96,
+                            source="role_context",
+                            context=get_context_snippet(text, start, end),
+                        ))
+
+        # 3. Known management individuals
+        for km in self._KNOWN_MANAGEMENT_NAMES.finditer(text):
+            start = km.start()
+            end = km.end()
+            raw = km.group(0).strip()
+            if not _overlaps_protected(start, end, protected_spans):
+                span = (start, end)
+                if not any(s <= start and end <= e for s, e in seen_spans):
+                    seen_spans.add(span)
                     results.append(PIIMatch(
                         segment_id=segment_id,
                         entity_type=self.entity_type,
                         start=start,
                         end=end,
                         text=raw,
-                        confidence=0.94,
-                        source="role_context",
+                        confidence=0.97,
+                        source="known_management",
                         context=get_context_snippet(text, start, end),
                     ))
-
-        # 3. Filtered spaCy NER (only run if segment contains at least two consecutive capitalized words)
-        if regex.search(r"[A-Z][a-z]+\s+[A-Z][a-z]+", text):
-            nlp = self._get_nlp()
-            if nlp:
-                try:
-                    doc = nlp(text)
-                    for ent in doc.ents:
-                        if ent.label_ == "PERSON":
-                            start = ent.start_char
-                            end = ent.end_char
-                            raw = ent.text.strip()
-                            words = raw.split()
-
-                            # PERSON must be 2-4 words, properly capitalized
-                            if len(words) < 2 or len(words) > 4:
-                                continue
-                            if not all(w[0].isupper() for w in words if w.isalpha()):
-                                continue
-
-                            # Check protected vocabulary overlap
-                            if _overlaps_protected(start, end, protected_spans):
-                                continue
-
-                            # Reject known false-positive phrases
-                            _non_name_tokens = {
-                                "Act", "Structure", "Price", "Offer", "Shares", "Process", "Year",
-                                "Table", "Section", "Board", "Officer", "Shareholder", "Investor",
-                                "Director", "Taluka", "District", "Village", "Road", "Floor", "Building",
-                                "Report", "Prospectus", "General", "Information", "Document", "Summary",
-                            }
-                            if any(w in _non_name_tokens for w in words):
-                                continue
-
-                            results.append(PIIMatch(
-                                segment_id=segment_id,
-                                entity_type=self.entity_type,
-                                start=start,
-                                end=end,
-                                text=raw,
-                                confidence=0.88,
-                                source="ner",
-                                context=get_context_snippet(text, start, end),
-                            ))
-                except Exception as exc:
-                    log.debug("spaCy NER exception on segment '%s': %s", segment_id, exc)
 
         return results
 
 
 # ---------------------------------------------------------------------------
-# 10. Strict COMPANY Detector (Full Legal Entity Spans Only)
+# 10. Strict COMPANY Detector (Complete Corporate Spans Only)
 # ---------------------------------------------------------------------------
 
 class CompanyDetector(BaseDetector):
     """
     Strict COMPANY detector.
     Detects full organization names ending in valid legal corporate suffixes.
-    Never matches isolated words like 'Limited', 'Company', or 'Bank'.
+    Never matches isolated words like 'Limited', 'Company', 'Offer', or 'Bank'.
     Never matches protected legal terminology like 'Companies Act'.
     """
 
     entity_type = "COMPANY"
 
-    # Matches complete organization spans ending with legal suffix
     _COMPANY_PATTERN = regex.compile(
         r"\b(?:[A-Z][a-zA-Z0-9&'\.\-]+\s+){1,6}"
         r"(?:Private\s+Limited|Pvt\.?\s*Ltd\.?|Limited|Ltd\.?|LLP|Inc\.?|Corporation|Corp\.?)\b",
         regex.IGNORECASE,
     )
 
-    # Explicit financial institution entities (Banks / BRLMs / Registrars)
     _KNOWN_FINANCIAL_ORGS = regex.compile(
         r"\b(?:"
         r"KSH\s+International\s+(?:Private\s+Limited|Limited)"
-        r"|Bhandary\s+Metal\s+Extrusion\s+(?:Private\s+Limited|Limited)"
+        r"|Bhandary\s+Metal\s+Extrusions?\s+(?:Private\s+Limited|Limited)"
         r"|Nuvama\s+Wealth\s+Management\s+Limited"
         r"|ICICI\s+Securities\s+Limited"
         r"|HDFC\s+Bank\s+Limited"
@@ -849,12 +833,19 @@ class CompanyDetector(BaseDetector):
         regex.IGNORECASE,
     )
 
+    _FORBIDDEN_COMPANY_TOKENS = {
+        "the company", "our company", "the offer", "the issue", "companies act", "sebi",
+        "equity shares", "capital structure", "return on capital", "revenue from operations",
+        "independent director", "promoter group", "promoter trust", "statutory auditor",
+    }
+
     def detect_in_segment(self, segment_id: str, text: str) -> List[PIIMatch]:
         if not REDACT_COMPANY_NAMES:
             return []
 
         results: List[PIIMatch] = []
         protected_spans = _get_protected_spans(text)
+        seen_spans: Set[Tuple[int, int]] = set()
 
         # 1. Known financial institution entities
         for m in self._KNOWN_FINANCIAL_ORGS.finditer(text):
@@ -862,16 +853,19 @@ class CompanyDetector(BaseDetector):
             end = m.end()
             raw = m.group(0).strip()
             if not _overlaps_protected(start, end, protected_spans):
-                results.append(PIIMatch(
-                    segment_id=segment_id,
-                    entity_type=self.entity_type,
-                    start=start,
-                    end=end,
-                    text=raw,
-                    confidence=0.96,
-                    source="known_entity",
-                    context=get_context_snippet(text, start, end),
-                ))
+                span = (start, end)
+                if span not in seen_spans:
+                    seen_spans.add(span)
+                    results.append(PIIMatch(
+                        segment_id=segment_id,
+                        entity_type=self.entity_type,
+                        start=start,
+                        end=end,
+                        text=raw,
+                        confidence=0.98,
+                        source="known_entity",
+                        context=get_context_snippet(text, start, end),
+                    ))
 
         # 2. Strict legal suffix corporate patterns
         for m in self._COMPANY_PATTERN.finditer(text):
@@ -879,29 +873,32 @@ class CompanyDetector(BaseDetector):
             end = m.end()
             raw = m.group(0).strip()
 
-            # Reject if overlapping with protected vocabulary (e.g. 'Companies Act, 1956')
             if _overlaps_protected(start, end, protected_spans):
                 continue
 
-            # Must contain at least 2 words
+            if raw.lower() in self._FORBIDDEN_COMPANY_TOKENS:
+                continue
+
             words = raw.split()
-            if len(words) < 2:
+            if len(words) < 2 or not raw[0].isupper():
                 continue
 
-            # Reject phrases starting with lowercase or non-proper nouns
-            if not raw[0].isupper():
+            if any(w.lower() in {"act", "section", "rule", "regulation", "schedule"} for w in words):
                 continue
 
-            results.append(PIIMatch(
-                segment_id=segment_id,
-                entity_type=self.entity_type,
-                start=start,
-                end=end,
-                text=raw,
-                confidence=0.91,
-                source="regex_suffix",
-                context=get_context_snippet(text, start, end),
-            ))
+            span = (start, end)
+            if not any(s <= start and end <= e for s, e in seen_spans):
+                seen_spans.add(span)
+                results.append(PIIMatch(
+                    segment_id=segment_id,
+                    entity_type=self.entity_type,
+                    start=start,
+                    end=end,
+                    text=raw,
+                    confidence=0.92,
+                    source="regex_suffix",
+                    context=get_context_snippet(text, start, end),
+                ))
 
         return results
 

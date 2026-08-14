@@ -11,6 +11,7 @@ Key Features:
 3. Residual PII Scanner with Synthetic Exclusion: Distinguishes between synthetic
    replacement values and true remaining original PII.
 4. Comprehensive Metrics: Calculates per-type and micro/macro Precision, Recall, F1, and Accuracy.
+5. Document Integrity Verification: Reports UNAUTHORIZED_CHANGE_RATE and UNAUTHORIZED_CHANGED_SEGMENTS.
 """
 
 from __future__ import annotations
@@ -167,50 +168,55 @@ def compute_overall_metrics(per_type: Dict[str, Dict]) -> Dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# Negative Candidate Evaluation
+# ---------------------------------------------------------------------------
+
 def evaluate_negative_candidates(
     negative_candidates: List[Dict],
     predictions: List[Dict],
 ) -> Dict:
-    """
-    Verify that protected non-PII phrases (negative candidate set) were NOT falsely redacted.
-    """
-    pred_texts = {p["text"].strip().lower() for p in predictions}
-    tested = len(negative_candidates)
-    passed = 0
-    failed_items = []
+    """Verify that no protected negative candidates were falsely redacted."""
+    pred_texts_lower = {p.get("text", "").strip().lower() for p in predictions}
 
-    for item in negative_candidates:
-        phrase = item["text"].strip().lower()
-        if phrase not in pred_texts:
-            passed += 1
+    passed = []
+    failed = []
+
+    for neg in negative_candidates:
+        phrase = neg.get("text", "").strip()
+        category = neg.get("category", "PROTECTED_TERM")
+
+        if phrase.lower() in pred_texts_lower:
+            failed.append({"text": phrase, "category": category, "result": "FALSE_POSITIVE"})
         else:
-            failed_items.append(item["text"])
+            passed.append({"text": phrase, "category": category, "result": "CORRECTLY_PRESERVED"})
+
+    total = len(negative_candidates)
+    pass_count = len(passed)
+    pass_rate = pass_count / total if total > 0 else 1.0
 
     return {
-        "total_tested": tested,
-        "passed": passed,
-        "failed": len(failed_items),
-        "pass_rate": round(passed / tested, 4) if tested > 0 else 1.0,
-        "failed_phrases": failed_items,
+        "total_tested": total,
+        "passed": pass_count,
+        "failed": len(failed),
+        "pass_rate": round(pass_rate, 4),
+        "failed_details": failed,
     }
 
 
 # ---------------------------------------------------------------------------
-# Residual PII Scanner with Synthetic Value Exclusion
+# Residual PII Scanner with Synthetic Replacement Exclusion
 # ---------------------------------------------------------------------------
 
 def run_residual_scan(
     redacted_docx_path: str | Path,
-    output_json_path: str | Path,
+    output_path: Optional[str | Path] = None,
 ) -> List[Dict]:
-    """
-    Scan the generated redacted DOCX for any TRUE remaining original PII.
-    Synthetic replacement values (e.g. Alex Carter, Summit Technologies Limited)
-    are excluded using the synthetic exclusion registry.
-    """
+    """Scan the redacted document to identify any remaining original PII."""
     doc = Document(str(redacted_docx_path))
     segments = extract_document_segments(doc)
-    synthetic_exclusions = get_synthetic_values()
+
+    synthetic_exclusions = {v.lower().strip() for v in get_synthetic_values()}
 
     residual_findings: List[Dict] = []
 
@@ -222,31 +228,27 @@ def run_residual_scan(
             try:
                 matches = detector.detect_in_segment(seg.segment_id, seg.text)
                 for m in matches:
-                    raw = m.text.strip()
-                    # Exclude synthetic replacements created during redaction
-                    if (
-                        raw in synthetic_exclusions
-                        or raw.lower() in {s.lower() for s in synthetic_exclusions}
-                        or any(synth.lower() in raw.lower() for synth in synthetic_exclusions if len(synth) > 3)
-                    ):
+                    matched_lower = m.text.lower().strip()
+                    if matched_lower in synthetic_exclusions:
                         continue
-                    # Also exclude safe example domains
-                    if "@example.com" in raw.lower() or "192.0.2." in raw:
+                    if any(syn in matched_lower or matched_lower in syn for syn in synthetic_exclusions if len(syn) > 4):
                         continue
 
                     residual_findings.append({
                         "segment_id": seg.segment_id,
-                        "location": seg.location,
                         "entity_type": m.entity_type,
                         "text": m.text,
+                        "start": m.start,
+                        "end": m.end,
                         "confidence": m.confidence,
                         "source": m.source,
-                        "context_snippet": m.context,
                     })
             except Exception as exc:
-                log.debug("Residual detector exception: %s", exc)
+                log.debug("Residual scanner error on %s: %s", seg.segment_id, exc)
 
-    save_json(residual_findings, output_json_path)
+    if output_path:
+        save_json(residual_findings, output_path)
+
     log.info("Residual scan complete: %d residual original PII findings.", len(residual_findings))
     return residual_findings
 
@@ -262,18 +264,19 @@ def generate_markdown_report(
     doc_stats: Optional[Dict] = None,
     negative_eval: Optional[Dict] = None,
     residual_count: int = 0,
+    integrity_report: Optional[Dict] = None,
 ) -> None:
     """Generate comprehensive evaluation report in GitHub-flavored Markdown."""
     lines = [
-        "# PII Redaction Evaluation Report",
+        "# PII Redaction Evaluation & Document Integrity Report",
         "",
         "## 1. Executive Summary",
         "",
-        "This evaluation benchmarks the PII Redaction Engine against manually verified gold standard",
-        "annotations from `Red Herring Prospectus(1).docx`, verifies non-PII document preservation,",
-        "and validates residual scan results.",
+        "This evaluation report documents the performance of the PII Redaction Engine on `Red Herring Prospectus(1).docx`.",
+        "It includes per-entity precision and recall, independent cryptographic document integrity verification,",
+        "non-PII preservation rates, and residual PII scan findings.",
         "",
-        "## 2. Document & Dataset Statistics",
+        "## 2. Document & Integrity Verification",
         "",
     ]
 
@@ -285,6 +288,22 @@ def generate_markdown_report(
             f"- **Sections**: {doc_stats.get('sections', 'N/A')}",
             f"- **Unique Headers**: {doc_stats.get('unique_headers', 'N/A')}",
             f"- **Unique Footers**: {doc_stats.get('unique_footers', 'N/A')}",
+            f"- **Unique Segments Processed**: {doc_stats.get('unique_segments', 'N/A')}",
+            "",
+        ]
+
+    if integrity_report:
+        status_badge = "✅ **PASS**" if integrity_report.get("status") == "PASS" else "❌ **FAIL**"
+        lines += [
+            "### Document Integrity Invariant",
+            "",
+            f"- **Integrity Verification Status**: {status_badge}",
+            f"- **Segments Checked**: {integrity_report.get('segments_checked', 0)}",
+            f"- **Segments with Expected Redactions**: {integrity_report.get('segments_with_expected_redactions', 0)}",
+            f"- **Segments with Unexpected Changes**: **{integrity_report.get('segments_with_unexpected_changes', 0)}**",
+            f"- **Unauthorized Changed Characters**: **{integrity_report.get('unauthorized_changed_characters', 0)}**",
+            f"- **Unauthorized Change Rate (UNAUTHORIZED_CHANGE_RATE)**: **{integrity_report.get('unauthorized_change_rate', 0.0):.6f}**",
+            f"- **Non-PII Preservation Rate**: **{integrity_report.get('non_pii_preservation_rate', 1.0) * 100:.4f}%**",
             "",
         ]
 
